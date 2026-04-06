@@ -1858,3 +1858,30 @@ sqlite3.OperationalError: misuse of aggregate: COUNT()
 2026-04-05 20:13:47,294 - __main__ - INFO - Checking for new documents...
 2026-04-05 20:13:47,339 - __main__ - INFO - Check completed. New: 0, Updated: 0
 2026-04-05 20:13:47,341 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:14:47 +05)" executed successfully
+2026-04-06 14:51:16,999 - __main__ - INFO - Starting LexBot in POLLING mode...
+2026-04-06 14:51:17,014 - __main__ - INFO - Database initialized with history support
+2026-04-06 14:51:17,014 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-06 14:51:17,016 - apscheduler.scheduler - INFO - Added job "Check Lex.uz" to job store "default"
+2026-04-06 14:51:17,016 - apscheduler.scheduler - INFO - Scheduler started
+2026-04-06 14:51:17,016 - __main__ - INFO - Scheduler started (interval: 1 min)
+2026-04-06 14:51:17,016 - aiogram.dispatcher - INFO - Start polling
+2026-04-06 14:51:17,387 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-04-06 14:51:18,032 - aiogram.event - INFO - Update id=833249271 is handled. Duration 531 ms by bot id=8703514394
+2026-04-06 14:51:18,100 - aiogram.event - INFO - Update id=833249273 is handled. Duration 598 ms by bot id=8703514394
+2026-04-06 14:51:18,119 - aiogram.event - INFO - Update id=833249274 is handled. Duration 616 ms by bot id=8703514394
+2026-04-06 14:52:17,023 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-06 14:53:17 +05)" (scheduled at 2026-04-06 14:52:17.014774+05:00)
+2026-04-06 14:52:17,025 - __main__ - INFO - Checking for new documents...
+2026-04-06 14:52:17,051 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-06 14:52:17,052 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-06 14:53:17 +05)" executed successfully
+2026-04-06 14:53:17,026 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-06 14:54:17 +05)" (scheduled at 2026-04-06 14:53:17.014774+05:00)
+2026-04-06 14:53:17,026 - __main__ - INFO - Checking for new documents...
+2026-04-06 14:53:17,042 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-06 14:53:17,042 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-06 14:54:17 +05)" executed successfully
+2026-04-06 14:54:17,016 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-06 14:55:17 +05)" (scheduled at 2026-04-06 14:54:17.014774+05:00)
+2026-04-06 14:54:17,019 - __main__ - INFO - Checking for new documents...
+2026-04-06 14:54:17,043 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-06 14:54:17,043 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-06 14:55:17 +05)" executed successfully
+2026-04-06 14:55:17,025 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-06 14:56:17 +05)" (scheduled at 2026-04-06 14:55:17.014774+05:00)
+2026-04-06 14:55:17,026 - __main__ - INFO - Checking for new documents...
+2026-04-06 14:55:17,037 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-06 14:55:17,039 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-06 14:56:17 +05)" executed successfully
