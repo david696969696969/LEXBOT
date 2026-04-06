@@ -1,0 +1,15 @@
+[Unit]
+Description=LexBot - Telegram бот для мониторинга законодательства
+After=network.target
+
+[Service]
+Type=simple
+User=lexbot
+WorkingDirectory=/opt/lexbot
+Environment=PATH=/opt/lexbot/venv/bin
+ExecStart=/opt/lexbot/venv/bin/python /opt/lexbot/lexbot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1860 @@
+2026-03-23 18:14:46,905 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-23 18:14:46,923 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-23 18:14:46,941 - aiogram.dispatcher - INFO - Start polling
+2026-03-23 18:14:49,717 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-23 18:16:04,259 - aiogram.event - INFO - Update id=833249171 is handled. Duration 414 ms by bot id=8703514394
+2026-03-23 18:16:15,755 - aiogram.event - INFO - Update id=833249172 is handled. Duration 260 ms by bot id=8703514394
+2026-03-23 18:16:29,914 - aiogram.event - INFO - Update id=833249173 is not handled. Duration 0 ms by bot id=8703514394
+2026-03-23 18:17:30,624 - aiogram.event - INFO - Update id=833249174 is handled. Duration 541 ms by bot id=8703514394
+2026-03-23 18:17:46,721 - aiogram.event - INFO - Update id=833249175 is not handled. Duration 0 ms by bot id=8703514394
+2026-03-23 18:17:59,836 - aiogram.event - INFO - Update id=833249176 is handled. Duration 183 ms by bot id=8703514394
+2026-03-23 18:18:08,139 - aiogram.event - INFO - Update id=833249177 is handled. Duration 255 ms by bot id=8703514394
+2026-03-23 18:18:10,150 - aiogram.event - INFO - Update id=833249178 is not handled. Duration 3 ms by bot id=8703514394
+2026-03-23 19:25:14,941 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-23 19:25:14,949 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-23 19:25:26,335 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8703514394)
+2026-03-23 19:47:18,357 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-23 19:47:18,363 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-23 19:47:18,366 - aiogram.dispatcher - INFO - Start polling
+2026-03-23 19:47:46,510 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-23 19:47:46,514 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-23 19:47:46,516 - aiogram.dispatcher - INFO - Start polling
+2026-03-23 19:47:47,183 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-26 20:02:26,641 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-26 20:02:26,653 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-26 20:02:26,660 - aiogram.dispatcher - INFO - Start polling
+2026-03-26 20:02:30,617 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-26 20:08:50,007 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-26 20:08:50,023 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-26 20:08:50,031 - aiogram.dispatcher - INFO - Start polling
+2026-03-26 20:08:50,831 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-26 20:09:49,545 - aiogram.event - INFO - Update id=833249187 is handled. Duration 10012 ms by bot id=8703514394
+2026-03-26 20:10:19,647 - aiogram.event - INFO - Update id=833249188 is handled. Duration 425 ms by bot id=8703514394
+2026-03-26 20:10:34,568 - aiogram.event - INFO - Update id=833249189 is handled. Duration 187 ms by bot id=8703514394
+2026-03-26 20:10:42,959 - aiogram.event - INFO - Update id=833249190 is handled. Duration 568 ms by bot id=8703514394
+2026-03-26 20:17:48,176 - aiogram.event - INFO - Update id=833249191 is handled. Duration 1056 ms by bot id=8703514394
+2026-03-26 20:18:17,802 - aiogram.event - INFO - Update id=833249192 is handled. Duration 195 ms by bot id=8703514394
+2026-03-26 20:18:54,607 - aiogram.event - INFO - Update id=833249193 is handled. Duration 204 ms by bot id=8703514394
+2026-03-26 20:21:49,242 - aiogram.dispatcher - INFO - Polling stopped
+2026-03-26 20:21:49,265 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-03-26 20:21:49,267 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-26 20:21:49,546 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-03-26 20:21:49,550 - aiogram.dispatcher - INFO - Polling stopped for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-26 20:23:50,302 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-26 20:23:50,356 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-26 20:23:50,360 - aiogram.dispatcher - INFO - Start polling
+2026-03-26 20:23:50,876 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-26 21:35:02,354 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-26 21:35:02,380 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-26 21:35:02,384 - aiogram.dispatcher - INFO - Start polling
+2026-03-26 21:35:06,988 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-26 21:35:07,160 - aiogram.event - INFO - Update id=833249194 is not handled. Duration 0 ms by bot id=8703514394
+2026-03-26 21:35:07,160 - aiogram.event - ERROR - Cause exception while process update id=833249194 by bot id=8703514394
+NameError: name 'add_subscriber' is not defined
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\lexbot\lexbot.py", line 292, in cmd_start
+    await add_subscriber(
+          ^^^^^^^^^^^^^^
+NameError: name 'add_subscriber' is not defined. Did you mean: 'cmd_subscribe'?
+2026-03-26 21:44:25,322 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-26 21:44:25,333 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-26 21:44:25,335 - aiogram.dispatcher - INFO - Start polling
+2026-03-26 21:44:26,093 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-26 21:45:14,094 - aiogram.event - INFO - Update id=833249195 is handled. Duration 1496 ms by bot id=8703514394
+2026-03-26 21:45:37,588 - aiogram.event - INFO - Update id=833249196 is handled. Duration 335 ms by bot id=8703514394
+2026-03-26 21:45:40,967 - aiogram.event - INFO - Update id=833249197 is handled. Duration 926 ms by bot id=8703514394
+2026-03-26 21:45:44,308 - aiogram.event - INFO - Update id=833249198 is handled. Duration 455 ms by bot id=8703514394
+2026-03-26 21:45:48,105 - aiogram.event - INFO - Update id=833249199 is handled. Duration 517 ms by bot id=8703514394
+2026-03-26 21:46:03,166 - aiogram.event - INFO - Update id=833249200 is handled. Duration 192 ms by bot id=8703514394
+2026-03-26 21:46:13,906 - aiogram.event - INFO - Update id=833249201 is handled. Duration 200 ms by bot id=8703514394
+2026-03-26 21:46:15,534 - aiogram.event - INFO - Update id=833249202 is not handled. Duration 1 ms by bot id=8703514394
+2026-03-26 21:46:30,467 - aiogram.event - INFO - Update id=833249203 is not handled. Duration 3 ms by bot id=8703514394
+2026-03-26 21:47:13,854 - aiogram.event - INFO - Update id=833249204 is not handled. Duration 1 ms by bot id=8703514394
+2026-03-26 21:47:26,537 - aiogram.event - INFO - Update id=833249205 is not handled. Duration 2 ms by bot id=8703514394
+2026-03-26 21:47:29,023 - aiogram.event - INFO - Update id=833249206 is not handled. Duration 1 ms by bot id=8703514394
+2026-03-26 21:47:30,334 - aiogram.event - INFO - Update id=833249207 is not handled. Duration 2 ms by bot id=8703514394
+2026-03-26 21:47:30,560 - aiogram.event - INFO - Update id=833249208 is not handled. Duration 1 ms by bot id=8703514394
+2026-03-26 21:47:35,570 - aiogram.event - INFO - Update id=833249209 is handled. Duration 227 ms by bot id=8703514394
+2026-03-26 21:47:40,936 - aiogram.event - INFO - Update id=833249210 is handled. Duration 545 ms by bot id=8703514394
+2026-03-26 21:47:44,006 - aiogram.event - INFO - Update id=833249211 is handled. Duration 497 ms by bot id=8703514394
+2026-03-26 22:07:45,608 - __main__ - INFO - Starting LexBot Pro...
+2026-03-26 22:07:45,619 - __main__ - INFO - Database initialized
+2026-03-26 22:07:45,620 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-26 22:07:45,621 - apscheduler.scheduler - INFO - Added job "Check Lex.uz" to job store "default"
+2026-03-26 22:07:45,622 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-26 22:07:45,622 - __main__ - INFO - Scheduler started (interval: 1 min)
+2026-03-26 22:07:45,622 - aiogram.dispatcher - INFO - Start polling
+2026-03-26 22:07:48,815 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-26 22:08:45,636 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:09:45 +05)" (scheduled at 2026-03-26 22:08:45.620242+05:00)
+2026-03-26 22:08:45,636 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:08:45,782 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:08:45,782 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:09:45 +05)" executed successfully
+2026-03-26 22:09:45,635 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:10:45 +05)" (scheduled at 2026-03-26 22:09:45.620242+05:00)
+2026-03-26 22:09:45,637 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:09:45,653 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:09:45,653 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:10:45 +05)" executed successfully
+2026-03-26 22:10:45,625 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:11:45 +05)" (scheduled at 2026-03-26 22:10:45.620242+05:00)
+2026-03-26 22:10:45,626 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:10:45,658 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:10:45,659 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:11:45 +05)" executed successfully
+2026-03-26 22:11:45,625 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:12:45 +05)" (scheduled at 2026-03-26 22:11:45.620242+05:00)
+2026-03-26 22:11:45,625 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:11:45,653 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:11:45,653 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:12:45 +05)" executed successfully
+2026-03-26 22:12:45,636 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:13:45 +05)" (scheduled at 2026-03-26 22:12:45.620242+05:00)
+2026-03-26 22:12:45,638 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:12:45,696 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:12:45,699 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:13:45 +05)" executed successfully
+2026-03-26 22:13:45,628 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:14:45 +05)" (scheduled at 2026-03-26 22:13:45.620242+05:00)
+2026-03-26 22:13:45,630 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:13:45,669 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:13:45,670 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:14:45 +05)" executed successfully
+2026-03-26 22:14:45,628 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:15:45 +05)" (scheduled at 2026-03-26 22:14:45.620242+05:00)
+2026-03-26 22:14:45,629 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:14:45,658 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:14:45,659 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:15:45 +05)" executed successfully
+2026-03-26 22:15:45,633 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:16:45 +05)" (scheduled at 2026-03-26 22:15:45.620242+05:00)
+2026-03-26 22:15:45,634 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:15:45,660 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:15:45,660 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:16:45 +05)" executed successfully
+2026-03-26 22:16:45,629 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:17:45 +05)" (scheduled at 2026-03-26 22:16:45.620242+05:00)
+2026-03-26 22:16:45,631 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:16:45,674 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:16:45,674 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:17:45 +05)" executed successfully
+2026-03-26 22:17:45,635 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:18:45 +05)" (scheduled at 2026-03-26 22:17:45.620242+05:00)
+2026-03-26 22:17:45,636 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:17:45,669 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:17:45,670 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:18:45 +05)" executed successfully
+2026-03-26 22:18:45,635 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:19:45 +05)" (scheduled at 2026-03-26 22:18:45.620242+05:00)
+2026-03-26 22:18:45,640 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:18:45,700 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:18:45,701 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:19:45 +05)" executed successfully
+2026-03-26 22:20:00,148 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:20:45 +05)" was missed by 0:00:14.528026
+2026-03-26 22:20:00,152 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] The network connection was aborted by the local system
+2026-03-26 22:20:00,154 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-26 22:20:12,346 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8703514394)
+2026-03-26 22:20:45,629 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:21:45 +05)" (scheduled at 2026-03-26 22:20:45.620242+05:00)
+2026-03-26 22:20:45,629 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:20:45,645 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:20:45,645 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:21:45 +05)" executed successfully
+2026-03-26 22:21:13,494 - aiogram.event - INFO - Update id=833249212 is handled. Duration 1191 ms by bot id=8703514394
+2026-03-26 22:21:22,861 - aiogram.event - INFO - Update id=833249213 is handled. Duration 421 ms by bot id=8703514394
+2026-03-26 22:21:24,096 - aiogram.event - INFO - Update id=833249214 is not handled. Duration 1 ms by bot id=8703514394
+2026-03-26 22:21:40,446 - aiogram.event - INFO - Update id=833249215 is handled. Duration 471 ms by bot id=8703514394
+2026-03-26 22:21:43,445 - aiogram.event - INFO - Update id=833249216 is not handled. Duration 1 ms by bot id=8703514394
+2026-03-26 22:21:45,623 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:22:45 +05)" (scheduled at 2026-03-26 22:21:45.620242+05:00)
+2026-03-26 22:21:45,623 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:21:45,658 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:21:45,660 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:22:45 +05)" executed successfully
+2026-03-26 22:21:48,610 - aiogram.event - INFO - Update id=833249217 is handled. Duration 539 ms by bot id=8703514394
+2026-03-26 22:21:54,174 - aiogram.event - INFO - Update id=833249218 is handled. Duration 449 ms by bot id=8703514394
+2026-03-26 22:22:45,626 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:23:45 +05)" (scheduled at 2026-03-26 22:22:45.620242+05:00)
+2026-03-26 22:22:45,627 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:22:45,649 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:22:45,649 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:23:45 +05)" executed successfully
+2026-03-26 22:23:01,102 - aiogram.event - INFO - Update id=833249219 is handled. Duration 522 ms by bot id=8703514394
+2026-03-26 22:23:04,697 - aiogram.event - INFO - Update id=833249220 is handled. Duration 490 ms by bot id=8703514394
+2026-03-26 22:23:11,723 - aiogram.event - INFO - Update id=833249221 is handled. Duration 757 ms by bot id=8703514394
+2026-03-26 22:23:20,665 - aiogram.event - INFO - Update id=833249222 is not handled. Duration 2 ms by bot id=8703514394
+2026-03-26 22:23:41,321 - aiogram.event - INFO - Update id=833249223 is not handled. Duration 2 ms by bot id=8703514394
+2026-03-26 22:23:45,624 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:24:45 +05)" (scheduled at 2026-03-26 22:23:45.620242+05:00)
+2026-03-26 22:23:45,625 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:23:45,654 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:23:45,654 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:24:45 +05)" executed successfully
+2026-03-26 22:23:58,229 - aiogram.event - INFO - Update id=833249224 is not handled. Duration 1 ms by bot id=8703514394
+2026-03-26 22:24:16,406 - aiogram.event - INFO - Update id=833249225 is not handled. Duration 2 ms by bot id=8703514394
+2026-03-26 22:24:45,648 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:25:45 +05)" (scheduled at 2026-03-26 22:24:45.620242+05:00)
+2026-03-26 22:24:45,649 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:24:45,674 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:24:45,675 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:25:45 +05)" executed successfully
+2026-03-26 22:24:50,304 - aiogram.event - INFO - Update id=833249226 is not handled. Duration 2 ms by bot id=8703514394
+2026-03-26 22:25:45,632 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:26:45 +05)" (scheduled at 2026-03-26 22:25:45.620242+05:00)
+2026-03-26 22:25:45,633 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:25:45,654 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:25:45,655 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:26:45 +05)" executed successfully
+2026-03-26 22:26:05,303 - aiogram.event - INFO - Update id=833249227 is not handled. Duration 2 ms by bot id=8703514394
+2026-03-26 22:26:45,623 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:27:45 +05)" (scheduled at 2026-03-26 22:26:45.620242+05:00)
+2026-03-26 22:26:45,638 - __main__ - INFO - Checking for new documents...
+2026-03-26 22:26:45,659 - __main__ - INFO - Check completed. New documents: 0
+2026-03-26 22:26:45,659 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:27:45 +05)" executed successfully
+2026-03-26 22:58:40,272 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-26 22:58:40,279 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-26 22:58:40,325 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 22:58:45 +05)" was missed by 0:00:54.704862
+2026-03-26 22:58:41,339 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-26 22:58:41,341 - aiogram.dispatcher - WARNING - Sleep for 1.296084 seconds and try again... (tryings = 1, bot id = 8703514394)
+2026-03-26 22:58:42,646 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-26 22:58:42,646 - aiogram.dispatcher - WARNING - Sleep for 1.560199 seconds and try again... (tryings = 2, bot id = 8703514394)
+2026-03-26 22:58:44,213 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-26 22:58:44,215 - aiogram.dispatcher - WARNING - Sleep for 2.063712 seconds and try again... (tryings = 3, bot id = 8703514394)
+2026-03-26 23:51:11,034 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-26 23:51:45 +05)" was missed by 0:00:25.413857
+2026-03-26 23:51:11,049 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-03-26 23:51:11,049 - aiogram.dispatcher - WARNING - Sleep for 2.650128 seconds and try again... (tryings = 4, bot id = 8703514394)
+2026-03-26 23:51:13,710 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-03-26 23:51:13,711 - aiogram.dispatcher - WARNING - Sleep for 3.471204 seconds and try again... (tryings = 5, bot id = 8703514394)
+2026-03-27 16:38:51,250 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-27 16:39:45 +05)" was missed by 0:00:05.630367
+2026-03-27 16:38:51,253 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-03-27 16:38:51,253 - aiogram.dispatcher - WARNING - Sleep for 4.590917 seconds and try again... (tryings = 6, bot id = 8703514394)
+2026-03-27 16:38:55,864 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-03-27 16:38:55,865 - aiogram.dispatcher - WARNING - Sleep for 5.015449 seconds and try again... (tryings = 7, bot id = 8703514394)
+2026-03-27 16:39:00,891 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-03-27 16:39:00,892 - aiogram.dispatcher - WARNING - Sleep for 4.958971 seconds and try again... (tryings = 8, bot id = 8703514394)
+2026-03-27 16:39:05,858 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-03-27 16:39:05,859 - aiogram.dispatcher - WARNING - Sleep for 4.940875 seconds and try again... (tryings = 9, bot id = 8703514394)
+2026-03-27 16:39:10,806 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-03-27 16:39:10,806 - aiogram.dispatcher - WARNING - Sleep for 4.917816 seconds and try again... (tryings = 10, bot id = 8703514394)
+2026-03-27 16:39:15,737 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-03-27 16:39:15,737 - aiogram.dispatcher - WARNING - Sleep for 4.958084 seconds and try again... (tryings = 11, bot id = 8703514394)
+2026-03-27 16:39:45,662 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-27 16:40:45 +05)" (scheduled at 2026-03-27 16:39:45.620242+05:00)
+2026-03-27 16:39:45,671 - __main__ - INFO - Checking for new documents...
+2026-03-27 16:39:45,740 - __main__ - INFO - Check completed. New documents: 0
+2026-03-27 16:39:45,741 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-27 16:40:45 +05)" executed successfully
+2026-03-27 16:40:23,414 - aiogram.dispatcher - INFO - Connection established (tryings = 12, bot id = 8703514394)
+2026-03-27 16:40:24,923 - aiogram.event - INFO - Update id=833249230 is not handled. Duration 5 ms by bot id=8703514394
+2026-03-27 16:40:25,622 - aiogram.event - INFO - Update id=833249229 is handled. Duration 710 ms by bot id=8703514394
+2026-03-27 16:40:45,632 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-27 16:41:45 +05)" (scheduled at 2026-03-27 16:40:45.620242+05:00)
+2026-03-27 16:40:45,635 - __main__ - INFO - Checking for new documents...
+2026-03-27 16:40:45,658 - __main__ - INFO - Check completed. New documents: 0
+2026-03-27 16:40:45,659 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-27 16:41:45 +05)" executed successfully
+2026-03-27 16:41:45,634 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-27 16:42:45 +05)" (scheduled at 2026-03-27 16:41:45.620242+05:00)
+2026-03-27 16:41:45,637 - __main__ - INFO - Checking for new documents...
+2026-03-27 16:41:45,658 - __main__ - INFO - Check completed. New documents: 0
+2026-03-27 16:41:45,659 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-27 16:42:45 +05)" executed successfully
+2026-03-28 18:56:06,762 - __main__ - INFO - Starting LexBot Pro...
+2026-03-28 18:56:06,779 - __main__ - INFO - Database initialized with extended schema
+2026-03-28 18:56:06,779 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-28 18:56:06,781 - apscheduler.scheduler - INFO - Added job "Check all sources" to job store "default"
+2026-03-28 18:56:06,782 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-28 18:56:06,782 - __main__ - INFO - Scheduler started (interval: 1 min)
+2026-03-28 18:56:06,782 - aiogram.dispatcher - INFO - Start polling
+2026-03-28 18:56:07,208 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-28 18:57:06,781 - apscheduler.executors.default - INFO - Running job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 18:58:06 +05)" (scheduled at 2026-03-28 18:57:06.779717+05:00)
+2026-03-28 18:57:06,782 - __main__ - INFO - Checking all sources for new documents...
+2026-03-28 18:57:06,805 - __main__ - ERROR - Check error: table documents has no column named date_effective
+2026-03-28 18:57:06,832 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\lexbot\lexbot.py", line 384, in check_new_documents
+    await db.execute("""
+    ...<13 lines>...
+    ))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table documents has no column named date_effective
+
+2026-03-28 18:57:06,834 - apscheduler.executors.default - INFO - Job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 18:58:06 +05)" executed successfully
+2026-03-28 18:58:06,789 - apscheduler.executors.default - INFO - Running job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 18:59:06 +05)" (scheduled at 2026-03-28 18:58:06.779717+05:00)
+2026-03-28 18:58:06,790 - __main__ - INFO - Checking all sources for new documents...
+2026-03-28 18:58:06,805 - __main__ - ERROR - Check error: table documents has no column named date_effective
+2026-03-28 18:58:06,807 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\lexbot\lexbot.py", line 384, in check_new_documents
+    await db.execute("""
+    ...<13 lines>...
+    ))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table documents has no column named date_effective
+
+2026-03-28 18:58:06,807 - apscheduler.executors.default - INFO - Job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 18:59:06 +05)" executed successfully
+2026-03-28 18:58:08,669 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-28 18:58:08,670 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-28 18:58:24,637 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network connection was aborted by the local system]
+2026-03-28 18:58:24,650 - aiogram.dispatcher - WARNING - Sleep for 1.083500 seconds and try again... (tryings = 1, bot id = 8703514394)
+2026-03-28 18:58:26,129 - aiogram.dispatcher - INFO - Connection established (tryings = 2, bot id = 8703514394)
+2026-03-28 18:58:26,134 - aiogram.event - INFO - Update id=833249231 is not handled. Duration 3 ms by bot id=8703514394
+2026-03-28 18:58:26,135 - aiogram.event - ERROR - Cause exception while process update id=833249231 by bot id=8703514394
+OperationalError: table user_logs has no column named details
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\lexbot\lexbot.py", line 533, in cmd_start
+    await log_user_action(
+    ...<6 lines>...
+    )
+  File "C:\lexbot\lexbot.py", line 198, in log_user_action
+    await db.execute("""
+    ...<2 lines>...
+    """, (user_id, username, first_name, last_name, action, details))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table user_logs has no column named details
+2026-03-28 18:59:06,788 - apscheduler.executors.default - INFO - Running job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 19:00:06 +05)" (scheduled at 2026-03-28 18:59:06.779717+05:00)
+2026-03-28 18:59:06,788 - __main__ - INFO - Checking all sources for new documents...
+2026-03-28 18:59:06,796 - __main__ - ERROR - Check error: table documents has no column named date_effective
+2026-03-28 18:59:06,797 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\lexbot\lexbot.py", line 384, in check_new_documents
+    await db.execute("""
+    ...<13 lines>...
+    ))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table documents has no column named date_effective
+
+2026-03-28 18:59:06,798 - apscheduler.executors.default - INFO - Job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 19:00:06 +05)" executed successfully
+2026-03-28 18:59:36,657 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-28 18:59:36,658 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-28 18:59:38,095 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8703514394)
+2026-03-28 18:59:38,100 - aiogram.event - INFO - Update id=833249232 is not handled. Duration 4 ms by bot id=8703514394
+2026-03-28 18:59:38,100 - aiogram.event - ERROR - Cause exception while process update id=833249232 by bot id=8703514394
+OperationalError: table user_logs has no column named details
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\lexbot\lexbot.py", line 533, in cmd_start
+    await log_user_action(
+    ...<6 lines>...
+    )
+  File "C:\lexbot\lexbot.py", line 198, in log_user_action
+    await db.execute("""
+    ...<2 lines>...
+    """, (user_id, username, first_name, last_name, action, details))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table user_logs has no column named details
+2026-03-28 19:00:06,784 - apscheduler.executors.default - INFO - Running job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 19:01:06 +05)" (scheduled at 2026-03-28 19:00:06.779717+05:00)
+2026-03-28 19:00:06,786 - __main__ - INFO - Checking all sources for new documents...
+2026-03-28 19:00:06,801 - __main__ - ERROR - Check error: table documents has no column named date_effective
+2026-03-28 19:00:06,803 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\lexbot\lexbot.py", line 384, in check_new_documents
+    await db.execute("""
+    ...<13 lines>...
+    ))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table documents has no column named date_effective
+
+2026-03-28 19:00:06,804 - apscheduler.executors.default - INFO - Job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 19:01:06 +05)" executed successfully
+2026-03-28 19:07:19,314 - __main__ - INFO - Starting LexBot Pro...
+2026-03-28 19:07:19,335 - __main__ - INFO - Database initialized with extended schema
+2026-03-28 19:07:19,335 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-28 19:07:19,337 - apscheduler.scheduler - INFO - Added job "Check all sources" to job store "default"
+2026-03-28 19:07:19,338 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-28 19:07:19,338 - __main__ - INFO - Scheduler started (interval: 1 min)
+2026-03-28 19:07:19,339 - aiogram.dispatcher - INFO - Start polling
+2026-03-28 19:07:22,387 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-28 19:08:19,347 - apscheduler.executors.default - INFO - Running job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 19:09:19 +05)" (scheduled at 2026-03-28 19:08:19.335511+05:00)
+2026-03-28 19:08:19,347 - __main__ - INFO - Checking all sources for new documents...
+2026-03-28 19:08:19,414 - __main__ - ERROR - Check error: no such table: check_logs
+2026-03-28 19:08:19,418 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\lexbot\lexbot.py", line 406, in check_new_documents
+    await db.execute("""
+    ...<2 lines>...
+    """, (new_count, 'success'))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: no such table: check_logs
+
+2026-03-28 19:08:19,419 - apscheduler.executors.default - INFO - Job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 19:09:19 +05)" executed successfully
+2026-03-28 19:09:19,352 - apscheduler.executors.default - INFO - Running job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 19:10:19 +05)" (scheduled at 2026-03-28 19:09:19.335511+05:00)
+2026-03-28 19:09:19,353 - __main__ - INFO - Checking all sources for new documents...
+2026-03-28 19:09:19,372 - __main__ - ERROR - Check error: no such table: check_logs
+2026-03-28 19:09:19,373 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\lexbot\lexbot.py", line 406, in check_new_documents
+    await db.execute("""
+    ...<2 lines>...
+    """, (new_count, 'success'))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: no such table: check_logs
+
+2026-03-28 19:09:19,374 - apscheduler.executors.default - INFO - Job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 19:10:19 +05)" executed successfully
+2026-03-28 19:10:19,342 - apscheduler.executors.default - INFO - Running job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 19:11:19 +05)" (scheduled at 2026-03-28 19:10:19.335511+05:00)
+2026-03-28 19:10:19,343 - __main__ - INFO - Checking all sources for new documents...
+2026-03-28 19:10:19,356 - __main__ - ERROR - Check error: no such table: check_logs
+2026-03-28 19:10:19,358 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\lexbot\lexbot.py", line 406, in check_new_documents
+    await db.execute("""
+    ...<2 lines>...
+    """, (new_count, 'success'))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: no such table: check_logs
+
+2026-03-28 19:10:19,359 - apscheduler.executors.default - INFO - Job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 19:11:19 +05)" executed successfully
+2026-03-28 19:11:22,435 - apscheduler.executors.default - WARNING - Run time of job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 19:12:19 +05)" was missed by 0:00:03.099276
+2026-03-28 19:11:22,444 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] The network connection was aborted by the local system
+2026-03-28 19:11:22,445 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-28 19:11:34,019 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8703514394)
+2026-03-28 19:12:19,337 - apscheduler.executors.default - INFO - Running job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 19:13:19 +05)" (scheduled at 2026-03-28 19:12:19.335511+05:00)
+2026-03-28 19:12:19,337 - __main__ - INFO - Checking all sources for new documents...
+2026-03-28 19:12:19,356 - __main__ - ERROR - Check error: no such table: check_logs
+2026-03-28 19:12:19,357 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\lexbot\lexbot.py", line 406, in check_new_documents
+    await db.execute("""
+    ...<2 lines>...
+    """, (new_count, 'success'))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: no such table: check_logs
+
+2026-03-28 19:12:19,357 - apscheduler.executors.default - INFO - Job "Check all sources (trigger: interval[0:01:00], next run at: 2026-03-28 19:13:19 +05)" executed successfully
+2026-03-30 19:15:02,162 - __main__ - INFO - Starting LexBot...
+2026-03-30 19:15:02,178 - __main__ - INFO - Database initialized
+2026-03-30 19:15:02,179 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-30 19:15:02,181 - apscheduler.scheduler - INFO - Added job "Check Lex.uz" to job store "default"
+2026-03-30 19:15:02,182 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-30 19:15:02,182 - __main__ - INFO - Scheduler started (interval: 1 min)
+2026-03-30 19:15:02,182 - aiogram.dispatcher - INFO - Start polling
+2026-03-30 19:15:02,792 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-30 19:16:02,183 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:17:02 +05)" (scheduled at 2026-03-30 19:16:02.179019+05:00)
+2026-03-30 19:16:02,183 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:16:02,191 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:16:02,192 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:17:02 +05)" executed successfully
+2026-03-30 19:17:02,195 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:18:02 +05)" (scheduled at 2026-03-30 19:17:02.179019+05:00)
+2026-03-30 19:17:02,198 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:17:02,207 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:17:02,208 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:18:02 +05)" executed successfully
+2026-03-30 19:18:02,195 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:19:02 +05)" (scheduled at 2026-03-30 19:18:02.179019+05:00)
+2026-03-30 19:18:02,196 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:18:02,204 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:18:02,204 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:19:02 +05)" executed successfully
+2026-03-30 19:19:02,182 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:20:02 +05)" (scheduled at 2026-03-30 19:19:02.179019+05:00)
+2026-03-30 19:19:02,183 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:19:02,192 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:19:02,193 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:20:02 +05)" executed successfully
+2026-03-30 19:20:02,193 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:21:02 +05)" (scheduled at 2026-03-30 19:20:02.179019+05:00)
+2026-03-30 19:20:02,194 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:20:02,203 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:20:02,203 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:21:02 +05)" executed successfully
+2026-03-30 19:21:02,189 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:22:02 +05)" (scheduled at 2026-03-30 19:21:02.179019+05:00)
+2026-03-30 19:21:02,190 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:21:02,197 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:21:02,198 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:22:02 +05)" executed successfully
+2026-03-30 19:22:02,182 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:23:02 +05)" (scheduled at 2026-03-30 19:22:02.179019+05:00)
+2026-03-30 19:22:02,184 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:22:02,191 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:22:02,192 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:23:02 +05)" executed successfully
+2026-03-30 19:23:02,188 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:24:02 +05)" (scheduled at 2026-03-30 19:23:02.179019+05:00)
+2026-03-30 19:23:02,189 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:23:02,205 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:23:02,206 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:24:02 +05)" executed successfully
+2026-03-30 19:24:02,184 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:25:02 +05)" (scheduled at 2026-03-30 19:24:02.179019+05:00)
+2026-03-30 19:24:02,185 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:24:02,201 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:24:02,219 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:25:02 +05)" executed successfully
+2026-03-30 19:25:02,182 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:26:02 +05)" (scheduled at 2026-03-30 19:25:02.179019+05:00)
+2026-03-30 19:25:02,183 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:25:02,197 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:25:02,199 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:26:02 +05)" executed successfully
+2026-03-30 19:26:02,186 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:27:02 +05)" (scheduled at 2026-03-30 19:26:02.179019+05:00)
+2026-03-30 19:26:02,187 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:26:02,208 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:26:02,209 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:27:02 +05)" executed successfully
+2026-03-30 19:40:28,484 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-30 19:40:28,485 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-30 19:40:28,492 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:41:02 +05)" was missed by 0:00:26.312960
+2026-03-30 19:40:43,683 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8703514394)
+2026-03-30 19:41:02,192 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:42:02 +05)" (scheduled at 2026-03-30 19:41:02.179019+05:00)
+2026-03-30 19:41:02,193 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:41:02,205 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:41:02,206 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:42:02 +05)" executed successfully
+2026-03-30 19:41:21,287 - aiogram.event - INFO - Update id=833249233 is handled. Duration 1551 ms by bot id=8703514394
+2026-03-30 19:41:31,027 - aiogram.event - INFO - Update id=833249234 is handled. Duration 1368 ms by bot id=8703514394
+2026-03-30 19:41:38,992 - aiogram.event - INFO - Update id=833249235 is not handled. Duration 8 ms by bot id=8703514394
+2026-03-30 19:41:43,995 - aiogram.event - INFO - Update id=833249236 is not handled. Duration 2 ms by bot id=8703514394
+2026-03-30 19:42:02,185 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:43:02 +05)" (scheduled at 2026-03-30 19:42:02.179019+05:00)
+2026-03-30 19:42:02,193 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:42:02,230 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:42:02,232 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:43:02 +05)" executed successfully
+2026-03-30 19:42:55,323 - aiogram.event - INFO - Update id=833249237 is not handled. Duration 2 ms by bot id=8703514394
+2026-03-30 19:42:58,694 - aiogram.event - INFO - Update id=833249238 is handled. Duration 1070 ms by bot id=8703514394
+2026-03-30 19:43:02,192 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:44:02 +05)" (scheduled at 2026-03-30 19:43:02.179019+05:00)
+2026-03-30 19:43:02,195 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:43:02,205 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:43:02,205 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:44:02 +05)" executed successfully
+2026-03-30 19:43:03,865 - aiogram.event - INFO - Update id=833249239 is handled. Duration 558 ms by bot id=8703514394
+2026-03-30 19:43:09,468 - aiogram.event - INFO - Update id=833249240 is handled. Duration 409 ms by bot id=8703514394
+2026-03-30 19:44:02,192 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:45:02 +05)" (scheduled at 2026-03-30 19:44:02.179019+05:00)
+2026-03-30 19:44:02,193 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:44:02,205 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:44:02,205 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:45:02 +05)" executed successfully
+2026-03-30 19:45:02,186 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:46:02 +05)" (scheduled at 2026-03-30 19:45:02.179019+05:00)
+2026-03-30 19:45:02,187 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:45:02,195 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:45:02,195 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:46:02 +05)" executed successfully
+2026-03-30 19:46:02,186 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:47:02 +05)" (scheduled at 2026-03-30 19:46:02.179019+05:00)
+2026-03-30 19:46:02,203 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:46:02,215 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:46:02,216 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:47:02 +05)" executed successfully
+2026-03-30 19:47:02,193 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:48:02 +05)" (scheduled at 2026-03-30 19:47:02.179019+05:00)
+2026-03-30 19:47:02,193 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:47:02,202 - __main__ - INFO - Check completed. New documents: 0
+2026-03-30 19:47:02,203 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:48:02 +05)" executed successfully
+2026-03-30 19:48:58,285 - __main__ - INFO - Starting LexBot with history support...
+2026-03-30 19:48:58,301 - __main__ - INFO - Database initialized with history support
+2026-03-30 19:48:58,302 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-30 19:48:58,306 - apscheduler.scheduler - INFO - Added job "Check Lex.uz" to job store "default"
+2026-03-30 19:48:58,306 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-30 19:48:58,307 - __main__ - INFO - Scheduler started (interval: 1 min)
+2026-03-30 19:48:58,307 - aiogram.dispatcher - INFO - Start polling
+2026-03-30 19:48:59,932 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-30 19:49:58,316 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:50:58 +05)" (scheduled at 2026-03-30 19:49:58.302178+05:00)
+2026-03-30 19:49:58,317 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:49:58,343 - __main__ - ERROR - Check error: 'version'
+2026-03-30 19:49:58,347 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\lexbot\lexbot.py", line 406, in check_new_documents
+    elif existing['version'] < doc.version:
+         ~~~~~~~~^^^^^^^^^^^
+KeyError: 'version'
+
+2026-03-30 19:49:58,347 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:50:58 +05)" executed successfully
+2026-03-30 19:50:58,316 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:51:58 +05)" (scheduled at 2026-03-30 19:50:58.302178+05:00)
+2026-03-30 19:50:58,317 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:50:58,331 - __main__ - ERROR - Check error: 'version'
+2026-03-30 19:50:58,332 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\lexbot\lexbot.py", line 406, in check_new_documents
+    elif existing['version'] < doc.version:
+         ~~~~~~~~^^^^^^^^^^^
+KeyError: 'version'
+
+2026-03-30 19:50:58,333 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:51:58 +05)" executed successfully
+2026-03-30 19:52:10,415 - __main__ - INFO - Starting LexBot with history support...
+2026-03-30 19:52:10,453 - __main__ - INFO - Database initialized with history support
+2026-03-30 19:52:10,454 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-03-30 19:52:10,456 - apscheduler.scheduler - INFO - Added job "Check Lex.uz" to job store "default"
+2026-03-30 19:52:10,457 - apscheduler.scheduler - INFO - Scheduler started
+2026-03-30 19:52:10,457 - __main__ - INFO - Scheduler started (interval: 1 min)
+2026-03-30 19:52:10,458 - aiogram.dispatcher - INFO - Start polling
+2026-03-30 19:52:13,268 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-03-30 19:53:10,470 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:54:10 +05)" (scheduled at 2026-03-30 19:53:10.453915+05:00)
+2026-03-30 19:53:10,473 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:53:10,574 - __main__ - INFO - Check completed. New: 4, Updated: 0
+2026-03-30 19:53:11,129 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:54:10 +05)" executed successfully
+2026-03-30 19:54:04,311 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 121] The semaphore timeout period has expired
+2026-03-30 19:54:04,311 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-30 19:54:10,470 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:55:10 +05)" (scheduled at 2026-03-30 19:54:10.453915+05:00)
+2026-03-30 19:54:10,473 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:54:10,521 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 19:54:10,523 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:55:10 +05)" executed successfully
+2026-03-30 19:54:26,335 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+2026-03-30 19:54:26,341 - aiogram.dispatcher - WARNING - Sleep for 1.292338 seconds and try again... (tryings = 1, bot id = 8703514394)
+2026-03-30 19:54:31,671 - aiogram.dispatcher - INFO - Connection established (tryings = 2, bot id = 8703514394)
+2026-03-30 19:54:31,679 - aiogram.event - INFO - Update id=833249242 is not handled. Duration 3 ms by bot id=8703514394
+2026-03-30 19:54:33,981 - aiogram.event - INFO - Update id=833249241 is handled. Duration 2307 ms by bot id=8703514394
+2026-03-30 19:55:10,459 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:56:10 +05)" (scheduled at 2026-03-30 19:55:10.453915+05:00)
+2026-03-30 19:55:10,460 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:55:10,506 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 19:55:10,508 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:56:10 +05)" executed successfully
+2026-03-30 19:56:05,643 - aiogram.event - INFO - Update id=833249243 is handled. Duration 551 ms by bot id=8703514394
+2026-03-30 19:56:10,457 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:57:10 +05)" (scheduled at 2026-03-30 19:56:10.453915+05:00)
+2026-03-30 19:56:10,460 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:56:10,546 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 19:56:10,547 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:57:10 +05)" executed successfully
+2026-03-30 19:56:11,261 - aiogram.event - INFO - Update id=833249244 is handled. Duration 531 ms by bot id=8703514394
+2026-03-30 19:57:10,465 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:58:10 +05)" (scheduled at 2026-03-30 19:57:10.453915+05:00)
+2026-03-30 19:57:10,476 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:57:10,523 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 19:57:10,524 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 19:58:10 +05)" executed successfully
+2026-03-30 19:59:11,082 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-30 19:59:11,108 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-30 19:59:11,131 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:00:10 +05)" (scheduled at 2026-03-30 19:59:10.453915+05:00)
+2026-03-30 19:59:11,139 - __main__ - INFO - Checking for new documents...
+2026-03-30 19:59:11,215 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 19:59:11,216 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:00:10 +05)" executed successfully
+2026-03-30 19:59:12,139 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-30 19:59:12,142 - aiogram.dispatcher - WARNING - Sleep for 1.187503 seconds and try again... (tryings = 1, bot id = 8703514394)
+2026-03-30 19:59:13,343 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-30 19:59:13,345 - aiogram.dispatcher - WARNING - Sleep for 1.554670 seconds and try again... (tryings = 2, bot id = 8703514394)
+2026-03-30 19:59:14,916 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-30 19:59:14,916 - aiogram.dispatcher - WARNING - Sleep for 2.036424 seconds and try again... (tryings = 3, bot id = 8703514394)
+2026-03-30 20:02:30,033 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:03:10 +05)" was missed by 0:00:19.579729
+2026-03-30 20:02:30,034 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-30 20:02:30,035 - aiogram.dispatcher - WARNING - Sleep for 2.546690 seconds and try again... (tryings = 4, bot id = 8703514394)
+2026-03-30 20:02:32,595 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-30 20:02:32,596 - aiogram.dispatcher - WARNING - Sleep for 3.291101 seconds and try again... (tryings = 5, bot id = 8703514394)
+2026-03-30 20:02:35,904 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-30 20:02:35,910 - aiogram.dispatcher - WARNING - Sleep for 4.144780 seconds and try again... (tryings = 6, bot id = 8703514394)
+2026-03-30 20:02:40,068 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-30 20:02:40,069 - aiogram.dispatcher - WARNING - Sleep for 5.110708 seconds and try again... (tryings = 7, bot id = 8703514394)
+2026-03-30 20:02:45,187 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-30 20:02:45,187 - aiogram.dispatcher - WARNING - Sleep for 5.035881 seconds and try again... (tryings = 8, bot id = 8703514394)
+2026-03-30 20:02:50,236 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-30 20:02:50,239 - aiogram.dispatcher - WARNING - Sleep for 4.980685 seconds and try again... (tryings = 9, bot id = 8703514394)
+2026-03-30 20:02:55,230 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-30 20:02:55,231 - aiogram.dispatcher - WARNING - Sleep for 4.936873 seconds and try again... (tryings = 10, bot id = 8703514394)
+2026-03-30 20:03:00,184 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-30 20:03:00,185 - aiogram.dispatcher - WARNING - Sleep for 5.092431 seconds and try again... (tryings = 11, bot id = 8703514394)
+2026-03-30 20:03:05,289 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-30 20:03:05,289 - aiogram.dispatcher - WARNING - Sleep for 5.000171 seconds and try again... (tryings = 12, bot id = 8703514394)
+2026-03-30 20:03:10,305 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-03-30 20:03:10,306 - aiogram.dispatcher - WARNING - Sleep for 5.077056 seconds and try again... (tryings = 13, bot id = 8703514394)
+2026-03-30 20:03:10,463 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:04:10 +05)" (scheduled at 2026-03-30 20:03:10.453915+05:00)
+2026-03-30 20:03:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:03:10,691 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:03:10,693 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:04:10 +05)" executed successfully
+2026-03-30 20:03:25,863 - aiogram.dispatcher - INFO - Connection established (tryings = 14, bot id = 8703514394)
+2026-03-30 20:04:10,463 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:05:10 +05)" (scheduled at 2026-03-30 20:04:10.453915+05:00)
+2026-03-30 20:04:10,464 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:04:10,485 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:04:10,485 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:05:10 +05)" executed successfully
+2026-03-30 20:05:10,457 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:06:10 +05)" (scheduled at 2026-03-30 20:05:10.453915+05:00)
+2026-03-30 20:05:10,458 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:05:10,497 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:05:10,498 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:06:10 +05)" executed successfully
+2026-03-30 20:06:10,461 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:07:10 +05)" (scheduled at 2026-03-30 20:06:10.453915+05:00)
+2026-03-30 20:06:10,461 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:06:10,505 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:06:10,506 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:07:10 +05)" executed successfully
+2026-03-30 20:07:10,471 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:08:10 +05)" (scheduled at 2026-03-30 20:07:10.453915+05:00)
+2026-03-30 20:07:10,473 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:07:10,554 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:07:10,554 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:08:10 +05)" executed successfully
+2026-03-30 20:08:10,474 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:09:10 +05)" (scheduled at 2026-03-30 20:08:10.453915+05:00)
+2026-03-30 20:08:10,476 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:08:10,517 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:08:10,518 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:09:10 +05)" executed successfully
+2026-03-30 20:08:58,230 - aiogram.event - INFO - Update id=833249245 is handled. Duration 1317 ms by bot id=8703514394
+2026-03-30 20:09:02,395 - aiogram.event - INFO - Update id=833249246 is handled. Duration 373 ms by bot id=8703514394
+2026-03-30 20:09:02,935 - aiogram.event - INFO - Update id=833249247 is handled. Duration 363 ms by bot id=8703514394
+2026-03-30 20:09:10,462 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:10:10 +05)" (scheduled at 2026-03-30 20:09:10.453915+05:00)
+2026-03-30 20:09:10,462 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:09:10,493 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:09:10,494 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:10:10 +05)" executed successfully
+2026-03-30 20:10:10,464 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:11:10 +05)" (scheduled at 2026-03-30 20:10:10.453915+05:00)
+2026-03-30 20:10:10,465 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:10:10,490 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:10:10,491 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:11:10 +05)" executed successfully
+2026-03-30 20:11:10,460 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:12:10 +05)" (scheduled at 2026-03-30 20:11:10.453915+05:00)
+2026-03-30 20:11:10,461 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:11:10,476 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:11:10,476 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:12:10 +05)" executed successfully
+2026-03-30 20:12:10,456 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:13:10 +05)" (scheduled at 2026-03-30 20:12:10.453915+05:00)
+2026-03-30 20:12:10,457 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:12:10,482 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:12:10,484 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:13:10 +05)" executed successfully
+2026-03-30 20:13:10,483 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:14:10 +05)" (scheduled at 2026-03-30 20:13:10.453915+05:00)
+2026-03-30 20:13:10,486 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:13:10,509 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:13:10,509 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:14:10 +05)" executed successfully
+2026-03-30 20:13:15,117 - aiogram.event - INFO - Update id=833249249 is handled. Duration 1076 ms by bot id=8703514394
+2026-03-30 20:13:19,659 - aiogram.event - INFO - Update id=833249248 is not handled. Duration 7915 ms by bot id=8703514394
+2026-03-30 20:13:19,661 - aiogram.event - ERROR - Cause exception while process update id=833249248 by bot id=8703514394
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\lexbot\lexbot.py", line 918, in callback_category
+    await callback.message.edit_text(text, reply_markup=keyboard, parse_mode="HTML", disable_web_page_preview=True)
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\client\bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-03-30 20:14:10,469 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:15:10 +05)" (scheduled at 2026-03-30 20:14:10.453915+05:00)
+2026-03-30 20:14:10,472 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:14:10,495 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:14:10,496 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:15:10 +05)" executed successfully
+2026-03-30 20:15:10,456 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:16:10 +05)" (scheduled at 2026-03-30 20:15:10.453915+05:00)
+2026-03-30 20:15:10,458 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:15:10,493 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:15:10,494 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:16:10 +05)" executed successfully
+2026-03-30 20:16:10,459 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:17:10 +05)" (scheduled at 2026-03-30 20:16:10.453915+05:00)
+2026-03-30 20:16:10,461 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:16:10,484 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:16:10,485 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:17:10 +05)" executed successfully
+2026-03-30 20:17:10,458 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:18:10 +05)" (scheduled at 2026-03-30 20:17:10.453915+05:00)
+2026-03-30 20:17:10,459 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:17:10,497 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:17:10,497 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:18:10 +05)" executed successfully
+2026-03-30 20:18:10,466 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:19:10 +05)" (scheduled at 2026-03-30 20:18:10.453915+05:00)
+2026-03-30 20:18:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:18:10,499 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:18:10,499 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:19:10 +05)" executed successfully
+2026-03-30 20:19:10,457 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:20:10 +05)" (scheduled at 2026-03-30 20:19:10.453915+05:00)
+2026-03-30 20:19:10,474 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:19:10,495 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:19:10,497 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:20:10 +05)" executed successfully
+2026-03-30 20:20:10,463 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:21:10 +05)" (scheduled at 2026-03-30 20:20:10.453915+05:00)
+2026-03-30 20:20:10,466 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:20:10,525 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:20:10,526 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:21:10 +05)" executed successfully
+2026-03-30 20:21:10,463 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:22:10 +05)" (scheduled at 2026-03-30 20:21:10.453915+05:00)
+2026-03-30 20:21:10,464 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:21:10,518 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:21:10,518 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:22:10 +05)" executed successfully
+2026-03-30 20:22:10,457 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:23:10 +05)" (scheduled at 2026-03-30 20:22:10.453915+05:00)
+2026-03-30 20:22:10,458 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:22:10,502 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:22:10,502 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:23:10 +05)" executed successfully
+2026-03-30 20:23:10,463 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:24:10 +05)" (scheduled at 2026-03-30 20:23:10.453915+05:00)
+2026-03-30 20:23:10,464 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:23:10,509 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:23:10,509 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:24:10 +05)" executed successfully
+2026-03-30 20:24:10,460 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:25:10 +05)" (scheduled at 2026-03-30 20:24:10.453915+05:00)
+2026-03-30 20:24:10,461 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:24:10,495 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:24:10,496 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:25:10 +05)" executed successfully
+2026-03-30 20:25:10,469 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:26:10 +05)" (scheduled at 2026-03-30 20:25:10.453915+05:00)
+2026-03-30 20:25:10,470 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:25:10,512 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:25:10,512 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:26:10 +05)" executed successfully
+2026-03-30 20:26:10,466 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:27:10 +05)" (scheduled at 2026-03-30 20:26:10.453915+05:00)
+2026-03-30 20:26:10,467 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:26:10,489 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:26:10,489 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:27:10 +05)" executed successfully
+2026-03-30 20:27:10,456 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:28:10 +05)" (scheduled at 2026-03-30 20:27:10.453915+05:00)
+2026-03-30 20:27:10,460 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:27:10,524 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:27:10,525 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:28:10 +05)" executed successfully
+2026-03-30 20:28:10,466 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:29:10 +05)" (scheduled at 2026-03-30 20:28:10.453915+05:00)
+2026-03-30 20:28:10,469 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:28:10,535 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:28:10,536 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:29:10 +05)" executed successfully
+2026-03-30 20:29:10,461 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:30:10 +05)" (scheduled at 2026-03-30 20:29:10.453915+05:00)
+2026-03-30 20:29:10,461 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:29:10,530 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:29:10,531 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:30:10 +05)" executed successfully
+2026-03-30 20:30:10,465 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:31:10 +05)" (scheduled at 2026-03-30 20:30:10.453915+05:00)
+2026-03-30 20:30:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:30:10,529 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:30:10,530 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:31:10 +05)" executed successfully
+2026-03-30 20:31:10,463 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:32:10 +05)" (scheduled at 2026-03-30 20:31:10.453915+05:00)
+2026-03-30 20:31:10,464 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:31:10,500 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:31:10,501 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:32:10 +05)" executed successfully
+2026-03-30 20:32:10,463 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:33:10 +05)" (scheduled at 2026-03-30 20:32:10.453915+05:00)
+2026-03-30 20:32:10,466 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:32:10,538 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:32:10,539 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:33:10 +05)" executed successfully
+2026-03-30 20:48:14,341 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-30 20:48:14,343 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-30 20:48:14,346 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:49:10 +05)" was missed by 0:00:03.892025
+2026-03-30 20:48:16,263 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8703514394)
+2026-03-30 20:48:16,996 - aiogram.event - INFO - Update id=833249250 is handled. Duration 730 ms by bot id=8703514394
+2026-03-30 20:48:26,688 - aiogram.event - INFO - Update id=833249251 is handled. Duration 454 ms by bot id=8703514394
+2026-03-30 20:48:33,507 - aiogram.event - INFO - Update id=833249252 is handled. Duration 407 ms by bot id=8703514394
+2026-03-30 20:49:10,469 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:50:10 +05)" (scheduled at 2026-03-30 20:49:10.453915+05:00)
+2026-03-30 20:49:10,470 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:49:10,484 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:49:10,485 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:50:10 +05)" executed successfully
+2026-03-30 20:49:29,279 - aiogram.event - INFO - Update id=833249253 is not handled. Duration 24 ms by bot id=8703514394
+2026-03-30 20:49:29,279 - aiogram.event - ERROR - Cause exception while process update id=833249253 by bot id=8703514394
+OperationalError: misuse of aggregate: COUNT()
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\lexbot\lexbot.py", line 865, in callback_history_menu
+    await cmd_history(callback.message)
+  File "C:\lexbot\lexbot.py", line 646, in cmd_history
+    async with db.execute("""
+               ~~~~~~~~~~^^^^
+        SELECT d.*, COUNT(v.id) as version_count
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        LIMIT 10
+        ^^^^^^^^
+    """) as cursor:
+    ^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\context.py", line 41, in __aenter__
+    self._obj = await self._coro
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: misuse of aggregate: COUNT()
+2026-03-30 20:50:10,556 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:51:10 +05)" (scheduled at 2026-03-30 20:50:10.453915+05:00)
+2026-03-30 20:50:10,557 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:50:10,586 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:50:10,587 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:51:10 +05)" executed successfully
+2026-03-30 20:51:10,465 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:52:10 +05)" (scheduled at 2026-03-30 20:51:10.453915+05:00)
+2026-03-30 20:51:10,466 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:51:10,513 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:51:10,513 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:52:10 +05)" executed successfully
+2026-03-30 20:52:10,462 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:53:10 +05)" (scheduled at 2026-03-30 20:52:10.453915+05:00)
+2026-03-30 20:52:10,464 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:52:10,537 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:52:10,539 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:53:10 +05)" executed successfully
+2026-03-30 20:53:10,458 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:54:10 +05)" (scheduled at 2026-03-30 20:53:10.453915+05:00)
+2026-03-30 20:53:10,459 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:53:10,519 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:53:10,520 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:54:10 +05)" executed successfully
+2026-03-30 20:54:10,456 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:55:10 +05)" (scheduled at 2026-03-30 20:54:10.453915+05:00)
+2026-03-30 20:54:10,456 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:54:10,491 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:54:10,492 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:55:10 +05)" executed successfully
+2026-03-30 20:55:10,467 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:56:10 +05)" (scheduled at 2026-03-30 20:55:10.453915+05:00)
+2026-03-30 20:55:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:55:10,486 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:55:10,486 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:56:10 +05)" executed successfully
+2026-03-30 20:56:10,459 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:57:10 +05)" (scheduled at 2026-03-30 20:56:10.453915+05:00)
+2026-03-30 20:56:10,460 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:56:10,482 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:56:10,483 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:57:10 +05)" executed successfully
+2026-03-30 20:57:10,860 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:58:10 +05)" (scheduled at 2026-03-30 20:57:10.453915+05:00)
+2026-03-30 20:57:10,868 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:57:10,926 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:57:10,928 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:58:10 +05)" executed successfully
+2026-03-30 20:58:10,477 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:59:10 +05)" (scheduled at 2026-03-30 20:58:10.453915+05:00)
+2026-03-30 20:58:10,480 - __main__ - INFO - Checking for new documents...
+2026-03-30 20:58:10,498 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 20:58:10,499 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 20:59:10 +05)" executed successfully
+2026-03-30 22:04:39,235 - aiogram.event - INFO - Update id=833249254 is not handled. Duration 3953877 ms by bot id=8703514394
+2026-03-30 22:04:39,244 - aiogram.event - ERROR - Cause exception while process update id=833249254 by bot id=8703514394
+TelegramNetworkError: HTTP Client says - Request timeout error
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiohttp\client_reqrep.py", line 539, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiohttp\streams.py", line 703, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\client\session\aiohttp.py", line 167, in make_request
+    async with session.post(
+               ~~~~~~~~~~~~^
+        url,
+        ^^^^
+        data=form,
+        ^^^^^^^^^^
+        timeout=self.timeout if timeout is None else timeout,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as resp:
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiohttp\client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiohttp\client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiohttp\client.py", line 757, in _connect_and_send_request
+    await resp.start(conn)
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiohttp\client_reqrep.py", line 534, in start
+    with self._timer:
+         ^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiohttp\helpers.py", line 713, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\lexbot\lexbot.py", line 575, in cmd_start
+    await message.answer(welcome, reply_markup=keyboard, parse_mode="HTML")
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\client\bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\client\session\aiohttp.py", line 174, in make_request
+    raise TelegramNetworkError(method=method, message="Request timeout error") from e
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-30 22:04:39,712 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-30 22:04:39,733 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-30 22:04:39,757 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 22:05:10 +05)" was missed by 0:00:29.303754
+2026-03-30 22:04:47,273 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8703514394)
+2026-03-30 22:04:47,289 - aiogram.event - INFO - Update id=833249258 is not handled. Duration 12 ms by bot id=8703514394
+2026-03-30 22:04:47,290 - aiogram.event - ERROR - Cause exception while process update id=833249258 by bot id=8703514394
+OperationalError: misuse of aggregate: COUNT()
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\lexbot\lexbot.py", line 646, in cmd_history
+    async with db.execute("""
+               ~~~~~~~~~~^^^^
+        SELECT d.*, COUNT(v.id) as version_count
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        LIMIT 10
+        ^^^^^^^^
+    """) as cursor:
+    ^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\context.py", line 41, in __aenter__
+    self._obj = await self._coro
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: misuse of aggregate: COUNT()
+2026-03-30 22:04:47,832 - aiogram.event - INFO - Update id=833249256 is handled. Duration 556 ms by bot id=8703514394
+2026-03-30 22:04:47,855 - aiogram.event - INFO - Update id=833249257 is handled. Duration 578 ms by bot id=8703514394
+2026-03-30 22:04:48,472 - aiogram.event - INFO - Update id=833249259 is handled. Duration 1193 ms by bot id=8703514394
+2026-03-30 22:04:48,689 - aiogram.event - INFO - Update id=833249261 is handled. Duration 1405 ms by bot id=8703514394
+2026-03-30 22:04:48,760 - aiogram.event - INFO - Update id=833249260 is handled. Duration 1478 ms by bot id=8703514394
+2026-03-30 22:04:48,799 - aiogram.event - INFO - Update id=833249255 is handled. Duration 1524 ms by bot id=8703514394
+2026-03-30 22:05:10,468 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 22:06:10 +05)" (scheduled at 2026-03-30 22:05:10.453915+05:00)
+2026-03-30 22:05:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-30 22:05:10,491 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 22:05:10,492 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 22:06:10 +05)" executed successfully
+2026-03-30 22:06:10,465 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 22:07:10 +05)" (scheduled at 2026-03-30 22:06:10.453915+05:00)
+2026-03-30 22:06:10,466 - __main__ - INFO - Checking for new documents...
+2026-03-30 22:06:10,502 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 22:06:10,503 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 22:07:10 +05)" executed successfully
+2026-03-30 22:07:10,455 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 22:08:10 +05)" (scheduled at 2026-03-30 22:07:10.453915+05:00)
+2026-03-30 22:07:10,457 - __main__ - INFO - Checking for new documents...
+2026-03-30 22:07:10,478 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 22:07:10,478 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 22:08:10 +05)" executed successfully
+2026-03-30 22:08:10,462 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 22:09:10 +05)" (scheduled at 2026-03-30 22:08:10.453915+05:00)
+2026-03-30 22:08:10,463 - __main__ - INFO - Checking for new documents...
+2026-03-30 22:08:10,505 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 22:08:10,506 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 22:09:10 +05)" executed successfully
+2026-03-30 22:09:10,456 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 22:10:10 +05)" (scheduled at 2026-03-30 22:09:10.453915+05:00)
+2026-03-30 22:09:10,456 - __main__ - INFO - Checking for new documents...
+2026-03-30 22:09:10,493 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-30 22:09:10,493 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 22:10:10 +05)" executed successfully
+2026-03-30 23:14:48,490 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-30 23:14:48,513 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-30 23:14:48,545 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 23:15:10 +05)" was missed by 0:00:38.086255
+2026-03-30 23:47:14,106 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-30 23:47:14,122 - aiogram.dispatcher - WARNING - Sleep for 1.193420 seconds and try again... (tryings = 1, bot id = 8703514394)
+2026-03-30 23:47:14,160 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-30 23:48:10 +05)" was missed by 0:00:03.706291
+2026-03-31 00:06:23,118 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-31 00:06:23,121 - aiogram.dispatcher - WARNING - Sleep for 1.498145 seconds and try again... (tryings = 2, bot id = 8703514394)
+2026-03-31 00:06:23,132 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:07:10 +05)" was missed by 0:00:12.678771
+2026-03-31 00:06:35,277 - aiogram.dispatcher - INFO - Connection established (tryings = 3, bot id = 8703514394)
+2026-03-31 00:07:10,471 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:08:10 +05)" (scheduled at 2026-03-31 00:07:10.453915+05:00)
+2026-03-31 00:07:10,473 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:07:10,515 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:07:10,517 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:08:10 +05)" executed successfully
+2026-03-31 00:08:10,495 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:09:10 +05)" (scheduled at 2026-03-31 00:08:10.453915+05:00)
+2026-03-31 00:08:10,498 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:08:10,552 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:08:10,552 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:09:10 +05)" executed successfully
+2026-03-31 00:09:10,467 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:10:10 +05)" (scheduled at 2026-03-31 00:09:10.453915+05:00)
+2026-03-31 00:09:10,467 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:09:10,512 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:09:10,514 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:10:10 +05)" executed successfully
+2026-03-31 00:10:10,456 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:11:10 +05)" (scheduled at 2026-03-31 00:10:10.453915+05:00)
+2026-03-31 00:10:10,458 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:10:10,512 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:10:10,512 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:11:10 +05)" executed successfully
+2026-03-31 00:11:10,456 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:12:10 +05)" (scheduled at 2026-03-31 00:11:10.453915+05:00)
+2026-03-31 00:11:10,457 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:11:10,514 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:11:10,515 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:12:10 +05)" executed successfully
+2026-03-31 00:12:10,482 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:13:10 +05)" (scheduled at 2026-03-31 00:12:10.453915+05:00)
+2026-03-31 00:12:10,483 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:12:10,543 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:12:10,544 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:13:10 +05)" executed successfully
+2026-03-31 00:18:47,528 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-31 00:18:47,534 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-31 00:18:47,536 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:19:10 +05)" was missed by 0:00:37.082743
+2026-03-31 00:19:00,014 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8703514394)
+2026-03-31 00:19:10,467 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:20:10 +05)" (scheduled at 2026-03-31 00:19:10.453915+05:00)
+2026-03-31 00:19:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:19:10,495 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:19:10,496 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:20:10 +05)" executed successfully
+2026-03-31 00:20:10,457 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:21:10 +05)" (scheduled at 2026-03-31 00:20:10.453915+05:00)
+2026-03-31 00:20:10,473 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:20:10,502 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:20:10,503 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:21:10 +05)" executed successfully
+2026-03-31 00:21:10,470 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:22:10 +05)" (scheduled at 2026-03-31 00:21:10.453915+05:00)
+2026-03-31 00:21:10,471 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:21:10,518 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:21:10,519 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:22:10 +05)" executed successfully
+2026-03-31 00:22:10,468 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:23:10 +05)" (scheduled at 2026-03-31 00:22:10.453915+05:00)
+2026-03-31 00:22:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:22:10,515 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:22:10,516 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:23:10 +05)" executed successfully
+2026-03-31 00:23:10,460 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:24:10 +05)" (scheduled at 2026-03-31 00:23:10.453915+05:00)
+2026-03-31 00:23:10,461 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:23:10,500 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:23:10,502 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:24:10 +05)" executed successfully
+2026-03-31 00:24:10,469 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:25:10 +05)" (scheduled at 2026-03-31 00:24:10.453915+05:00)
+2026-03-31 00:24:10,472 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:24:10,495 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:24:10,495 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:25:10 +05)" executed successfully
+2026-03-31 00:25:10,463 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:26:10 +05)" (scheduled at 2026-03-31 00:25:10.453915+05:00)
+2026-03-31 00:25:10,464 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:25:10,487 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:25:10,487 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:26:10 +05)" executed successfully
+2026-03-31 00:26:10,455 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:27:10 +05)" (scheduled at 2026-03-31 00:26:10.453915+05:00)
+2026-03-31 00:26:10,456 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:26:10,505 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:26:10,506 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:27:10 +05)" executed successfully
+2026-03-31 00:26:22,567 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 121] The semaphore timeout period has expired
+2026-03-31 00:26:22,569 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-31 00:26:39,755 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] The network connection was aborted by the local system
+2026-03-31 00:26:39,766 - aiogram.dispatcher - WARNING - Sleep for 1.336371 seconds and try again... (tryings = 1, bot id = 8703514394)
+2026-03-31 00:26:51,559 - aiogram.dispatcher - INFO - Connection established (tryings = 2, bot id = 8703514394)
+2026-03-31 00:27:10,469 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:28:10 +05)" (scheduled at 2026-03-31 00:27:10.453915+05:00)
+2026-03-31 00:27:10,471 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:27:10,520 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:27:10,520 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:28:10 +05)" executed successfully
+2026-03-31 00:28:10,463 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:29:10 +05)" (scheduled at 2026-03-31 00:28:10.453915+05:00)
+2026-03-31 00:28:10,478 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:28:10,497 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:28:10,498 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:29:10 +05)" executed successfully
+2026-03-31 00:29:10,457 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:30:10 +05)" (scheduled at 2026-03-31 00:29:10.453915+05:00)
+2026-03-31 00:29:10,476 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:29:10,495 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:29:10,496 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:30:10 +05)" executed successfully
+2026-03-31 00:30:10,468 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:31:10 +05)" (scheduled at 2026-03-31 00:30:10.453915+05:00)
+2026-03-31 00:30:10,469 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:30:10,512 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:30:10,513 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:31:10 +05)" executed successfully
+2026-03-31 00:31:10,459 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:32:10 +05)" (scheduled at 2026-03-31 00:31:10.453915+05:00)
+2026-03-31 00:31:10,461 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:31:10,487 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:31:10,489 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:32:10 +05)" executed successfully
+2026-03-31 00:32:10,473 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:33:10 +05)" (scheduled at 2026-03-31 00:32:10.453915+05:00)
+2026-03-31 00:32:10,474 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:32:10,511 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:32:10,517 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:33:10 +05)" executed successfully
+2026-03-31 00:33:10,462 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:34:10 +05)" (scheduled at 2026-03-31 00:33:10.453915+05:00)
+2026-03-31 00:33:10,463 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:33:10,504 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:33:10,504 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:34:10 +05)" executed successfully
+2026-03-31 00:34:10,464 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:35:10 +05)" (scheduled at 2026-03-31 00:34:10.453915+05:00)
+2026-03-31 00:34:10,466 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:34:10,503 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:34:10,503 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:35:10 +05)" executed successfully
+2026-03-31 00:35:10,461 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:36:10 +05)" (scheduled at 2026-03-31 00:35:10.453915+05:00)
+2026-03-31 00:35:10,462 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:35:10,498 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:35:10,499 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:36:10 +05)" executed successfully
+2026-03-31 00:36:10,465 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:37:10 +05)" (scheduled at 2026-03-31 00:36:10.453915+05:00)
+2026-03-31 00:36:10,465 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:36:10,490 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:36:10,491 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:37:10 +05)" executed successfully
+2026-03-31 00:37:10,458 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:38:10 +05)" (scheduled at 2026-03-31 00:37:10.453915+05:00)
+2026-03-31 00:37:10,459 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:37:10,495 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:37:10,497 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:38:10 +05)" executed successfully
+2026-03-31 00:38:10,465 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:39:10 +05)" (scheduled at 2026-03-31 00:38:10.453915+05:00)
+2026-03-31 00:38:10,466 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:38:10,501 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:38:10,502 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:39:10 +05)" executed successfully
+2026-03-31 00:39:10,466 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:40:10 +05)" (scheduled at 2026-03-31 00:39:10.453915+05:00)
+2026-03-31 00:39:10,466 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:39:10,502 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:39:10,503 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:40:10 +05)" executed successfully
+2026-03-31 00:40:10,463 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:41:10 +05)" (scheduled at 2026-03-31 00:40:10.453915+05:00)
+2026-03-31 00:40:10,464 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:40:10,488 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:40:10,490 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:41:10 +05)" executed successfully
+2026-03-31 00:41:10,464 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:42:10 +05)" (scheduled at 2026-03-31 00:41:10.453915+05:00)
+2026-03-31 00:41:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:41:10,502 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:41:10,502 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:42:10 +05)" executed successfully
+2026-03-31 00:42:10,455 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:43:10 +05)" (scheduled at 2026-03-31 00:42:10.453915+05:00)
+2026-03-31 00:42:10,456 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:42:10,487 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:42:10,487 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:43:10 +05)" executed successfully
+2026-03-31 00:43:10,472 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:44:10 +05)" (scheduled at 2026-03-31 00:43:10.453915+05:00)
+2026-03-31 00:43:10,473 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:43:10,511 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:43:10,511 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:44:10 +05)" executed successfully
+2026-03-31 00:44:10,461 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:45:10 +05)" (scheduled at 2026-03-31 00:44:10.453915+05:00)
+2026-03-31 00:44:10,462 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:44:10,505 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:44:10,508 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:45:10 +05)" executed successfully
+2026-03-31 00:45:10,468 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:46:10 +05)" (scheduled at 2026-03-31 00:45:10.453915+05:00)
+2026-03-31 00:45:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:45:10,490 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:45:10,491 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:46:10 +05)" executed successfully
+2026-03-31 00:46:10,468 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:47:10 +05)" (scheduled at 2026-03-31 00:46:10.453915+05:00)
+2026-03-31 00:46:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:46:10,512 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:46:10,512 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:47:10 +05)" executed successfully
+2026-03-31 00:47:10,466 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:48:10 +05)" (scheduled at 2026-03-31 00:47:10.453915+05:00)
+2026-03-31 00:47:10,467 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:47:10,503 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:47:10,504 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:48:10 +05)" executed successfully
+2026-03-31 00:48:10,468 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:49:10 +05)" (scheduled at 2026-03-31 00:48:10.453915+05:00)
+2026-03-31 00:48:10,469 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:48:10,507 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:48:10,508 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:49:10 +05)" executed successfully
+2026-03-31 00:49:10,469 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:50:10 +05)" (scheduled at 2026-03-31 00:49:10.453915+05:00)
+2026-03-31 00:49:10,497 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:49:10,524 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:49:10,526 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:50:10 +05)" executed successfully
+2026-03-31 00:50:10,469 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:51:10 +05)" (scheduled at 2026-03-31 00:50:10.453915+05:00)
+2026-03-31 00:50:10,470 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:50:10,492 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:50:10,493 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:51:10 +05)" executed successfully
+2026-03-31 00:51:10,460 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:52:10 +05)" (scheduled at 2026-03-31 00:51:10.453915+05:00)
+2026-03-31 00:51:10,475 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:51:10,499 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:51:10,501 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:52:10 +05)" executed successfully
+2026-03-31 00:52:10,466 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:53:10 +05)" (scheduled at 2026-03-31 00:52:10.453915+05:00)
+2026-03-31 00:52:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:52:10,490 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:52:10,490 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:53:10 +05)" executed successfully
+2026-03-31 00:53:10,467 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:54:10 +05)" (scheduled at 2026-03-31 00:53:10.453915+05:00)
+2026-03-31 00:53:10,472 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:53:10,498 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:53:10,499 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:54:10 +05)" executed successfully
+2026-03-31 00:54:10,458 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:55:10 +05)" (scheduled at 2026-03-31 00:54:10.453915+05:00)
+2026-03-31 00:54:10,458 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:54:10,498 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:54:10,498 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:55:10 +05)" executed successfully
+2026-03-31 00:55:10,457 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:56:10 +05)" (scheduled at 2026-03-31 00:55:10.453915+05:00)
+2026-03-31 00:55:10,458 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:55:10,497 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:55:10,498 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:56:10 +05)" executed successfully
+2026-03-31 00:56:10,465 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:57:10 +05)" (scheduled at 2026-03-31 00:56:10.453915+05:00)
+2026-03-31 00:56:10,465 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:56:10,506 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:56:10,507 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:57:10 +05)" executed successfully
+2026-03-31 00:57:10,458 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:58:10 +05)" (scheduled at 2026-03-31 00:57:10.453915+05:00)
+2026-03-31 00:57:10,459 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:57:10,483 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:57:10,484 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:58:10 +05)" executed successfully
+2026-03-31 00:58:51,652 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-03-31 00:58:51,654 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-03-31 00:58:51,657 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 00:59:10 +05)" was missed by 0:00:41.203623
+2026-03-31 00:59:03,296 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8703514394)
+2026-03-31 00:59:10,466 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:00:10 +05)" (scheduled at 2026-03-31 00:59:10.453915+05:00)
+2026-03-31 00:59:10,466 - __main__ - INFO - Checking for new documents...
+2026-03-31 00:59:10,509 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 00:59:10,510 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:00:10 +05)" executed successfully
+2026-03-31 01:00:10,467 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:01:10 +05)" (scheduled at 2026-03-31 01:00:10.453915+05:00)
+2026-03-31 01:00:10,467 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:00:10,511 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:00:10,511 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:01:10 +05)" executed successfully
+2026-03-31 01:01:10,454 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:02:10 +05)" (scheduled at 2026-03-31 01:01:10.453915+05:00)
+2026-03-31 01:01:10,457 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:01:10,479 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:01:10,481 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:02:10 +05)" executed successfully
+2026-03-31 01:02:10,462 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:03:10 +05)" (scheduled at 2026-03-31 01:02:10.453915+05:00)
+2026-03-31 01:02:10,465 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:02:10,507 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:02:10,508 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:03:10 +05)" executed successfully
+2026-03-31 01:03:10,459 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:04:10 +05)" (scheduled at 2026-03-31 01:03:10.453915+05:00)
+2026-03-31 01:03:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:03:10,492 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:03:10,492 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:04:10 +05)" executed successfully
+2026-03-31 01:04:10,456 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:05:10 +05)" (scheduled at 2026-03-31 01:04:10.453915+05:00)
+2026-03-31 01:04:10,456 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:04:10,493 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:04:10,494 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:05:10 +05)" executed successfully
+2026-03-31 01:05:10,458 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:06:10 +05)" (scheduled at 2026-03-31 01:05:10.453915+05:00)
+2026-03-31 01:05:10,459 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:05:10,485 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:05:10,485 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:06:10 +05)" executed successfully
+2026-03-31 01:06:10,469 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:07:10 +05)" (scheduled at 2026-03-31 01:06:10.453915+05:00)
+2026-03-31 01:06:10,470 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:06:10,508 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:06:10,508 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:07:10 +05)" executed successfully
+2026-03-31 01:07:10,461 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:08:10 +05)" (scheduled at 2026-03-31 01:07:10.453915+05:00)
+2026-03-31 01:07:10,461 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:07:10,499 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:07:10,499 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:08:10 +05)" executed successfully
+2026-03-31 01:08:10,466 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:09:10 +05)" (scheduled at 2026-03-31 01:08:10.453915+05:00)
+2026-03-31 01:08:10,467 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:08:10,500 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:08:10,502 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:09:10 +05)" executed successfully
+2026-03-31 01:09:10,455 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:10:10 +05)" (scheduled at 2026-03-31 01:09:10.453915+05:00)
+2026-03-31 01:09:10,458 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:09:10,487 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:09:10,487 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:10:10 +05)" executed successfully
+2026-03-31 01:10:10,467 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:11:10 +05)" (scheduled at 2026-03-31 01:10:10.453915+05:00)
+2026-03-31 01:10:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:10:10,500 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:10:10,503 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:11:10 +05)" executed successfully
+2026-03-31 01:11:10,459 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:12:10 +05)" (scheduled at 2026-03-31 01:11:10.453915+05:00)
+2026-03-31 01:11:10,460 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:11:10,500 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:11:10,502 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:12:10 +05)" executed successfully
+2026-03-31 01:12:10,462 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:13:10 +05)" (scheduled at 2026-03-31 01:12:10.453915+05:00)
+2026-03-31 01:12:10,463 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:12:10,509 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:12:10,510 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:13:10 +05)" executed successfully
+2026-03-31 01:13:10,469 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:14:10 +05)" (scheduled at 2026-03-31 01:13:10.453915+05:00)
+2026-03-31 01:13:10,471 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:13:10,513 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:13:10,514 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:14:10 +05)" executed successfully
+2026-03-31 01:14:10,466 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:15:10 +05)" (scheduled at 2026-03-31 01:14:10.453915+05:00)
+2026-03-31 01:14:10,466 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:14:10,505 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:14:10,506 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:15:10 +05)" executed successfully
+2026-03-31 01:15:10,467 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:16:10 +05)" (scheduled at 2026-03-31 01:15:10.453915+05:00)
+2026-03-31 01:15:10,468 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:15:10,491 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:15:10,492 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:16:10 +05)" executed successfully
+2026-03-31 01:16:10,460 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:17:10 +05)" (scheduled at 2026-03-31 01:16:10.453915+05:00)
+2026-03-31 01:16:10,460 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:16:10,499 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:16:10,500 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:17:10 +05)" executed successfully
+2026-03-31 01:17:10,458 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:18:10 +05)" (scheduled at 2026-03-31 01:17:10.453915+05:00)
+2026-03-31 01:17:10,458 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:17:10,489 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:17:10,491 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:18:10 +05)" executed successfully
+2026-03-31 01:18:10,469 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:19:10 +05)" (scheduled at 2026-03-31 01:18:10.453915+05:00)
+2026-03-31 01:18:10,470 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:18:10,513 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:18:10,513 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:19:10 +05)" executed successfully
+2026-03-31 01:19:10,461 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:20:10 +05)" (scheduled at 2026-03-31 01:19:10.453915+05:00)
+2026-03-31 01:19:10,462 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:19:10,503 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:19:10,504 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:20:10 +05)" executed successfully
+2026-03-31 01:20:10,459 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:21:10 +05)" (scheduled at 2026-03-31 01:20:10.453915+05:00)
+2026-03-31 01:20:10,475 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:20:10,515 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:20:10,515 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:21:10 +05)" executed successfully
+2026-03-31 01:21:10,467 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:22:10 +05)" (scheduled at 2026-03-31 01:21:10.453915+05:00)
+2026-03-31 01:21:10,483 - __main__ - INFO - Checking for new documents...
+2026-03-31 01:21:10,505 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-03-31 01:21:10,507 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-03-31 01:22:10 +05)" executed successfully
+2026-04-05 19:37:55,563 - __main__ - INFO - Starting LexBot on Railway...
+2026-04-05 19:37:55,576 - __main__ - INFO - Database initialized with history support
+2026-04-05 19:37:55,577 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-05 19:37:55,579 - apscheduler.scheduler - INFO - Added job "Check Lex.uz" to job store "default"
+2026-04-05 19:37:55,579 - apscheduler.scheduler - INFO - Scheduler started
+2026-04-05 19:37:55,579 - __main__ - INFO - Scheduler started (interval: 1 min)
+2026-04-05 19:37:55,579 - __main__ - INFO - Webhook URL: /bot8703514394:AAFOmSDezJbxRZJvsmHKF5KTcGcGBtGrI6Q
+2026-04-05 19:42:45,666 - __main__ - INFO - Starting LexBot in POLLING mode...
+2026-04-05 19:42:45,669 - __main__ - INFO - Database initialized with history support
+2026-04-05 19:42:45,670 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-05 19:42:45,671 - apscheduler.scheduler - INFO - Added job "Check Lex.uz" to job store "default"
+2026-04-05 19:42:45,671 - apscheduler.scheduler - INFO - Scheduler started
+2026-04-05 19:42:45,671 - __main__ - INFO - Scheduler started (interval: 1 min)
+2026-04-05 19:42:45,671 - aiogram.dispatcher - INFO - Start polling
+2026-04-05 19:42:46,281 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-04-05 19:43:45,680 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:44:45 +05)" (scheduled at 2026-04-05 19:43:45.669952+05:00)
+2026-04-05 19:43:45,681 - __main__ - INFO - Checking for new documents...
+2026-04-05 19:43:45,724 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 19:43:45,725 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:44:45 +05)" executed successfully
+2026-04-05 19:44:45,688 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:45:45 +05)" (scheduled at 2026-04-05 19:44:45.669952+05:00)
+2026-04-05 19:44:45,690 - __main__ - INFO - Checking for new documents...
+2026-04-05 19:44:45,714 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 19:44:45,714 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:45:45 +05)" executed successfully
+2026-04-05 19:45:45,686 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:46:45 +05)" (scheduled at 2026-04-05 19:45:45.669952+05:00)
+2026-04-05 19:45:45,686 - __main__ - INFO - Checking for new documents...
+2026-04-05 19:45:45,712 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 19:45:45,713 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:46:45 +05)" executed successfully
+2026-04-05 19:46:45,686 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:47:45 +05)" (scheduled at 2026-04-05 19:46:45.669952+05:00)
+2026-04-05 19:46:45,688 - __main__ - INFO - Checking for new documents...
+2026-04-05 19:46:45,713 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 19:46:45,714 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:47:45 +05)" executed successfully
+2026-04-05 19:47:45,672 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:48:45 +05)" (scheduled at 2026-04-05 19:47:45.669952+05:00)
+2026-04-05 19:47:45,674 - __main__ - INFO - Checking for new documents...
+2026-04-05 19:47:45,739 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 19:47:45,740 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:48:45 +05)" executed successfully
+2026-04-05 19:48:45,681 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:49:45 +05)" (scheduled at 2026-04-05 19:48:45.669952+05:00)
+2026-04-05 19:48:45,681 - __main__ - INFO - Checking for new documents...
+2026-04-05 19:48:45,707 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 19:48:45,709 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:49:45 +05)" executed successfully
+2026-04-05 19:49:45,685 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:50:45 +05)" (scheduled at 2026-04-05 19:49:45.669952+05:00)
+2026-04-05 19:49:45,691 - __main__ - INFO - Checking for new documents...
+2026-04-05 19:49:45,717 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 19:49:45,719 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:50:45 +05)" executed successfully
+2026-04-05 19:50:45,686 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:51:45 +05)" (scheduled at 2026-04-05 19:50:45.669952+05:00)
+2026-04-05 19:50:45,687 - __main__ - INFO - Checking for new documents...
+2026-04-05 19:50:45,715 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 19:50:45,716 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:51:45 +05)" executed successfully
+2026-04-05 19:51:45,674 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:52:45 +05)" (scheduled at 2026-04-05 19:51:45.669952+05:00)
+2026-04-05 19:51:45,676 - __main__ - INFO - Checking for new documents...
+2026-04-05 19:51:45,710 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 19:51:45,713 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:52:45 +05)" executed successfully
+2026-04-05 19:52:45,681 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:53:45 +05)" (scheduled at 2026-04-05 19:52:45.669952+05:00)
+2026-04-05 19:52:45,682 - __main__ - INFO - Checking for new documents...
+2026-04-05 19:52:45,729 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 19:52:45,729 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:53:45 +05)" executed successfully
+2026-04-05 19:53:45,683 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:54:45 +05)" (scheduled at 2026-04-05 19:53:45.669952+05:00)
+2026-04-05 19:53:45,684 - __main__ - INFO - Checking for new documents...
+2026-04-05 19:53:45,702 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 19:53:45,702 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 19:54:45 +05)" executed successfully
+2026-04-05 20:04:47,275 - __main__ - INFO - Starting LexBot in POLLING mode...
+2026-04-05 20:04:47,287 - __main__ - INFO - Database initialized with history support
+2026-04-05 20:04:47,287 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-05 20:04:47,289 - apscheduler.scheduler - INFO - Added job "Check Lex.uz" to job store "default"
+2026-04-05 20:04:47,289 - apscheduler.scheduler - INFO - Scheduler started
+2026-04-05 20:04:47,289 - __main__ - INFO - Scheduler started (interval: 1 min)
+2026-04-05 20:04:47,289 - aiogram.dispatcher - INFO - Start polling
+2026-04-05 20:04:48,397 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-04-05 20:04:49,389 - aiogram.event - INFO - Update id=833249265 is handled. Duration 817 ms by bot id=8703514394
+2026-04-05 20:04:50,156 - aiogram.event - INFO - Update id=833249266 is handled. Duration 1583 ms by bot id=8703514394
+2026-04-05 20:05:45,048 - aiogram.event - INFO - Update id=833249267 is handled. Duration 390 ms by bot id=8703514394
+2026-04-05 20:05:47,296 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:06:47 +05)" (scheduled at 2026-04-05 20:05:47.287748+05:00)
+2026-04-05 20:05:47,298 - __main__ - INFO - Checking for new documents...
+2026-04-05 20:05:47,323 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 20:05:47,324 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:06:47 +05)" executed successfully
+2026-04-05 20:05:55,456 - aiogram.event - INFO - Update id=833249268 is not handled. Duration 12 ms by bot id=8703514394
+2026-04-05 20:05:55,457 - aiogram.event - ERROR - Cause exception while process update id=833249268 by bot id=8703514394
+OperationalError: misuse of aggregate: COUNT()
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\lexbot\lexbot.py", line 865, in callback_history_menu
+    await cmd_history(callback.message)
+  File "C:\lexbot\lexbot.py", line 646, in cmd_history
+    async with db.execute("""
+               ~~~~~~~~~~^^^^
+        SELECT d.*, COUNT(v.id) as version_count
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        LIMIT 10
+        ^^^^^^^^
+    """) as cursor:
+    ^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\context.py", line 41, in __aenter__
+    self._obj = await self._coro
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: misuse of aggregate: COUNT()
+2026-04-05 20:05:57,422 - aiogram.event - INFO - Update id=833249269 is not handled. Duration 5 ms by bot id=8703514394
+2026-04-05 20:05:57,423 - aiogram.event - ERROR - Cause exception while process update id=833249269 by bot id=8703514394
+OperationalError: misuse of aggregate: COUNT()
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\lexbot\lexbot.py", line 865, in callback_history_menu
+    await cmd_history(callback.message)
+  File "C:\lexbot\lexbot.py", line 646, in cmd_history
+    async with db.execute("""
+               ~~~~~~~~~~^^^^
+        SELECT d.*, COUNT(v.id) as version_count
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        LIMIT 10
+        ^^^^^^^^
+    """) as cursor:
+    ^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\context.py", line 41, in __aenter__
+    self._obj = await self._coro
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: misuse of aggregate: COUNT()
+2026-04-05 20:05:58,848 - aiogram.event - INFO - Update id=833249270 is handled. Duration 433 ms by bot id=8703514394
+2026-04-05 20:06:47,295 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:07:47 +05)" (scheduled at 2026-04-05 20:06:47.287748+05:00)
+2026-04-05 20:06:47,296 - __main__ - INFO - Checking for new documents...
+2026-04-05 20:06:47,317 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 20:06:47,317 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:07:47 +05)" executed successfully
+2026-04-05 20:07:47,301 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:08:47 +05)" (scheduled at 2026-04-05 20:07:47.287748+05:00)
+2026-04-05 20:07:47,301 - __main__ - INFO - Checking for new documents...
+2026-04-05 20:07:47,330 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 20:07:47,331 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:08:47 +05)" executed successfully
+2026-04-05 20:08:47,290 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:09:47 +05)" (scheduled at 2026-04-05 20:08:47.287748+05:00)
+2026-04-05 20:08:47,293 - __main__ - INFO - Checking for new documents...
+2026-04-05 20:08:47,348 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 20:08:47,349 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:09:47 +05)" executed successfully
+2026-04-05 20:09:02,596 - __main__ - INFO - Starting LexBot in POLLING mode...
+2026-04-05 20:09:02,600 - __main__ - INFO - Database initialized with history support
+2026-04-05 20:09:02,601 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-05 20:09:02,602 - apscheduler.scheduler - INFO - Added job "Check Lex.uz" to job store "default"
+2026-04-05 20:09:02,602 - apscheduler.scheduler - INFO - Scheduler started
+2026-04-05 20:09:02,602 - __main__ - INFO - Scheduler started (interval: 1 min)
+2026-04-05 20:09:02,602 - aiogram.dispatcher - INFO - Start polling
+2026-04-05 20:09:03,628 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-04-05 20:09:03,789 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-05 20:09:03,790 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-04-05 20:09:08,027 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-05 20:09:08,029 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-04-05 20:09:09,706 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-05 20:09:09,707 - aiogram.dispatcher - WARNING - Sleep for 1.307924 seconds and try again... (tryings = 1, bot id = 8703514394)
+2026-04-05 20:09:14,201 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-05 20:09:14,202 - aiogram.dispatcher - WARNING - Sleep for 1.214695 seconds and try again... (tryings = 1, bot id = 8703514394)
+2026-04-05 20:09:15,590 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-05 20:09:15,592 - aiogram.dispatcher - WARNING - Sleep for 1.658834 seconds and try again... (tryings = 2, bot id = 8703514394)
+2026-04-05 20:09:20,421 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-05 20:09:20,422 - aiogram.dispatcher - WARNING - Sleep for 1.508688 seconds and try again... (tryings = 2, bot id = 8703514394)
+2026-04-05 20:09:22,152 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-05 20:09:22,154 - aiogram.dispatcher - WARNING - Sleep for 2.230184 seconds and try again... (tryings = 3, bot id = 8703514394)
+2026-04-05 20:09:27,669 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-05 20:09:27,670 - aiogram.dispatcher - WARNING - Sleep for 2.124571 seconds and try again... (tryings = 3, bot id = 8703514394)
+2026-04-05 20:09:29,974 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-05 20:09:29,975 - aiogram.dispatcher - WARNING - Sleep for 3.047625 seconds and try again... (tryings = 4, bot id = 8703514394)
+2026-04-05 20:09:43,229 - aiogram.dispatcher - INFO - Connection established (tryings = 5, bot id = 8703514394)
+2026-04-05 20:09:47,294 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:10:47 +05)" (scheduled at 2026-04-05 20:09:47.287748+05:00)
+2026-04-05 20:09:47,295 - __main__ - INFO - Checking for new documents...
+2026-04-05 20:09:47,331 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 20:09:47,332 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:10:47 +05)" executed successfully
+2026-04-05 20:10:47,302 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:11:47 +05)" (scheduled at 2026-04-05 20:10:47.287748+05:00)
+2026-04-05 20:10:47,303 - __main__ - INFO - Checking for new documents...
+2026-04-05 20:10:47,340 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 20:10:47,341 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:11:47 +05)" executed successfully
+2026-04-05 20:11:47,297 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:12:47 +05)" (scheduled at 2026-04-05 20:11:47.287748+05:00)
+2026-04-05 20:11:47,299 - __main__ - INFO - Checking for new documents...
+2026-04-05 20:11:47,340 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 20:11:47,340 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:12:47 +05)" executed successfully
+2026-04-05 20:12:47,292 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:13:47 +05)" (scheduled at 2026-04-05 20:12:47.287748+05:00)
+2026-04-05 20:12:47,293 - __main__ - INFO - Checking for new documents...
+2026-04-05 20:12:47,330 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 20:12:47,330 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:13:47 +05)" executed successfully
+2026-04-05 20:13:47,293 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:14:47 +05)" (scheduled at 2026-04-05 20:13:47.287748+05:00)
+2026-04-05 20:13:47,294 - __main__ - INFO - Checking for new documents...
+2026-04-05 20:13:47,339 - __main__ - INFO - Check completed. New: 0, Updated: 0
+2026-04-05 20:13:47,341 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-05 20:14:47 +05)" executed successfully
