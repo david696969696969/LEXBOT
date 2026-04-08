@@ -222,24 +222,37 @@ async def get_document_by_number(doc_number: str) -> Optional[Dict]:
         db.row_factory = aiosqlite.Row
         async with db.execute('SELECT * FROM documents WHERE doc_number = ?', (doc_number,)) as cursor:
             row = await cursor.fetchone()
-            return dict(row) if row else None
+            if row:
+                result = dict(row)
+                # ??????? URL ?? HTML-?????
+                if result.get('url'):
+                    result['url'] = clean_url(result['url'])
+                return result
+            return None
 async def get_document_versions(doc_number: str) -> List[Dict]:
     """Получить историю версий документа"""
     async with aiosqlite.connect(DATABASE_PATH) as db:
         db.row_factory = aiosqlite.Row
         async with db.execute("""
-            SELECT * FROM document_versions 
-            WHERE doc_number = ? 
-            ORDER BY version DESC
-        """, (doc_number,)) as cursor:
-            rows = await cursor.fetchall()
-            return [dict(row) for row in rows]
 async def get_documents_by_category(category: str, limit: int = 10) -> List[Dict]:
-    """Получить документы по категории"""
+    """???????? ????????? ?? ?????????"""
     async with aiosqlite.connect(DATABASE_PATH) as db:
         db.row_factory = aiosqlite.Row
         async with db.execute("""
-            SELECT * FROM documents 
+            SELECT * FROM documents
+            WHERE category = ?
+            ORDER BY created_at DESC
+            LIMIT ?
+        """, (category, limit)) as cursor:
+            rows = await cursor.fetchall()
+            results = []
+            for row in rows:
+                doc = dict(row)
+                # ??????? URL ?? HTML-?????
+                if doc.get('url'):
+                    doc['url'] = clean_url(doc['url'])
+                results.append(doc)
+            return results
             WHERE category = ? 
             ORDER BY created_at DESC 
             LIMIT ?
@@ -529,7 +542,7 @@ async def cmd_documents(message: Message):
         text += f"{i}. {type_info['icon']} <b>{doc['title']}</b>\n"
         text += f"   <code>{doc['doc_number']}</code> | v{doc['version']}\n"
         text += f"   📅 {doc['date_published']} | {cat_info['name']}\n"
-        text += f"   <a href='{doc['url']}'>Открыть →</a>\n\n"
+        text += f"   <a href='{clean_url(doc['url'])}'>Открыть →</a>\n\n"
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="📁 По категориям", callback_data="categories_menu")],
         [InlineKeyboardButton(text="📚 История изменений", callback_data="history_menu")]
@@ -585,7 +598,7 @@ async def cmd_history(message: Message):
         text += f"📜 <b>{doc['title']}</b>\n"
         text += f"   <code>{doc['doc_number']}</code> | {versions} версий\n"
         text += f"   Текущая: v{doc['version']}\n"
-        text += f"   <a href='{doc['url']}'>Смотреть →</a>\n\n"
+        text += f"   <a href='{clean_url(doc['url'])}'>Смотреть →</a>\n\n"
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="🔍 Найти документ", callback_data="search_doc")]
     ])
@@ -776,7 +789,7 @@ async def callback_category(callback: CallbackQuery):
             text += f"{i}. {type_info['icon']} <b>{doc['title']}</b>\n"
             text += f"   <code>{doc['doc_number']}</code> | v{doc['version']}\n"
             text += f"   📅 {doc['date_published']}\n"
-            text += f"   <a href='{doc['url']}'>Открыть →</a>\n\n"
+            text += f"   <a href='{clean_url(doc['url'])}'>Открыть →</a>\n\n"
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="🔙 Все категории", callback_data="categories_menu")],
         [InlineKeyboardButton(text="📊 Статистика", callback_data="stats")]
@@ -809,7 +822,7 @@ async def callback_document_history(callback: CallbackQuery):
         for change in changes:
             text += f"\n• {change.get('article', '')}: {change.get('change_type', '')}"
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="📖 Полный текст", url=doc['url'])],
+        [InlineKeyboardButton(text="📖 Полный текст", url=clean_url(doc['url']))],
         [InlineKeyboardButton(text="🔙 Назад", callback_data="all_docs")]
     ])
     await callback.message.edit_text(text, reply_markup=keyboard, parse_mode="HTML")
