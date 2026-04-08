@@ -729,6 +729,24 @@ async def cmd_admin(message: Message):
         [InlineKeyboardButton(text="📢 Рассылка", callback_data="admin_broadcast")]
     ])
     await message.answer(report, reply_markup=keyboard, parse_mode="HTML")
+
+@dp.message(Command("reset"))
+async def cmd_reset(message: Message):
+    """Reset database (admin only)"""
+    if message.from_user.id != ADMIN_ID:
+        await message.answer("? <b>Access denied</b>", parse_mode="HTML")
+        return
+    import os
+    try:
+        # Close any open connections first
+        # Remove database file
+        if os.path.exists(DATABASE_PATH):
+            os.remove(DATABASE_PATH)
+        # Reinitialize database
+        await init_database()
+        await message.answer("? <b>Database reset successful!</b>", parse_mode="HTML")
+    except Exception as e:
+        await message.answer(f"? <b>Error:</b> {e}", parse_mode="HTML")
 # ==================== CALLBACKS ====================
 @dp.callback_query(F.data == "all_docs")
 async def callback_all_docs(callback: CallbackQuery):
