@@ -21,7 +21,7 @@ from apscheduler.triggers.interval import IntervalTrigger
 from dotenv import load_dotenv
 
 def clean_url(url):
-    """??????? URL ?? HTML-?????"""
+    """Clean URL from HTML tags"""
     import re
     url = re.sub(r'<[^>]+>', '', url)
     return url.strip()
@@ -234,8 +234,7 @@ async def get_document_versions(doc_number: str) -> List[Dict]:
     async with aiosqlite.connect(DATABASE_PATH) as db:
         db.row_factory = aiosqlite.Row
         async with db.execute("""
-async def get_documents_by_category(category: str, limit: int = 10) -> List[Dict]:
-    """???????? ????????? ?? ?????????"""
+    """Get documents Get documents? ?? Get documents?"""
     async with aiosqlite.connect(DATABASE_PATH) as db:
         db.row_factory = aiosqlite.Row
         async with db.execute("""
