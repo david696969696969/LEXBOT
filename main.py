@@ -234,7 +234,6 @@ async def get_document_versions(doc_number: str) -> List[Dict]:
     async with aiosqlite.connect(DATABASE_PATH) as db:
         db.row_factory = aiosqlite.Row
         async with db.execute("""
-    """Get documents Get documents? ?? Get documents?"""
     """Get documents by category with URL cleaning"""
         db.row_factory = aiosqlite.Row
         async with db.execute("""
