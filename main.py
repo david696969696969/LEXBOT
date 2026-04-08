@@ -222,35 +222,24 @@ async def get_document_by_number(doc_number: str) -> Optional[Dict]:
         db.row_factory = aiosqlite.Row
         async with db.execute('SELECT * FROM documents WHERE doc_number = ?', (doc_number,)) as cursor:
             row = await cursor.fetchone()
-            if row:
-                result = dict(row)
-                # ??????? URL ?? HTML-?????
-                if result.get('url'):
-                    result['url'] = clean_url(result['url'])
-                return result
-            return None
+            return dict(row) if row else None
 async def get_document_versions(doc_number: str) -> List[Dict]:
     """ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð¸ÑÑ‚Ð¾Ñ€Ð¸ÑŽ Ð²ÐµÑ€ÑÐ¸Ð¹ Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ð°"""
     async with aiosqlite.connect(DATABASE_PATH) as db:
         db.row_factory = aiosqlite.Row
         async with db.execute("""
-    """Get documents by category with URL cleaning"""
+            SELECT * FROM document_versions 
+            WHERE doc_number = ? 
+            ORDER BY version DESC
+        """, (doc_number,)) as cursor:
+            rows = await cursor.fetchall()
+            return [dict(row) for row in rows]
+async def get_documents_by_category(category: str, limit: int = 10) -> List[Dict]:
+    """ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¿Ð¾ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸"""
+    async with aiosqlite.connect(DATABASE_PATH) as db:
         db.row_factory = aiosqlite.Row
         async with db.execute("""
-            SELECT * FROM documents
-            WHERE category = ?
-            ORDER BY created_at DESC
-            LIMIT ?
-        """, (category, limit)) as cursor:
-            rows = await cursor.fetchall()
-            results = []
-            for row in rows:
-                doc = dict(row)
-                # ??????? URL ?? HTML-?????
-                if doc.get('url'):
-                    doc['url'] = clean_url(doc['url'])
-                results.append(doc)
-            return results
+            SELECT * FROM documents 
             WHERE category = ? 
             ORDER BY created_at DESC 
             LIMIT ?
@@ -540,7 +529,7 @@ async def cmd_documents(message: Message):
         text += f"{i}. {type_info['icon']} <b>{doc['title']}</b>\n"
         text += f"   <code>{doc['doc_number']}</code> | v{doc['version']}\n"
         text += f"   ðŸ“… {doc['date_published']} | {cat_info['name']}\n"
-        text += f"   <a href='{clean_url(doc['url'])}'>ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ â†’</a>\n\n"
+        text += f"   <a href='{doc['url']}'>ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ â†’</a>\n\n"
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="ðŸ“ ÐŸÐ¾ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸ÑÐ¼", callback_data="categories_menu")],
         [InlineKeyboardButton(text="ðŸ“š Ð˜ÑÑ‚Ð¾Ñ€Ð¸Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹", callback_data="history_menu")]
@@ -596,7 +585,7 @@ async def cmd_history(message: Message):
         text += f"ðŸ“œ <b>{doc['title']}</b>\n"
         text += f"   <code>{doc['doc_number']}</code> | {versions} Ð²ÐµÑ€ÑÐ¸Ð¹\n"
         text += f"   Ð¢ÐµÐºÑƒÑ‰Ð°Ñ: v{doc['version']}\n"
-        text += f"   <a href='{clean_url(doc['url'])}'>Ð¡Ð¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ â†’</a>\n\n"
+        text += f"   <a href='{doc['url']}'>Ð¡Ð¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ â†’</a>\n\n"
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="ðŸ” ÐÐ°Ð¹Ñ‚Ð¸ Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚", callback_data="search_doc")]
     ])
@@ -787,7 +776,7 @@ async def callback_category(callback: CallbackQuery):
             text += f"{i}. {type_info['icon']} <b>{doc['title']}</b>\n"
             text += f"   <code>{doc['doc_number']}</code> | v{doc['version']}\n"
             text += f"   ðŸ“… {doc['date_published']}\n"
-            text += f"   <a href='{clean_url(doc['url'])}'>ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ â†’</a>\n\n"
+            text += f"   <a href='{doc['url']}'>ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ â†’</a>\n\n"
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="ðŸ”™ Ð’ÑÐµ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸", callback_data="categories_menu")],
         [InlineKeyboardButton(text="ðŸ“Š Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ°", callback_data="stats")]
@@ -820,7 +809,7 @@ async def callback_document_history(callback: CallbackQuery):
         for change in changes:
             text += f"\nâ€¢ {change.get('article', '')}: {change.get('change_type', '')}"
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="ðŸ“– ÐŸÐ¾Ð»Ð½Ñ‹Ð¹ Ñ‚ÐµÐºÑÑ‚", url=clean_url(doc['url']))],
+        [InlineKeyboardButton(text="ðŸ“– ÐŸÐ¾Ð»Ð½Ñ‹Ð¹ Ñ‚ÐµÐºÑÑ‚", url=doc['url'])],
         [InlineKeyboardButton(text="ðŸ”™ ÐÐ°Ð·Ð°Ð´", callback_data="all_docs")]
     ])
     await callback.message.edit_text(text, reply_markup=keyboard, parse_mode="HTML")
