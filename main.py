@@ -225,7 +225,13 @@ async def get_document_by_number(doc_number: str) -> Optional[Dict]:
         async with db.execute('SELECT * FROM documents WHERE doc_number = ?', (doc_number,)) as cursor:
             row = await cursor.fetchone()
             return dict(row) if row else None
-async def get_document_versions(doc_number: str) -> List[Dict]:
+            if row:
+                result = dict(row)
+                # Clean URL from HTML tags
+                if result.get('url'):
+                    result['url'] = clean_url(result['url'])
+                return result
+            return None
     """Получить историю версий документа"""
     async with aiosqlite.connect(DATABASE_PATH) as db:
         db.row_factory = aiosqlite.Row
@@ -242,7 +248,14 @@ async def get_documents_by_category(category: str, limit: int = 10) -> List[Dict
         db.row_factory = aiosqlite.Row
         async with db.execute("""
             SELECT * FROM documents 
-            WHERE category = ? 
+            results = []
+            for row in rows:
+                doc = dict(row)
+                # Clean URL from HTML tags
+                if doc.get('url'):
+                    doc['url'] = clean_url(doc['url'])
+                results.append(doc)
+            return results
             ORDER BY created_at DESC 
             LIMIT ?
         """, (category, limit)) as cursor:
