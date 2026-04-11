@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 LexBot â€” KPMG Law Uzbekistan
 ÐœÐ¾Ð½Ð¸Ñ‚Ð¾Ñ€Ð¸Ð½Ð³ Ð·Ð°ÐºÐ¾Ð½Ð¾Ð´Ð°Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð° Ñ Ð¸ÑÑ‚Ð¾Ñ€Ð¸ÐµÐ¹ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹
