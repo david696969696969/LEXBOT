@@ -1,0 +1,19 @@
+async def get_documents_by_category(category: str, limit: int = 10) -> List[Dict]:
+    """???????? ????????? ?? ?????????"""
+    async with aiosqlite.connect(DATABASE_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        async with db.execute("""
+            SELECT * FROM documents
+            WHERE category = ?
+            ORDER BY created_at DESC
+            LIMIT ?
+        """, (category, limit)) as cursor:
+            rows = await cursor.fetchall()
+            results = []
+            for row in rows:
+                doc = dict(row)
+                # ??????? URL ?? HTML-?????
+                if doc.get('url'):
+                    doc['url'] = clean_url(doc['url'])
+                results.append(doc)
+            return results
