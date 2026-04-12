@@ -739,6 +739,9 @@ async def on_shutdown():
 
 async def main():
     logger.info("Starting LexBot with parser...")
+
+    # Initialize database FIRST
+    await init_database()
     
     dp.startup.register(on_startup)
     dp.shutdown.register(on_shutdown)
