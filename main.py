@@ -1,9 +1,5 @@
-#!/usr/bin/env python3
-"""
-LexBot - KPMG Law Uzbekistan
-Рабочая версия с выводом документов
-"""
-
+﻿#!/usr/bin/env python3
+# LexBot - исправленная версия
 import asyncio
 import logging
 import os
@@ -35,21 +31,19 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# ============ КОНФИГУРАЦИЯ ============
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 ADMIN_ID = int(os.getenv('ADMIN_ID', '0'))
 DATABASE_PATH = os.getenv('DATABASE_PATH', 'lexbot.db')
 CHECK_INTERVAL = int(os.getenv('CHECK_INTERVAL', '60'))
 
 if not BOT_TOKEN:
-    logger.error("❌ BOT_TOKEN не найден! Проверьте .env файл")
+    logger.error("BOT_TOKEN not found!")
     sys.exit(1)
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 scheduler = AsyncIOScheduler()
 
-# ============ КАТЕГОРИИ ============
 CATEGORIES = {
     'tax': {'name': 'Налоги и сборы', 'icon': '💰'},
     'economy': {'name': 'Экономика и бизнес', 'icon': '📈'},
@@ -73,26 +67,20 @@ DOC_TYPES = {
     'decree': {'name': 'Указ Президента', 'icon': '⚡'},
     'resolution': {'name': 'Постановление КМ', 'icon': '📋'},
     'order': {'name': 'Приказ', 'icon': '📄'},
+    'constitution': {'name': 'Конституция', 'icon': '🏛️'},
 }
 
 LEX_UZ_BASE = "https://lex.uz"
 session = None
 
-    async def get_session():
+async def get_session():
     global session
     if session is None or session.closed:
-        # Отключаем проверку SSL для lex.uz
-        import ssl
-        ssl_context = ssl.create_default_context()
-        ssl_context.check_hostname = False
-        ssl_context.verify_mode = ssl.CERT_NONE
-        
         session = aiohttp.ClientSession(
             headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
                 'Accept-Language': 'ru-RU,ru;q=0.9',
-            },
-            connector=aiohttp.TCPConnector(ssl=ssl_context)
+            }
         )
     return session
 
@@ -117,29 +105,26 @@ class LawDocument:
     doc_type: str
     doc_number: str
     date_published: str
+    date_effective: Optional[str]
     category: str
     description: str
+    full_text: str
     url: str
-
-# ============ ПАРСЕР ============
+    status: str
+    changes: list
+    version: int = 1
 
 async def parse_lexuz_main_page() -> List[Dict]:
-    """Парсинг главной страницы Lex.uz"""
     try:
         sess = await get_session()
         async with sess.get(LEX_UZ_BASE, timeout=30) as response:
             if response.status != 200:
-                logger.error(f"HTTP {response.status}")
                 return []
-                
             html = await response.text()
             soup = BeautifulSoup(html, 'html.parser')
             documents = []
             
-            # Ищем все ссылки на документы
             links = soup.find_all('a', href=re.compile(r'/docs/\d+'))
-            logger.info(f"Найдено {len(links)} ссылок на документы")
-            
             for link in links[:15]:
                 try:
                     title = link.get_text(strip=True)
@@ -152,22 +137,17 @@ async def parse_lexuz_main_page() -> List[Dict]:
                             'doc_number': f"LEX-{doc_id}",
                             'url': url,
                             'date_published': datetime.now().strftime("%d.%m.%Y"),
-                            'category': 'constitution',
-                            'doc_type': 'law',
-                            'description': 'Документ с Lex.uz'
+                            'description': "Документ с Lex.uz",
+                            'doc_id': doc_id
                         })
-                except Exception as e:
+                except:
                     continue
-                    
-            logger.info(f"Спарсено {len(documents)} документов с главной")
             return documents
-            
     except Exception as e:
-        logger.error(f"Ошибка парсинга главной: {e}")
+        logger.error(f"Parse error: {e}")
         return []
 
 async def parse_lexuz_by_category(category_key: str) -> List[Dict]:
-    """Парсинг по категории"""
     category_urls = {
         'tax': '/ru/acts?sort=date&direction=desc&categ=13',
         'banking': '/ru/acts?sort=date&direction=desc&categ=22',
@@ -187,54 +167,38 @@ async def parse_lexuz_by_category(category_key: str) -> List[Dict]:
         async with sess.get(url, timeout=30) as response:
             if response.status != 200:
                 return []
-                
             html = await response.text()
             soup = BeautifulSoup(html, 'html.parser')
             documents = []
             
-            # Ищем строки таблицы с документами
             rows = soup.find_all('tr')
-            
             for row in rows[:15]:
                 try:
                     link = row.find('a', href=re.compile(r'/docs/\d+'))
                     if not link:
                         continue
-                        
                     title = link.get_text(strip=True)
                     url = urljoin(LEX_UZ_BASE, link['href'])
                     doc_id = get_doc_id_from_url(url)
                     
-                    # Ищем номер документа в соседних ячейках
-                    number_elem = row.find('td', class_=lambda x: x and ('number' in str(x).lower() if x else False))
-                    doc_number = number_elem.get_text(strip=True) if number_elem else f"LEX-{doc_id}"
-                    
                     if title and doc_id and len(title) > 3:
                         documents.append({
                             'title': title,
-                            'doc_number': doc_number,
+                            'doc_number': f"LEX-{doc_id}",
                             'url': url,
                             'date_published': datetime.now().strftime("%d.%m.%Y"),
-                            'category': category_key,
-                            'doc_type': 'law',
-                            'description': f"Категория: {CATEGORIES.get(category_key, {}).get('name', category_key)}"
+                            'description': f"Документ: {CATEGORIES.get(category_key, {}).get('name', category_key)}",
+                            'doc_id': doc_id
                         })
                 except:
                     continue
-                    
-            logger.info(f"Категория {category_key}: найдено {len(documents)} документов")
             return documents
-            
     except Exception as e:
-        logger.error(f"Ошибка категории {category_key}: {e}")
+        logger.error(f"Category error: {e}")
         return []
 
-# ============ БАЗА ДАННЫХ ============
-
 async def init_database():
-    """Инициализация базы данных"""
     async with aiosqlite.connect(DATABASE_PATH) as db:
-        # Таблица документов
         await db.execute("""
             CREATE TABLE IF NOT EXISTS documents (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -242,15 +206,17 @@ async def init_database():
                 doc_type TEXT,
                 doc_number TEXT UNIQUE,
                 date_published TEXT,
+                date_effective TEXT,
                 category TEXT,
                 description TEXT,
+                full_text TEXT,
                 url TEXT,
                 status TEXT DEFAULT 'new',
+                changes TEXT,
+                version INTEGER DEFAULT 1,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         """)
-        
-        # Таблица подписчиков
         await db.execute("""
             CREATE TABLE IF NOT EXISTS subscribers (
                 user_id INTEGER PRIMARY KEY,
@@ -259,9 +225,16 @@ async def init_database():
                 subscribed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         """)
-        
+        await db.execute("""
+            CREATE TABLE IF NOT EXISTS check_logs (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                check_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                new_count INTEGER DEFAULT 0,
+                status TEXT
+            )
+        """)
         await db.commit()
-    logger.info("✅ База данных инициализирована")
+    logger.info("Database initialized")
 
 async def add_subscriber(user_id: int, username: str, first_name: str):
     async with aiosqlite.connect(DATABASE_PATH) as db:
@@ -316,7 +289,6 @@ async def get_all_categories_stats():
         return stats
 
 async def get_latest_documents(limit: int = 10):
-    """Получить последние документы"""
     async with aiosqlite.connect(DATABASE_PATH) as db:
         db.row_factory = aiosqlite.Row
         async with db.execute("""
@@ -332,31 +304,29 @@ async def get_latest_documents(limit: int = 10):
                 results.append(doc)
             return results
 
-# ============ ЗАГРУЗКА ДОКУМЕНТОВ ============
-
 async def load_documents_from_parser():
-    """Загрузка всех документов через парсер"""
     all_docs = []
     
-    # Парсим главную страницу
-    logger.info("🌐 Парсинг главной страницы...")
+    logger.info("Parsing main page...")
     main_docs = await parse_lexuz_main_page()
     for doc in main_docs:
+        doc['category'] = 'constitution'
+        doc['doc_type'] = 'law'
         all_docs.append(doc)
     
-    # Парсим категории
     for cat_key in ['tax', 'banking', 'labor', 'economy', 'civil']:
-        logger.info(f"📁 Парсинг категории: {cat_key}")
+        logger.info(f"Parsing category: {cat_key}")
         cat_docs = await parse_lexuz_by_category(cat_key)
         for doc in cat_docs:
+            doc['category'] = cat_key
+            doc['doc_type'] = 'law'
             all_docs.append(doc)
-        await asyncio.sleep(1)  # Не перегружаем сервер
+        await asyncio.sleep(1)
     
     return all_docs
 
 async def check_new_documents():
-    """Проверка и загрузка новых документов"""
-    logger.info("🔍 Проверка новых документов...")
+    logger.info("Checking for new documents...")
     try:
         new_docs = await load_documents_from_parser()
         new_count = 0
@@ -367,8 +337,9 @@ async def check_new_documents():
                 async with aiosqlite.connect(DATABASE_PATH) as db:
                     await db.execute("""
                         INSERT INTO documents 
-                        (title, doc_type, doc_number, date_published, category, description, url)
-                        VALUES (?, ?, ?, ?, ?, ?, ?)
+                        (title, doc_type, doc_number, date_published, category, 
+                         description, url, status, changes, version)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     """, (
                         doc_data['title'],
                         doc_data.get('doc_type', 'law'),
@@ -376,23 +347,88 @@ async def check_new_documents():
                         doc_data.get('date_published', datetime.now().strftime("%d.%m.%Y")),
                         doc_data.get('category', 'economy'),
                         doc_data.get('description', ''),
-                        doc_data['url']
+                        doc_data['url'],
+                        'new',
+                        json.dumps([]),
+                        1
                     ))
                     await db.commit()
                 new_count += 1
+                
+                doc = LawDocument(
+                    id=0,
+                    title=doc_data['title'],
+                    doc_type=doc_data.get('doc_type', 'law'),
+                    doc_number=doc_data['doc_number'],
+                    date_published=doc_data.get('date_published', ''),
+                    date_effective=None,
+                    category=doc_data.get('category', 'economy'),
+                    description=doc_data.get('description', ''),
+                    full_text='',
+                    url=doc_data['url'],
+                    status='new',
+                    changes=[],
+                    version=1
+                )
+                await notify_subscribers(doc)
         
-        logger.info(f"✅ Добавлено {new_count} новых документов")
+        async with aiosqlite.connect(DATABASE_PATH) as db:
+            await db.execute(
+                "INSERT INTO check_logs (new_count, status) VALUES (?, ?)",
+                (new_count, 'success')
+            )
+            await db.commit()
+        
+        logger.info(f"Added {new_count} new documents")
         
     except Exception as e:
-        logger.error(f"❌ Ошибка проверки: {e}")
+        logger.error(f"Check error: {e}")
         import traceback
         logger.error(traceback.format_exc())
 
-# ============ ОБРАБОТЧИКИ КОМАНД ============
+async def notify_subscribers(doc: LawDocument):
+    subscribers = await get_all_subscribers()
+    type_info = DOC_TYPES.get(doc.doc_type, {'name': 'Документ', 'icon': '📄'})
+    cat_info = CATEGORIES.get(doc.category, {'name': doc.category, 'icon': '📁'})
+    
+    message = f"""
+🆕 <b>НОВЫЙ ДОКУМЕНТ</b>
+
+{type_info['icon']} <b>{doc.title}</b>
+
+<b>📋 Информация:</b>
+• Тип: {type_info['name']}
+• Номер: <code>{doc.doc_number}</code>
+• Категория: {cat_info['icon']} {cat_info['name']}
+• Дата: {doc.date_published or 'N/A'}
+
+<b>📝 Описание:</b>
+{doc.description[:300] if doc.description else 'Нет описания'}
+
+<b>🔗 Ссылка:</b> <a href="{doc.url}">Открыть на Lex.uz →</a>
+"""
+    
+    keyboard = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="📖 Открыть документ", url=doc.url)],
+        [InlineKeyboardButton(text=f"{cat_info['icon']} Ещё {cat_info['name']}", 
+                            callback_data=f"cat_{doc.category}")],
+    ])
+    
+    for sub in subscribers:
+        try:
+            await bot.send_message(
+                sub['user_id'],
+                message,
+                reply_markup=keyboard,
+                parse_mode="HTML",
+                disable_web_page_preview=False
+            )
+            await asyncio.sleep(0.1)
+        except Exception as e:
+            logger.error(f"Notify error: {e}")
 
 @dp.message(Command("start"))
 async def cmd_start(message: Message):
-    """Команда /start"""
     user = message.from_user
     await add_subscriber(user.id, user.username or "", user.first_name or "")
     
@@ -404,15 +440,21 @@ async def cmd_start(message: Message):
 
 Привет, {user.first_name}!
 
-🤖 Я мониторю законодательство Узбекистана с <b>Lex.uz</b>
+🤖 Я мониторю законодательство Узбекистана с <b>Lex.uz</b> в реальном времени.
 
-📊 <b>В базе:</b> {total_docs} документов
-📁 <b>Категорий:</b> {len(CATEGORIES)}
+📊 <b>База данных:</b> {total_docs} документов
+📁 <b>Категории:</b> {len(CATEGORIES)}
 
-<b>⚡ Команды:</b>
+<b>⚡ Возможности:</b>
+• Автоматический парсинг Lex.uz
+• Рабочие ссылки на документы
+• Фильтрация по категориям
+• Мгновенные уведомления
+
+<b>📋 Команды:</b>
 /documents — Последние документы
-/categories — По категориям
-/parse — Загрузить с Lex.uz (админ)
+/categories — Категории
+/search — Поиск документов
 /stats — Статистика
 /help — Помощь
 """
@@ -426,22 +468,21 @@ async def cmd_start(message: Message):
 
 @dp.message(Command("documents"))
 async def cmd_documents(message: Message):
-    """Показать последние документы"""
     docs = await get_latest_documents(10)
     
     if not docs:
-        await message.answer("📭 Пока нет документов.\n\nНажмите /parse для загрузки с Lex.uz")
+        await message.answer("📭 Пока нет документов. Используйте /parse для загрузки с Lex.uz")
         return
     
-    text = "<b>📜 ПОСЛЕДНИЕ ДОКУМЕНТЫ:</b>\n\n"
+    text = "<b>📜 ПОСЛЕДНИЕ ДОКУМЕНТЫ С LEX.UZ</b>\n\n"
     
     for i, doc in enumerate(docs, 1):
-        type_info = DOC_TYPES.get(doc.get('doc_type', 'law'), {'icon': '📄'})
-        cat_info = CATEGORIES.get(doc.get('category', 'economy'), {'name': 'Другое'})
+        type_info = DOC_TYPES.get(doc['doc_type'], {'icon': '📄'})
+        cat_info = CATEGORIES.get(doc['category'], {'name': doc['category']})
         
-        text += f"{i}. {type_info['icon']} <b>{doc['title'][:55]}</b>\n"
-        text += f"   └ <code>{doc['doc_number']}</code> | {cat_info['name']}\n"
-        text += f"   └ <a href='{doc['url']}'>🔗 Открыть на Lex.uz</a>\n\n"
+        text += f"{i}. {type_info['icon']} <b>{doc['title'][:60]}</b>\n"
+        text += f"   <code>{doc['doc_number']}</code> | {cat_info['name']}\n"
+        text += f"   <a href='{doc['url']}'>🔗 Открыть на Lex.uz</a>\n\n"
     
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="🔄 Обновить", callback_data="all_docs")],
@@ -452,7 +493,6 @@ async def cmd_documents(message: Message):
 
 @dp.message(Command("categories"))
 async def cmd_categories(message: Message):
-    """Показать категории"""
     cat_stats = await get_all_categories_stats()
     
     text = "<b>📁 КАТЕГОРИИ ЗАКОНОДАТЕЛЬСТВА</b>\n\n"
@@ -477,28 +517,53 @@ async def cmd_categories(message: Message):
     keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
     await message.answer(text, reply_markup=keyboard, parse_mode="HTML")
 
+@dp.message(Command("search"))
+async def cmd_search(message: Message):
+    args = message.text.replace("/search", "").strip()
+    
+    if not args:
+        await message.answer(
+            "🔍 <b>ПОИСК</b>\n\n"
+            "Использование: <code>/search ключевое слово</code>\n\n"
+            "Примеры:\n"
+            "/search налог\n"
+            "/search банк\n"
+            "/search труд",
+            parse_mode="HTML"
+        )
+        return
+    
+    await message.answer(f"🔍 Ищу: <b>{args}</b>...", parse_mode="HTML")
+    
+    results = await parse_lexuz_search(args)
+    
+    if not results:
+        await message.answer(f"❌ Ничего не найдено по запросу: {args}")
+        return
+    
+    text = f"<b>🔍 РЕЗУЛЬТАТЫ ПОИСКА: {args}</b>\n\n"
+    for i, doc in enumerate(results[:5], 1):
+        text += f"{i}. 📄 <b>{doc['title'][:80]}</b>\n"
+        text += f"   <a href='{doc['url']}'>🔗 Открыть</a>\n\n"
+    
+    await message.answer(text, parse_mode="HTML", disable_web_page_preview=True)
+
 @dp.message(Command("parse"))
 async def cmd_parse(message: Message):
-    """Ручной запуск парсинга"""
     if message.from_user.id != ADMIN_ID:
         await message.answer("⛔ Только для администратора")
         return
     
-    await message.answer("🔄 Загрузка документов с Lex.uz...\n⏳ Это может занять 1-2 минуты")
+    await message.answer("🔄 Парсинг Lex.uz...")
     await check_new_documents()
-    
-    # Показываем результат
-    count = await get_all_categories_stats()
-    total = sum(count.values())
-    await message.answer(f"✅ <b>Готово!</b>\n\n📊 Загружено документов: <b>{total}</b>\n\nТеперь нажмите /documents", parse_mode="HTML")
+    await message.answer("✅ Парсинг завершён!")
 
 @dp.message(Command("stats"))
 async def cmd_stats(message: Message):
-    """Статистика"""
     cat_stats = await get_all_categories_stats()
     total = sum(cat_stats.values())
     
-    text = f"<b>📊 СТАТИСТИКА</b>\n\n<b>Всего документов:</b> {total}\n\n"
+    text = f"<b>📊 СТАТИСТИКА</b>\n\nВсего: <b>{total}</b> документов\n\n"
     
     for cat_key, count in sorted(cat_stats.items(), key=lambda x: x[1], reverse=True):
         if count > 0:
@@ -509,26 +574,24 @@ async def cmd_stats(message: Message):
 
 @dp.message(Command("help"))
 async def cmd_help(message: Message):
-    """Помощь"""
     help_text = """
 <b>❓ ПОМОЩЬ — LexBot</b>
 
 <b>📋 Команды:</b>
 /start — Начать работу
 /documents — Последние документы
-/categories — Категории законов
-/parse — Загрузить с Lex.uz (админ)
+/categories — Категории
+/search [слово] — Поиск
+/parse — Загрузить новые (админ)
 /stats — Статистика
 /help — Эта справка
 
-<b>💡 Совет:</b>
-Если документы не показываются, нажмите /parse для первичной загрузки.
+<b>🔍 Все ссылки открываются напрямую на Lex.uz</b>
 """
     await message.answer(help_text, parse_mode="HTML")
 
 @dp.message(Command("reset"))
 async def cmd_reset(message: Message):
-    """Сброс базы данных"""
     if message.from_user.id != ADMIN_ID:
         await message.answer("⛔ Доступ запрещён")
         return
@@ -537,11 +600,9 @@ async def cmd_reset(message: Message):
         if os.path.exists(DATABASE_PATH):
             os.remove(DATABASE_PATH)
         await init_database()
-        await message.answer("✅ База данных сброшена!\n\nТеперь нажмите /parse для загрузки документов.")
+        await message.answer("✅ База данных сброшена! Используйте /parse для загрузки.")
     except Exception as e:
         await message.answer(f"❌ Ошибка: {e}")
-
-# ============ CALLBACK ОБРАБОТЧИКИ ============
 
 @dp.callback_query(F.data == "all_docs")
 async def callback_all_docs(callback: CallbackQuery):
@@ -565,12 +626,12 @@ async def callback_category(callback: CallbackQuery):
     docs = await get_documents_by_category(category, limit=10)
     
     if not docs:
-        text = f"<b>{cat_info['icon']} {cat_info['name']}</b>\n\nПока нет документов.\nНажмите /parse для загрузки."
+        text = f"<b>{cat_info['icon']} {cat_info['name']}</b>\n\nПока нет документов в этой категории."
     else:
         text = f"<b>{cat_info['icon']} {cat_info['name']}</b>\n\n"
         for i, doc in enumerate(docs, 1):
             text += f"{i}. 📄 {doc['title'][:50]}...\n"
-            text += f"   └ <a href='{doc['url']}'>🔗 Открыть</a>\n\n"
+            text += f"   <a href='{doc['url']}'>🔗 Открыть</a>\n\n"
     
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="🔙 Назад", callback_data="categories_menu")],
@@ -578,8 +639,6 @@ async def callback_category(callback: CallbackQuery):
     
     await callback.message.edit_text(text, reply_markup=keyboard, parse_mode="HTML")
     await callback.answer()
-
-# ============ ЗАПУСК ============
 
 async def on_startup():
     await init_database()
@@ -591,19 +650,20 @@ async def on_shutdown():
     scheduler.shutdown()
 
 async def main():
-    logger.info("🚀 Запуск LexBot...")
-    
+    logger.info("Starting LexBot...")
+
     await init_database()
     
-    # Проверяем, пуста ли база
+    dp.startup.register(on_startup)
+    dp.shutdown.register(on_shutdown)
+    
     async with aiosqlite.connect(DATABASE_PATH) as db:
         async with db.execute('SELECT COUNT(*) FROM documents') as cursor:
             count = (await cursor.fetchone())[0]
             if count == 0:
-                logger.info("📭 База пуста, запускаем первичную загрузку...")
+                logger.info("База пуста, загружаем с Lex.uz...")
                 await check_new_documents()
     
-    # Запускаем планировщик
     scheduler.add_job(
         check_new_documents,
         trigger=IntervalTrigger(minutes=CHECK_INTERVAL),
@@ -612,11 +672,11 @@ async def main():
     )
     scheduler.start()
     
-    logger.info("✅ Бот запущен и готов к работе!")
+    logger.info("Bot started!")
     await dp.start_polling(bot, skip_updates=True)
 
 if __name__ == "__main__":
     try:
         asyncio.run(main())
     except (KeyboardInterrupt, SystemExit):
-        logger.info("🛑 Бот остановлен")
+        logger.info("Bot stopped")
