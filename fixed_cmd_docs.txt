@@ -1,0 +1,69 @@
+﻿# Хранилище для пагинации (временное, в памяти)
+user_docs_cache = {}
+
+@dp.message(Command("documents"))
+async def cmd_documents(message: Message, page: int = 0):
+    """Показать все документы с пагинацией"""
+    docs = await get_latest_documents(100)  # Берём до 100 документов
+    
+    if not docs:
+        await message.answer("📭 Пока нет документов.\n\nНажмите /parse для загрузки с Lex.uz")
+        return
+    
+    # Сохраняем в кэш для callback
+    user_id = message.from_user.id
+    user_docs_cache[user_id] = docs
+    
+    # Пагинация: 5 документов на страницу
+    per_page = 5
+    total_pages = (len(docs) + per_page - 1) // per_page
+    current_page = min(page, total_pages - 1)
+    start_idx = current_page * per_page
+    end_idx = start_idx + per_page
+    page_docs = docs[start_idx:end_idx]
+    
+    text = f"<b>📜 ДОКУМЕНТЫ</b> (стр. {current_page + 1}/{total_pages})\n"
+    text += f"<i>Всего: {len(docs)} | Нажмите 📄 PDF для скачивания</i>\n\n"
+    
+    for i, doc in enumerate(page_docs, start_idx + 1):
+        type_info = DOC_TYPES.get(doc.get('doc_type', 'law'), {'icon': '📄'})
+        cat_info = CATEGORIES.get(doc.get('category', 'economy'), {'name': 'Другое', 'icon': '📁'})
+        
+        text += f"<b>#{i}</b> {type_info['icon']} {cat_info['icon']}\n"
+        text += f"📋 {doc['title'][:55]}\n"
+        text += f"🏷 <code>{doc['doc_number']}</code> | {cat_info['name']}\n"
+        text += f"🔗 <a href='{doc['url']}'>Открыть на Lex.uz</a>\n\n"
+    
+    # Кнопки PDF для текущей страницы
+    keyboard_buttons = []
+    row = []
+    for doc in page_docs:
+        btn = InlineKeyboardButton(
+            text=f"📄 PDF #{docs.index(doc) + 1}",
+            callback_data=f"pdf_{doc['id']}"
+        )
+        row.append(btn)
+        if len(row) == 3:
+            keyboard_buttons.append(row)
+            row = []
+    if row:
+        keyboard_buttons.append(row)
+    
+    # Кнопки навигации (Назад/Вперёд)
+    nav_row = []
+    if current_page > 0:
+        nav_row.append(InlineKeyboardButton(text="⬅️ Назад", callback_data=f"docs_page_{current_page - 1}"))
+    if current_page < total_pages - 1:
+        nav_row.append(InlineKeyboardButton(text="Вперёд ➡️", callback_data=f"docs_page_{current_page + 1}"))
+    if nav_row:
+        keyboard_buttons.append(nav_row)
+    
+    # Дополнительные кнопки
+    keyboard_buttons.append([
+        InlineKeyboardButton(text="🔄 Обновить", callback_data="all_docs"),
+        InlineKeyboardButton(text="📁 Категории", callback_data="categories_menu")
+    ])
+    
+    keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
+    
+    await message.answer(text, reply_markup=keyboard, parse_mode="HTML", disable_web_page_preview=True)
