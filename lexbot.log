@@ -1885,3 +1885,20 @@ sqlite3.OperationalError: misuse of aggregate: COUNT()
 2026-04-06 14:55:17,026 - __main__ - INFO - Checking for new documents...
 2026-04-06 14:55:17,037 - __main__ - INFO - Check completed. New: 0, Updated: 0
 2026-04-06 14:55:17,039 - apscheduler.executors.default - INFO - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-06 14:56:17 +05)" executed successfully
+2026-04-15 14:15:58,960 - main - INFO - Checking for new documents...
+2026-04-15 14:15:58,975 - main - ERROR - Check error: table documents has no column named date_effective
+2026-04-15 14:15:58,994 - main - ERROR - Traceback (most recent call last):
+  File "C:\lexbot\main.py", line 390, in check_new_documents
+    await db.execute("""
+    ...<9 lines>...
+    ))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table documents has no column named date_effective
+
