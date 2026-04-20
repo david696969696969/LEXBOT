@@ -44,7 +44,7 @@ logger = logging.getLogger(__name__)
 BOT_TOKEN = os.getenv('BOT_TOKEN', 'YOUR_BOT_TOKEN_HERE')
 ADMIN_ID = int(os.getenv('ADMIN_ID', '0'))
 DATABASE_PATH = os.getenv('DATABASE_PATH', 'lexbot.db')
-CHECK_INTERVAL = int(os.getenv('CHECK_INTERVAL', '30'))
+CHECK_INTERVAL = int(os.getenv('CHECK_INTERVAL', '60'))
 LEX_UZ_URL = 'https://lex.uz'
 
 bot = Bot(token=BOT_TOKEN)
@@ -99,7 +99,6 @@ class LexUzParser:
 
     async def __aenter__(self):
         timeout = aiohttp.ClientTimeout(total=30)
-        # SSL=False для обхода ошибки сертификата
         connector = aiohttp.TCPConnector(ssl=False)
         self.session = aiohttp.ClientSession(
             timeout=timeout,
@@ -142,74 +141,91 @@ class LexUzParser:
         return 'regulation'
 
     async def fetch_new_documents(self) -> List[LawDocument]:
+        """Парсинг реальных документов с Lex.uz"""
         documents = []
+        
         if not BeautifulSoup:
             logger.error("BeautifulSoup not installed")
             return documents
 
-        try:
-            async with self.session.get(f"{self.base_url}/ru/lists/all/") as response:
-                if response.status == 200:
-                    html = await response.text()
-                    soup = BeautifulSoup(html, 'html.parser')
-                    rows = soup.find_all('tr', class_='doc-row') or soup.find_all('tr')
+        urls_to_try = [
+            "https://lex.uz/ru/",
+            "https://lex.uz/ru/search/all/",
+            "https://lex.uz/ru/docs/",
+        ]
+        
+        html = None
+        used_url = None
+        
+        for url in urls_to_try:
+            try:
+                logger.info(f"Trying {url}")
+                async with self.session.get(url, allow_redirects=True) as response:
+                    logger.info(f"Status: {response.status}")
+                    if response.status == 200:
+                        html = await response.text()
+                        used_url = url
+                        break
+            except Exception as e:
+                logger.error(f"Error with {url}: {e}")
+                continue
+        
+        if not html:
+            logger.error("All URLs failed")
+            return documents
 
-                    for row in rows[:20]:
-                        try:
-                            cells = row.find_all('td')
-                            if len(cells) < 3:
-                                continue
-
-                            doc_number = cells[0].get_text(strip=True) if cells[0] else 'N/A'
-                            title_cell = cells[1] if len(cells) > 1 else cells[0]
-                            link_elem = title_cell.find('a')
-
-                            title = 'Без названия'
-                            href = None
-                            if link_elem:
-                                title = link_elem.get_text(strip=True)
-                                href = link_elem.get('href')
-
-                            if title == 'Без названия' and title_cell:
-                                title = title_cell.get_text(strip=True)
-
-                            date_published = cells[2].get_text(strip=True) if len(cells) > 2 else datetime.now().strftime('%d.%m.%Y')
-
-                            doc_type = self._get_doc_type(doc_number)
-                            category = self._get_category(title)
-
-                            if href:
-                                if href.startswith('/'):
-                                    url = f'{self.base_url}{href}'
-                                elif href.startswith('http'):
-                                    url = href
-                                else:
-                                    url = f'{self.base_url}/ru/docs/{href}'
-                            else:
-                                url = f'{self.base_url}/ru/search/all/?text={doc_number.replace(" ", "+")}'
-
-                            documents.append(LawDocument(
-                                id=0,
-                                title=title[:300],
-                                doc_type=doc_type,
-                                doc_number=doc_number[:100],
-                                date_published=date_published,
-                                date_effective=date_published,
-                                category=category,
-                                description=title[:250],
-                                full_text='',
-                                url=url,
-                                status='new',
-                                version=1,
-                                changes=[],
-                                previous_versions=[],
-                                created_at=datetime.now().isoformat()
-                            ))
-                        except Exception as e:
-                            logger.error(f'Parse row error: {e}')
-                            continue
-        except Exception as e:
-            logger.error(f'Lex.uz connection error: {e}')
+        soup = BeautifulSoup(html, 'html.parser')
+        links = soup.find_all('a', href=True)
+        doc_links = []
+        
+        for link in links:
+            href = link['href']
+            text = link.get_text(strip=True)
+            
+            if '/docs/' in href and text and len(text) > 10:
+                doc_links.append((text, href))
+        
+        logger.info(f"Found {len(doc_links)} potential documents")
+        
+        for title, href in doc_links[:20]:
+            try:
+                doc_type = 'regulation'
+                if 'закон' in title.lower() or 'ЗРУ' in title:
+                    doc_type = 'law'
+                elif 'указ' in title.lower():
+                    doc_type = 'decree'
+                elif 'постановление' in title.lower():
+                    doc_type = 'resolution'
+                
+                if href.startswith('/'):
+                    url = f'{self.base_url}{href}'
+                elif href.startswith('http'):
+                    url = href
+                else:
+                    url = f'{self.base_url}/ru/docs/{href}'
+                
+                doc_number = href.split('/')[-1] if '/' in href else 'unknown'
+                
+                documents.append(LawDocument(
+                    id=0,
+                    title=title[:300],
+                    doc_type=doc_type,
+                    doc_number=doc_number[:100],
+                    date_published=datetime.now().strftime('%d.%m.%Y'),
+                    date_effective=datetime.now().strftime('%d.%m.%Y'),
+                    category=self._get_category(title),
+                    description=title[:250],
+                    full_text='',
+                    url=url,
+                    status='new',
+                    version=1,
+                    changes=[],
+                    previous_versions=[],
+                    created_at=datetime.now().isoformat()
+                ))
+            except Exception as e:
+                logger.error(f'Parse error: {e}')
+                continue
 
         logger.info(f'Parsed {len(documents)} documents')
         return documents
