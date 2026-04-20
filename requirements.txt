@@ -1,14 +1,7 @@
-﻿# Core
-aiogram==3.4.1
-aiohttp==3.9.3
-aiosqlite==0.20.0
-
-# Scheduling
-apscheduler==3.10.4
-
-# Parsing
-beautifulsoup4==4.12.3
-lxml==5.1.0
-
-# Environment
-python-dotenv==1.0.1
+﻿aiogram
+aiohttp
+aiosqlite
+apscheduler
+beautifulsoup4
+lxml
+python-dotenv
