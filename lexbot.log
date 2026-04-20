@@ -3109,3 +3109,407 @@ sqlite3.OperationalError: no such table: check_logs
 2026-04-16 18:02:21,027 - __main__ - INFO - Scheduler started (interval: 1 min)
 2026-04-16 18:02:21,027 - aiogram.dispatcher - INFO - Start polling
 2026-04-16 18:02:22,435 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-04-20 19:17:40,055 - __main__ - INFO - Starting LexBot in POLLING mode...
+2026-04-20 19:17:40,083 - __main__ - INFO - Database initialized
+2026-04-20 19:17:40,084 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-20 19:17:40,089 - apscheduler.scheduler - INFO - Added job "Check Lex.uz" to job store "default"
+2026-04-20 19:17:40,089 - apscheduler.scheduler - INFO - Scheduler started
+2026-04-20 19:17:40,089 - __main__ - INFO - Scheduler started (interval: 1 min)
+2026-04-20 19:17:40,089 - aiogram.dispatcher - INFO - Start polling
+2026-04-20 19:17:40,528 - aiogram.dispatcher - INFO - Run polling for bot @lexkpmguz_bot id=8703514394 - 'LexUzbekistanBot for KPMG'
+2026-04-20 19:17:44,952 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:17:44,952 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8703514394)
+2026-04-20 19:17:50,065 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:17:50,068 - aiogram.dispatcher - WARNING - Sleep for 1.378939 seconds and try again... (tryings = 1, bot id = 8703514394)
+2026-04-20 19:17:56,304 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:17:56,304 - aiogram.dispatcher - WARNING - Sleep for 1.615237 seconds and try again... (tryings = 2, bot id = 8703514394)
+2026-04-20 19:18:03,385 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:18:03,385 - aiogram.dispatcher - WARNING - Sleep for 2.195978 seconds and try again... (tryings = 3, bot id = 8703514394)
+2026-04-20 19:18:11,479 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:18:11,479 - aiogram.dispatcher - WARNING - Sleep for 2.870894 seconds and try again... (tryings = 4, bot id = 8703514394)
+2026-04-20 19:18:17,909 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:18:17,909 - aiogram.dispatcher - WARNING - Sleep for 3.708705 seconds and try again... (tryings = 5, bot id = 8703514394)
+2026-04-20 19:18:26,542 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:18:26,542 - aiogram.dispatcher - WARNING - Sleep for 4.929255 seconds and try again... (tryings = 6, bot id = 8703514394)
+2026-04-20 19:18:36,725 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:18:36,725 - aiogram.dispatcher - WARNING - Sleep for 4.668197 seconds and try again... (tryings = 7, bot id = 8703514394)
+2026-04-20 19:18:40,095 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:19:40 +05)" (scheduled at 2026-04-20 19:18:40.084364+05:00)
+2026-04-20 19:18:40,095 - __main__ - INFO - Starting check for new documents...
+2026-04-20 19:18:40,250 - __main__ - ERROR - Сайт недоступен: Cannot connect to host lex.uz:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')]
+2026-04-20 19:18:40,280 - __main__ - ERROR - Lex.uz недоступен
+2026-04-20 19:18:40,294 - __main__ - ERROR - Check error: table check_logs has no column named error_message
+2026-04-20 19:18:40,365 - apscheduler.executors.default - ERROR - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:19:40 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lexbot\main.py", line 448, in check_new_documents
+    await log_check(0, 0, 'error', str(e))
+  File "C:\lexbot\main.py", line 455, in log_check
+    await db.execute("""
+    ...<2 lines>...
+    """, (new, updated, status, error))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table check_logs has no column named error_message
+2026-04-20 19:18:47,096 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:18:47,097 - aiogram.dispatcher - WARNING - Sleep for 4.941994 seconds and try again... (tryings = 8, bot id = 8703514394)
+2026-04-20 19:18:58,525 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:18:58,526 - aiogram.dispatcher - WARNING - Sleep for 5.001089 seconds and try again... (tryings = 9, bot id = 8703514394)
+2026-04-20 19:19:09,935 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:19:09,937 - aiogram.dispatcher - WARNING - Sleep for 5.103809 seconds and try again... (tryings = 10, bot id = 8703514394)
+2026-04-20 19:19:21,675 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:19:21,676 - aiogram.dispatcher - WARNING - Sleep for 5.026622 seconds and try again... (tryings = 11, bot id = 8703514394)
+2026-04-20 19:19:30,410 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:19:30,410 - aiogram.dispatcher - WARNING - Sleep for 4.875776 seconds and try again... (tryings = 12, bot id = 8703514394)
+2026-04-20 19:19:40,098 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:20:40 +05)" (scheduled at 2026-04-20 19:19:40.084364+05:00)
+2026-04-20 19:19:40,101 - __main__ - INFO - Starting check for new documents...
+2026-04-20 19:19:40,904 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:19:40,907 - aiogram.dispatcher - WARNING - Sleep for 4.881503 seconds and try again... (tryings = 13, bot id = 8703514394)
+2026-04-20 19:19:43,833 - __main__ - ERROR - Сайт недоступен: Cannot connect to host lex.uz:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')]
+2026-04-20 19:19:43,834 - __main__ - ERROR - Lex.uz недоступен
+2026-04-20 19:19:43,842 - __main__ - ERROR - Check error: table check_logs has no column named error_message
+2026-04-20 19:19:43,849 - apscheduler.executors.default - ERROR - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:20:40 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lexbot\main.py", line 448, in check_new_documents
+    await log_check(0, 0, 'error', str(e))
+  File "C:\lexbot\main.py", line 455, in log_check
+    await db.execute("""
+    ...<2 lines>...
+    """, (new, updated, status, error))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table check_logs has no column named error_message
+2026-04-20 19:19:52,405 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:19:52,409 - aiogram.dispatcher - WARNING - Sleep for 4.909292 seconds and try again... (tryings = 14, bot id = 8703514394)
+2026-04-20 19:20:07,388 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:20:07,389 - aiogram.dispatcher - WARNING - Sleep for 4.868490 seconds and try again... (tryings = 15, bot id = 8703514394)
+2026-04-20 19:20:22,780 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:20:22,781 - aiogram.dispatcher - WARNING - Sleep for 4.974086 seconds and try again... (tryings = 16, bot id = 8703514394)
+2026-04-20 19:20:32,952 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:20:32,953 - aiogram.dispatcher - WARNING - Sleep for 5.164399 seconds and try again... (tryings = 17, bot id = 8703514394)
+2026-04-20 19:20:40,088 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:21:40 +05)" (scheduled at 2026-04-20 19:20:40.084364+05:00)
+2026-04-20 19:20:40,088 - __main__ - INFO - Starting check for new documents...
+2026-04-20 19:20:40,139 - __main__ - ERROR - Сайт недоступен: Cannot connect to host lex.uz:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')]
+2026-04-20 19:20:40,140 - __main__ - ERROR - Lex.uz недоступен
+2026-04-20 19:20:40,145 - __main__ - ERROR - Check error: table check_logs has no column named error_message
+2026-04-20 19:20:40,153 - apscheduler.executors.default - ERROR - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:21:40 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lexbot\main.py", line 448, in check_new_documents
+    await log_check(0, 0, 'error', str(e))
+  File "C:\lexbot\main.py", line 455, in log_check
+    await db.execute("""
+    ...<2 lines>...
+    """, (new, updated, status, error))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table check_logs has no column named error_message
+2026-04-20 19:20:43,472 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:20:43,484 - aiogram.dispatcher - WARNING - Sleep for 5.054144 seconds and try again... (tryings = 18, bot id = 8703514394)
+2026-04-20 19:20:53,789 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:20:53,789 - aiogram.dispatcher - WARNING - Sleep for 5.011263 seconds and try again... (tryings = 19, bot id = 8703514394)
+2026-04-20 19:28:20,265 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-04-20 19:28:20,275 - aiogram.dispatcher - WARNING - Sleep for 4.921441 seconds and try again... (tryings = 20, bot id = 8703514394)
+2026-04-20 19:28:20,389 - apscheduler.executors.default - WARNING - Run time of job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:28:40 +05)" was missed by 0:00:40.304932
+2026-04-20 19:28:29,836 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:28:29,838 - aiogram.dispatcher - WARNING - Sleep for 5.096763 seconds and try again... (tryings = 21, bot id = 8703514394)
+2026-04-20 19:28:38,268 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:28:38,271 - aiogram.dispatcher - WARNING - Sleep for 5.069731 seconds and try again... (tryings = 22, bot id = 8703514394)
+2026-04-20 19:28:40,085 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:29:40 +05)" (scheduled at 2026-04-20 19:28:40.084364+05:00)
+2026-04-20 19:28:40,087 - __main__ - INFO - Starting check for new documents...
+2026-04-20 19:28:40,145 - __main__ - ERROR - Сайт недоступен: Cannot connect to host lex.uz:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')]
+2026-04-20 19:28:40,146 - __main__ - ERROR - Lex.uz недоступен
+2026-04-20 19:28:40,151 - __main__ - ERROR - Check error: table check_logs has no column named error_message
+2026-04-20 19:28:40,159 - apscheduler.executors.default - ERROR - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:29:40 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lexbot\main.py", line 448, in check_new_documents
+    await log_check(0, 0, 'error', str(e))
+  File "C:\lexbot\main.py", line 455, in log_check
+    await db.execute("""
+    ...<2 lines>...
+    """, (new, updated, status, error))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table check_logs has no column named error_message
+2026-04-20 19:28:48,387 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:28:48,387 - aiogram.dispatcher - WARNING - Sleep for 5.089332 seconds and try again... (tryings = 23, bot id = 8703514394)
+2026-04-20 19:28:58,557 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:28:58,557 - aiogram.dispatcher - WARNING - Sleep for 4.915206 seconds and try again... (tryings = 24, bot id = 8703514394)
+2026-04-20 19:29:11,224 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:29:11,224 - aiogram.dispatcher - WARNING - Sleep for 4.890199 seconds and try again... (tryings = 25, bot id = 8703514394)
+2026-04-20 19:29:20,917 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:29:20,917 - aiogram.dispatcher - WARNING - Sleep for 5.165770 seconds and try again... (tryings = 26, bot id = 8703514394)
+2026-04-20 19:29:31,588 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:29:31,589 - aiogram.dispatcher - WARNING - Sleep for 5.224827 seconds and try again... (tryings = 27, bot id = 8703514394)
+2026-04-20 19:29:40,097 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:30:40 +05)" (scheduled at 2026-04-20 19:29:40.084364+05:00)
+2026-04-20 19:29:40,099 - __main__ - INFO - Starting check for new documents...
+2026-04-20 19:29:40,151 - __main__ - ERROR - Сайт недоступен: Cannot connect to host lex.uz:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')]
+2026-04-20 19:29:40,151 - __main__ - ERROR - Lex.uz недоступен
+2026-04-20 19:29:40,157 - __main__ - ERROR - Check error: table check_logs has no column named error_message
+2026-04-20 19:29:40,161 - apscheduler.executors.default - ERROR - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:30:40 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lexbot\main.py", line 448, in check_new_documents
+    await log_check(0, 0, 'error', str(e))
+  File "C:\lexbot\main.py", line 455, in log_check
+    await db.execute("""
+    ...<2 lines>...
+    """, (new, updated, status, error))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table check_logs has no column named error_message
+2026-04-20 19:29:42,150 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:29:42,150 - aiogram.dispatcher - WARNING - Sleep for 4.985519 seconds and try again... (tryings = 28, bot id = 8703514394)
+2026-04-20 19:29:50,976 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:29:50,976 - aiogram.dispatcher - WARNING - Sleep for 5.019175 seconds and try again... (tryings = 29, bot id = 8703514394)
+2026-04-20 19:30:01,568 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:30:01,569 - aiogram.dispatcher - WARNING - Sleep for 4.845183 seconds and try again... (tryings = 30, bot id = 8703514394)
+2026-04-20 19:30:11,612 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:30:11,613 - aiogram.dispatcher - WARNING - Sleep for 5.040642 seconds and try again... (tryings = 31, bot id = 8703514394)
+2026-04-20 19:30:20,320 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:30:20,321 - aiogram.dispatcher - WARNING - Sleep for 4.919328 seconds and try again... (tryings = 32, bot id = 8703514394)
+2026-04-20 19:30:30,691 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:30:30,691 - aiogram.dispatcher - WARNING - Sleep for 4.997933 seconds and try again... (tryings = 33, bot id = 8703514394)
+2026-04-20 19:30:40,092 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:31:40 +05)" (scheduled at 2026-04-20 19:30:40.084364+05:00)
+2026-04-20 19:30:40,093 - __main__ - INFO - Starting check for new documents...
+2026-04-20 19:30:40,187 - __main__ - ERROR - Сайт недоступен: Cannot connect to host lex.uz:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')]
+2026-04-20 19:30:40,187 - __main__ - ERROR - Lex.uz недоступен
+2026-04-20 19:30:40,191 - __main__ - ERROR - Check error: table check_logs has no column named error_message
+2026-04-20 19:30:40,195 - apscheduler.executors.default - ERROR - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:31:40 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lexbot\main.py", line 448, in check_new_documents
+    await log_check(0, 0, 'error', str(e))
+  File "C:\lexbot\main.py", line 455, in log_check
+    await db.execute("""
+    ...<2 lines>...
+    """, (new, updated, status, error))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table check_logs has no column named error_message
+2026-04-20 19:30:41,260 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:30:41,261 - aiogram.dispatcher - WARNING - Sleep for 4.779806 seconds and try again... (tryings = 34, bot id = 8703514394)
+2026-04-20 19:30:51,227 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:30:51,227 - aiogram.dispatcher - WARNING - Sleep for 4.982379 seconds and try again... (tryings = 35, bot id = 8703514394)
+2026-04-20 19:31:00,066 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:31:00,067 - aiogram.dispatcher - WARNING - Sleep for 4.997663 seconds and try again... (tryings = 36, bot id = 8703514394)
+2026-04-20 19:31:10,583 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:31:10,583 - aiogram.dispatcher - WARNING - Sleep for 5.025621 seconds and try again... (tryings = 37, bot id = 8703514394)
+2026-04-20 19:31:20,857 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:31:20,857 - aiogram.dispatcher - WARNING - Sleep for 5.126451 seconds and try again... (tryings = 38, bot id = 8703514394)
+2026-04-20 19:31:29,389 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:31:29,390 - aiogram.dispatcher - WARNING - Sleep for 5.050979 seconds and try again... (tryings = 39, bot id = 8703514394)
+2026-04-20 19:31:39,809 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:31:39,809 - aiogram.dispatcher - WARNING - Sleep for 4.909290 seconds and try again... (tryings = 40, bot id = 8703514394)
+2026-04-20 19:31:40,090 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:32:40 +05)" (scheduled at 2026-04-20 19:31:40.084364+05:00)
+2026-04-20 19:31:40,091 - __main__ - INFO - Starting check for new documents...
+2026-04-20 19:31:40,756 - __main__ - ERROR - Сайт недоступен: Cannot connect to host lex.uz:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')]
+2026-04-20 19:31:40,756 - __main__ - ERROR - Lex.uz недоступен
+2026-04-20 19:31:40,761 - __main__ - ERROR - Check error: table check_logs has no column named error_message
+2026-04-20 19:31:40,766 - apscheduler.executors.default - ERROR - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:32:40 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lexbot\main.py", line 448, in check_new_documents
+    await log_check(0, 0, 'error', str(e))
+  File "C:\lexbot\main.py", line 455, in log_check
+    await db.execute("""
+    ...<2 lines>...
+    """, (new, updated, status, error))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table check_logs has no column named error_message
+2026-04-20 19:31:50,028 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:31:50,029 - aiogram.dispatcher - WARNING - Sleep for 4.894112 seconds and try again... (tryings = 41, bot id = 8703514394)
+2026-04-20 19:32:00,081 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:32:00,081 - aiogram.dispatcher - WARNING - Sleep for 4.983400 seconds and try again... (tryings = 42, bot id = 8703514394)
+2026-04-20 19:32:09,806 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:32:09,844 - aiogram.dispatcher - WARNING - Sleep for 4.948124 seconds and try again... (tryings = 43, bot id = 8703514394)
+2026-04-20 19:32:20,013 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:32:20,014 - aiogram.dispatcher - WARNING - Sleep for 5.035521 seconds and try again... (tryings = 44, bot id = 8703514394)
+2026-04-20 19:32:30,453 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:32:30,453 - aiogram.dispatcher - WARNING - Sleep for 5.029998 seconds and try again... (tryings = 45, bot id = 8703514394)
+2026-04-20 19:32:40,092 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:33:40 +05)" (scheduled at 2026-04-20 19:32:40.084364+05:00)
+2026-04-20 19:32:40,093 - __main__ - INFO - Starting check for new documents...
+2026-04-20 19:32:40,159 - __main__ - ERROR - Сайт недоступен: Cannot connect to host lex.uz:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')]
+2026-04-20 19:32:40,159 - __main__ - ERROR - Lex.uz недоступен
+2026-04-20 19:32:40,163 - __main__ - ERROR - Check error: table check_logs has no column named error_message
+2026-04-20 19:32:40,166 - apscheduler.executors.default - ERROR - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:33:40 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lexbot\main.py", line 448, in check_new_documents
+    await log_check(0, 0, 'error', str(e))
+  File "C:\lexbot\main.py", line 455, in log_check
+    await db.execute("""
+    ...<2 lines>...
+    """, (new, updated, status, error))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table check_logs has no column named error_message
+2026-04-20 19:32:40,568 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:32:40,569 - aiogram.dispatcher - WARNING - Sleep for 5.015569 seconds and try again... (tryings = 46, bot id = 8703514394)
+2026-04-20 19:32:50,816 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:32:50,816 - aiogram.dispatcher - WARNING - Sleep for 4.961454 seconds and try again... (tryings = 47, bot id = 8703514394)
+2026-04-20 19:33:01,101 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:33:01,103 - aiogram.dispatcher - WARNING - Sleep for 4.816104 seconds and try again... (tryings = 48, bot id = 8703514394)
+2026-04-20 19:33:11,980 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:33:11,982 - aiogram.dispatcher - WARNING - Sleep for 4.902083 seconds and try again... (tryings = 49, bot id = 8703514394)
+2026-04-20 19:33:21,903 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:33:21,904 - aiogram.dispatcher - WARNING - Sleep for 4.925503 seconds and try again... (tryings = 50, bot id = 8703514394)
+2026-04-20 19:33:32,060 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:33:32,061 - aiogram.dispatcher - WARNING - Sleep for 5.171419 seconds and try again... (tryings = 51, bot id = 8703514394)
+2026-04-20 19:33:40,100 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:34:40 +05)" (scheduled at 2026-04-20 19:33:40.084364+05:00)
+2026-04-20 19:33:40,101 - __main__ - INFO - Starting check for new documents...
+2026-04-20 19:33:52,879 - __main__ - ERROR - Сайт недоступен: Cannot connect to host lex.uz:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')]
+2026-04-20 19:33:52,879 - __main__ - ERROR - Lex.uz недоступен
+2026-04-20 19:33:52,887 - __main__ - ERROR - Check error: table check_logs has no column named error_message
+2026-04-20 19:33:52,894 - apscheduler.executors.default - ERROR - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:34:40 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lexbot\main.py", line 448, in check_new_documents
+    await log_check(0, 0, 'error', str(e))
+  File "C:\lexbot\main.py", line 455, in log_check
+    await db.execute("""
+    ...<2 lines>...
+    """, (new, updated, status, error))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table check_logs has no column named error_message
+2026-04-20 19:34:21,813 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:34:21,815 - aiogram.dispatcher - WARNING - Sleep for 4.976187 seconds and try again... (tryings = 52, bot id = 8703514394)
+2026-04-20 19:34:35,489 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:34:35,492 - aiogram.dispatcher - WARNING - Sleep for 4.916611 seconds and try again... (tryings = 53, bot id = 8703514394)
+2026-04-20 19:34:40,089 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:35:40 +05)" (scheduled at 2026-04-20 19:34:40.084364+05:00)
+2026-04-20 19:34:40,090 - __main__ - INFO - Starting check for new documents...
+2026-04-20 19:34:40,227 - __main__ - ERROR - Сайт недоступен: Cannot connect to host lex.uz:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')]
+2026-04-20 19:34:40,228 - __main__ - ERROR - Lex.uz недоступен
+2026-04-20 19:34:40,231 - __main__ - ERROR - Check error: table check_logs has no column named error_message
+2026-04-20 19:34:40,236 - apscheduler.executors.default - ERROR - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:35:40 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lexbot\main.py", line 448, in check_new_documents
+    await log_check(0, 0, 'error', str(e))
+  File "C:\lexbot\main.py", line 455, in log_check
+    await db.execute("""
+    ...<2 lines>...
+    """, (new, updated, status, error))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table check_logs has no column named error_message
+2026-04-20 19:34:44,893 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:34:44,894 - aiogram.dispatcher - WARNING - Sleep for 5.141642 seconds and try again... (tryings = 54, bot id = 8703514394)
+2026-04-20 19:35:11,268 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:35:11,269 - aiogram.dispatcher - WARNING - Sleep for 5.097633 seconds and try again... (tryings = 55, bot id = 8703514394)
+2026-04-20 19:35:37,958 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 121] The semaphore timeout period has expired
+2026-04-20 19:35:37,959 - aiogram.dispatcher - WARNING - Sleep for 4.988905 seconds and try again... (tryings = 56, bot id = 8703514394)
+2026-04-20 19:35:40,126 - apscheduler.executors.default - INFO - Running job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:36:40 +05)" (scheduled at 2026-04-20 19:35:40.084364+05:00)
+2026-04-20 19:35:40,127 - __main__ - INFO - Starting check for new documents...
+2026-04-20 19:35:47,089 - __main__ - ERROR - Сайт недоступен: Cannot connect to host lex.uz:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')]
+2026-04-20 19:35:47,089 - __main__ - ERROR - Lex.uz недоступен
+2026-04-20 19:35:47,094 - __main__ - ERROR - Check error: table check_logs has no column named error_message
+2026-04-20 19:35:47,100 - apscheduler.executors.default - ERROR - Job "Check Lex.uz (trigger: interval[0:01:00], next run at: 2026-04-20 19:36:40 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lexbot\main.py", line 448, in check_new_documents
+    await log_check(0, 0, 'error', str(e))
+  File "C:\lexbot\main.py", line 455, in log_check
+    await db.execute("""
+    ...<2 lines>...
+    """, (new, updated, status, error))
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\david\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+sqlite3.OperationalError: table check_logs has no column named error_message
+2026-04-20 19:35:53,626 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:35:53,626 - aiogram.dispatcher - WARNING - Sleep for 4.978439 seconds and try again... (tryings = 57, bot id = 8703514394)
+2026-04-20 19:36:02,096 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:36:02,098 - aiogram.dispatcher - WARNING - Sleep for 4.998179 seconds and try again... (tryings = 58, bot id = 8703514394)
+2026-04-20 19:36:11,844 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-04-20 19:36:11,847 - aiogram.dispatcher - WARNING - Sleep for 5.124678 seconds and try again... (tryings = 59, bot id = 8703514394)
