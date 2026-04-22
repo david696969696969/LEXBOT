@@ -51,12 +51,25 @@ bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 scheduler = AsyncIOScheduler()
 
+# ==================== 15 КАТЕГОРИЙ ====================
+
 CATEGORIES = {
-    'tax': {'name': 'Налоги и сборы', 'icon': '💰'},
-    'labor': {'name': 'Трудовое право', 'icon': '👷'},
-    'digital': {'name': 'IT и цифровизация', 'icon': '💻'},
-    'finance': {'name': 'Финансы и банки', 'icon': '🏦'},
-    'general': {'name': 'Общие', 'icon': '📁'},
+    'tax': {'name': 'Налоги и сборы', 'icon': '💰', 'keywords': ['налог', 'сбор', 'ндс', 'прибыль', 'акциз', 'таможен', 'пошлин', 'бюджет', 'сбора', 'налогов']},
+    'economy': {'name': 'Экономика и бизнес', 'icon': '📈', 'keywords': ['эконом', 'бизнес', 'предприниматель', 'инвести', 'госзакуп', 'концесс', 'франшиз', 'торговл', 'предприят', 'коммерц']},
+    'labor': {'name': 'Трудовое право', 'icon': '👷', 'keywords': ['труд', 'зарплат', 'отпуск', 'работник', 'занятост', 'профсоюз', 'коллектив', 'работодат', 'трудовой']},
+    'digital': {'name': 'IT и цифровизация', 'icon': '💻', 'keywords': ['цифров', 'информаци', 'коммуникаци', 'интернет', 'электрон', 'кибер', 'программ', 'телеком', 'айти', 'it', 'технолог']},
+    'civil': {'name': 'Гражданское право', 'icon': '⚖️', 'keywords': ['граждан', 'договор', 'собствен', 'наслед', 'обязательств', 'недвижим', 'жилищ', 'семейн']},
+    'criminal': {'name': 'Уголовное право', 'icon': '🚔', 'keywords': ['уголовн', 'преступлен', 'наказан', 'экстремизм', 'терроризм', 'коррупц', 'взяточнич', 'контрабанд', 'отмыван']},
+    'administrative': {'name': 'Административное право', 'icon': '📋', 'keywords': ['административ', 'штраф', 'лиценз', 'разрешен', 'регистрац', 'проверка', 'инспекц', 'контроль']},
+    'environment': {'name': 'Экология', 'icon': '🌿', 'keywords': ['эколог', 'природ', 'окружающ', 'земл', 'вод', 'воздух', 'отход', 'охрана', 'загрязнен', 'лес']},
+    'health': {'name': 'Здравоохранение', 'icon': '🏥', 'keywords': ['здравоохран', 'медицин', 'фармац', 'лекарств', 'врач', 'больниц', 'эпидем', 'санитар', 'клинич']},
+    'education': {'name': 'Образование', 'icon': '🎓', 'keywords': ['образован', 'школ', 'университет', 'академ', 'студент', 'учитель', 'аттестат', 'диплом', 'учебн']},
+    'finance': {'name': 'Финансы и банки', 'icon': '🏦', 'keywords': ['банк', 'валют', 'финанс', 'кредит', 'страхован', 'бирж', 'ценн бумаг', 'ипотек', 'аудит', 'бухгалт']},
+    'trade': {'name': 'Торговля и таможня', 'icon': '🌍', 'keywords': ['торговл', 'таможн', 'внешнеторг', 'экспорт', 'импорт', 'товар', 'контракт', 'перевозк', 'логистик']},
+    'construction': {'name': 'Строительство', 'icon': '🏗️', 'keywords': ['строитель', 'архитектур', 'жкх', 'капремонт', 'жил', 'дом', 'квартир', 'ремонт', 'инфраструктур']},
+    'transport': {'name': 'Транспорт', 'icon': '🚛', 'keywords': ['транспорт', 'авто', 'авиа', 'ж/д', 'дорог', 'водител', 'перевозк', 'логистик', 'автомобил']},
+    'energy': {'name': 'Энергетика', 'icon': '⚡', 'keywords': ['энерг', 'электро', 'газ', 'нефт', 'топлив', 'атом', 'возобновляем', 'тепл', 'солнечн', 'ветр']},
+    'general': {'name': 'Общие', 'icon': '📁', 'keywords': []},
 }
 
 DOC_TYPES = {
@@ -64,6 +77,7 @@ DOC_TYPES = {
     'decree': {'name': 'Указ Президента', 'icon': '⚡'},
     'resolution': {'name': 'Постановление КМ', 'icon': '📋'},
     'order': {'name': 'Приказ', 'icon': '📄'},
+    'regulation': {'name': 'Нормативный акт', 'icon': '📑'},
 }
 
 @dataclass
@@ -116,23 +130,31 @@ class LexUzParser:
             await self.session.close()
 
     def _get_category(self, title: str) -> str:
+        """Умное определение категории по ключевым словам"""
         title_lower = title.lower()
-        keywords = {
-            'tax': ['налог', 'сбор', 'ндс', 'прибыль', 'акциз'],
-            'labor': ['труд', 'зарплат', 'отпуск', 'работник'],
-            'digital': ['цифров', 'информаци', 'интернет', 'кибер'],
-            'finance': ['банк', 'валют', 'финанс', 'кредит'],
-        }
-        for cat, words in keywords.items():
-            if any(w in title_lower for w in words):
-                return cat
+        
+        # Считаем совпадения для каждой категории
+        scores = {}
+        for cat_key, cat_info in CATEGORIES.items():
+            if cat_key == 'general':
+                continue
+            score = 0
+            for keyword in cat_info['keywords']:
+                if keyword in title_lower:
+                    score += 1
+            if score > 0:
+                scores[cat_key] = score
+        
+        # Возвращаем категорию с максимальным score
+        if scores:
+            return max(scores, key=scores.get)
         return 'general'
 
     def _get_doc_type(self, doc_number: str) -> str:
         doc_upper = doc_number.upper()
-        if 'УП-' in doc_upper or doc_upper.startswith('УП'):
+        if 'УП-' in doc_upper or doc_upper.startswith('УП') or 'УКАЗ' in doc_upper:
             return 'decree'
-        elif 'ПКМ' in doc_upper:
+        elif 'ПКМ' in doc_upper or 'ПОСТАНОВЛЕНИЕ' in doc_upper:
             return 'resolution'
         elif 'ПРИКАЗ' in doc_upper or doc_upper.startswith('П '):
             return 'order'
@@ -155,7 +177,6 @@ class LexUzParser:
         ]
         
         html = None
-        used_url = None
         
         for url in urls_to_try:
             try:
@@ -164,7 +185,6 @@ class LexUzParser:
                     logger.info(f"Status: {response.status}")
                     if response.status == 200:
                         html = await response.text()
-                        used_url = url
                         break
             except Exception as e:
                 logger.error(f"Error with {url}: {e}")
@@ -187,15 +207,18 @@ class LexUzParser:
         
         logger.info(f"Found {len(doc_links)} potential documents")
         
-        for title, href in doc_links[:20]:
+        for title, href in doc_links[:30]:
             try:
                 doc_type = 'regulation'
-                if 'закон' in title.lower() or 'ЗРУ' in title:
+                title_lower = title.lower()
+                if 'закон' in title_lower or 'ЗРУ' in title:
                     doc_type = 'law'
-                elif 'указ' in title.lower():
+                elif 'указ' in title_lower:
                     doc_type = 'decree'
-                elif 'постановление' in title.lower():
+                elif 'постановление' in title_lower:
                     doc_type = 'resolution'
+                elif 'приказ' in title_lower:
+                    doc_type = 'order'
                 
                 if href.startswith('/'):
                     url = f'{self.base_url}{href}'
@@ -206,6 +229,9 @@ class LexUzParser:
                 
                 doc_number = href.split('/')[-1] if '/' in href else 'unknown'
                 
+                # Определяем категорию
+                category = self._get_category(title)
+                
                 documents.append(LawDocument(
                     id=0,
                     title=title[:300],
@@ -213,7 +239,7 @@ class LexUzParser:
                     doc_number=doc_number[:100],
                     date_published=datetime.now().strftime('%d.%m.%Y'),
                     date_effective=datetime.now().strftime('%d.%m.%Y'),
-                    category=self._get_category(title),
+                    category=category,
                     description=title[:250],
                     full_text='',
                     url=url,
@@ -438,6 +464,7 @@ async def cmd_start(message: Message):
 
 <b>📊 В базе:</b>
 • Всего документов: <b>{total_docs}</b>
+• Категорий: <b>{len(CATEGORIES) - 1}</b>
 
 <b>📋 Команды:</b>
 /documents — Все документы
@@ -471,7 +498,7 @@ async def cmd_documents(message: Message):
 
         text += f"{i}. {type_info['icon']} <b>{doc['title'][:80]}</b>\n"
         text += f"   <code>{doc['doc_number']}</code>\n"
-        text += f"   📅 {doc['date_published']} | {cat_info['name']}\n"
+        text += f"   📅 {doc['date_published']} | {cat_info['icon']} {cat_info['name']}\n"
         text += f"   <a href='{doc['url']}'>Открыть →</a>\n\n"
 
     await message.answer(text, parse_mode="HTML", disable_web_page_preview=True)
@@ -480,11 +507,13 @@ async def cmd_documents(message: Message):
 async def cmd_categories(message: Message):
     cat_stats = await get_all_categories_stats()
 
-    text = "<b>📁 КАТЕГОРИИ ЗАКОНОДАТЕЛЬСТВА</b>\n\n"
+    text = "<b>📁 КАТЕГОРИИ ЗАКОНОДАТЕЛЬСТВА</b>\n\nВыберите категорию:\n\n"
 
     keyboard_buttons = []
     row = []
     for key, info in CATEGORIES.items():
+        if key == 'general':
+            continue
         count = cat_stats.get(key, 0)
         btn = InlineKeyboardButton(
             text=f"{info['icon']} {info['name']} ({count})",
@@ -521,7 +550,7 @@ async def cmd_help(message: Message):
 
 <b>📋 Команды:</b>
 /documents — Все документы
-/categories — По категориям
+/categories — По категориям (15 категорий)
 /stats — Статистика
 /help — Помощь
 
