@@ -51,25 +51,121 @@ bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 scheduler = AsyncIOScheduler()
 
-# ==================== 15 КАТЕГОРИЙ ====================
+# ==================== 15 КАТЕГОРИЙ С УЗБЕКСКИМИ ТЕГАМИ ====================
 
 CATEGORIES = {
-    'tax': {'name': 'Налоги и сборы', 'icon': '💰', 'keywords': ['налог', 'сбор', 'ндс', 'прибыль', 'акциз', 'таможен', 'пошлин', 'бюджет', 'сбора', 'налогов']},
-    'economy': {'name': 'Экономика и бизнес', 'icon': '📈', 'keywords': ['эконом', 'бизнес', 'предприниматель', 'инвести', 'госзакуп', 'концесс', 'франшиз', 'торговл', 'предприят', 'коммерц']},
-    'labor': {'name': 'Трудовое право', 'icon': '👷', 'keywords': ['труд', 'зарплат', 'отпуск', 'работник', 'занятост', 'профсоюз', 'коллектив', 'работодат', 'трудовой']},
-    'digital': {'name': 'IT и цифровизация', 'icon': '💻', 'keywords': ['цифров', 'информаци', 'коммуникаци', 'интернет', 'электрон', 'кибер', 'программ', 'телеком', 'айти', 'it', 'технолог']},
-    'civil': {'name': 'Гражданское право', 'icon': '⚖️', 'keywords': ['граждан', 'договор', 'собствен', 'наслед', 'обязательств', 'недвижим', 'жилищ', 'семейн']},
-    'criminal': {'name': 'Уголовное право', 'icon': '🚔', 'keywords': ['уголовн', 'преступлен', 'наказан', 'экстремизм', 'терроризм', 'коррупц', 'взяточнич', 'контрабанд', 'отмыван']},
-    'administrative': {'name': 'Административное право', 'icon': '📋', 'keywords': ['административ', 'штраф', 'лиценз', 'разрешен', 'регистрац', 'проверка', 'инспекц', 'контроль']},
-    'environment': {'name': 'Экология', 'icon': '🌿', 'keywords': ['эколог', 'природ', 'окружающ', 'земл', 'вод', 'воздух', 'отход', 'охрана', 'загрязнен', 'лес']},
-    'health': {'name': 'Здравоохранение', 'icon': '🏥', 'keywords': ['здравоохран', 'медицин', 'фармац', 'лекарств', 'врач', 'больниц', 'эпидем', 'санитар', 'клинич']},
-    'education': {'name': 'Образование', 'icon': '🎓', 'keywords': ['образован', 'школ', 'университет', 'академ', 'студент', 'учитель', 'аттестат', 'диплом', 'учебн']},
-    'finance': {'name': 'Финансы и банки', 'icon': '🏦', 'keywords': ['банк', 'валют', 'финанс', 'кредит', 'страхован', 'бирж', 'ценн бумаг', 'ипотек', 'аудит', 'бухгалт']},
-    'trade': {'name': 'Торговля и таможня', 'icon': '🌍', 'keywords': ['торговл', 'таможн', 'внешнеторг', 'экспорт', 'импорт', 'товар', 'контракт', 'перевозк', 'логистик']},
-    'construction': {'name': 'Строительство', 'icon': '🏗️', 'keywords': ['строитель', 'архитектур', 'жкх', 'капремонт', 'жил', 'дом', 'квартир', 'ремонт', 'инфраструктур']},
-    'transport': {'name': 'Транспорт', 'icon': '🚛', 'keywords': ['транспорт', 'авто', 'авиа', 'ж/д', 'дорог', 'водител', 'перевозк', 'логистик', 'автомобил']},
-    'energy': {'name': 'Энергетика', 'icon': '⚡', 'keywords': ['энерг', 'электро', 'газ', 'нефт', 'топлив', 'атом', 'возобновляем', 'тепл', 'солнечн', 'ветр']},
-    'general': {'name': 'Общие', 'icon': '📁', 'keywords': []},
+    'tax': {
+        'name': 'Налоги и сборы',
+        'icon': '💰',
+        'hashtag': '#Налоги',
+        'uz_tags': ['#Soliq', '#Bojxona', '#NDS', '#Daromad', '#Byudjet'],
+        'keywords': ['налог', 'сбор', 'ндс', 'прибыль', 'акциз', 'таможен', 'пошлин', 'бюджет', 'сбора', 'налогов', 'солиқ', 'божхона']
+    },
+    'economy': {
+        'name': 'Экономика и бизнес',
+        'icon': '📈',
+        'hashtag': '#Экономика',
+        'uz_tags': ['#Iqtisodiyot', '#Biznes', '#Tadbirkorlik', '#Investitsiya'],
+        'keywords': ['эконом', 'бизнес', 'предприниматель', 'инвести', 'госзакуп', 'концесс', 'франшиз', 'торговл', 'предприят', 'коммерц', 'иқтисод', 'бизнес']
+    },
+    'labor': {
+        'name': 'Трудовое право',
+        'icon': '👷',
+        'hashtag': '#Труд',
+        'uz_tags': ['#Mehnat', '#Ish', '#Maosh', '#Tatil', '#Xodim'],
+        'keywords': ['труд', 'зарплат', 'отпуск', 'работник', 'занятост', 'профсоюз', 'коллектив', 'работодат', 'трудовой', 'меҳнат', 'иш', 'маош']
+    },
+    'digital': {
+        'name': 'IT и цифровизация',
+        'icon': '💻',
+        'hashtag': '#IT',
+        'uz_tags': ['#IT', '#Raqamlashtirish', '#Internet', '#Kiber', '#Dasturiy'],
+        'keywords': ['цифров', 'информаци', 'коммуникаци', 'интернет', 'электрон', 'кибер', 'программ', 'телеком', 'айти', 'it', 'технолог', 'рақамлаштириш']
+    },
+    'civil': {
+        'name': 'Гражданское право',
+        'icon': '⚖️',
+        'hashtag': '#ГражданскоеПраво',
+        'uz_tags': ['#Fuqarolik', '#Shartnoma', '#Mulk', '#Meros'],
+        'keywords': ['граждан', 'договор', 'собствен', 'наслед', 'обязательств', 'недвижим', 'жилищ', 'семейн', 'фуқаролик', 'шартнома', 'мулк']
+    },
+    'criminal': {
+        'name': 'Уголовное право',
+        'icon': '🚔',
+        'hashtag': '#УголовноеПраво',
+        'uz_tags': ['#Jinoyat', '#Jazo', '#Korrupsiya', '#Terror'],
+        'keywords': ['уголовн', 'преступлен', 'наказан', 'экстремизм', 'терроризм', 'коррупц', 'взяточнич', 'контрабанд', 'отмыван', 'жиноят', 'жазо']
+    },
+    'administrative': {
+        'name': 'Административное право',
+        'icon': '📋',
+        'hashtag': '#Административное',
+        'uz_tags': ['#Ma muriyat', '#Jarima', '#Litsenziya', '#Ruxsatnoma'],
+        'keywords': ['административ', 'штраф', 'лиценз', 'разрешен', 'регистрац', 'проверка', 'инспекц', 'контроль', 'маъмурият', 'жарима', 'лицензия']
+    },
+    'environment': {
+        'name': 'Экология',
+        'icon': '🌿',
+        'hashtag': '#Экология',
+        'uz_tags': ['#Ekologiya', '#Tabiat', '#AtrofMuhit', '#Chiqindi'],
+        'keywords': ['эколог', 'природ', 'окружающ', 'земл', 'вод', 'воздух', 'отход', 'охрана', 'загрязнен', 'лес', 'экология', 'табиат']
+    },
+    'health': {
+        'name': 'Здравоохранение',
+        'icon': '🏥',
+        'hashtag': '#Здравоохранение',
+        'uz_tags': ['#SogliqniSaqlash', '#Tibbiyot', '#Dori', '#Shifokor'],
+        'keywords': ['здравоохран', 'медицин', 'фармац', 'лекарств', 'врач', 'больниц', 'эпидем', 'санитар', 'клинич', 'соғлиқни сақлаш', 'тиббиёт']
+    },
+    'education': {
+        'name': 'Образование',
+        'icon': '🎓',
+        'hashtag': '#Образование',
+        'uz_tags': ['#Talim', '#Maktab', '#Universitet', '#Oqituvchi', '#Talaba'],
+        'keywords': ['образован', 'школ', 'университет', 'академ', 'студент', 'учитель', 'аттестат', 'диплом', 'учебн', 'таълим', 'мактаб', 'университет']
+    },
+    'finance': {
+        'name': 'Финансы и банки',
+        'icon': '🏦',
+        'hashtag': '#Финансы',
+        'uz_tags': ['#Moliya', '#Bank', '#Valyuta', '#Kredit', '#Sugurta'],
+        'keywords': ['банк', 'валют', 'финанс', 'кредит', 'страхован', 'бирж', 'ценн бумаг', 'ипотек', 'аудит', 'бухгалт', 'молия', 'банк', 'валюта']
+    },
+    'trade': {
+        'name': 'Торговля и таможня',
+        'icon': '🌍',
+        'hashtag': '#Торговля',
+        'uz_tags': ['#Savdo', '#Tamojnya', '#Eksport', '#Import', '#Tovar'],
+        'keywords': ['торговл', 'таможн', 'внешнеторг', 'экспорт', 'импорт', 'товар', 'контракт', 'перевозк', 'логистик', 'савдо', 'таможня', 'экспорт']
+    },
+    'construction': {
+        'name': 'Строительство',
+        'icon': '🏗️',
+        'hashtag': '#Строительство',
+        'uz_tags': ['#Qurilish', '#Arxitektura', '#Uy', '#Kvartira', '#Remont'],
+        'keywords': ['строитель', 'архитектур', 'жкх', 'капремонт', 'жил', 'дом', 'квартир', 'ремонт', 'инфраструктур', 'қурилиш', 'архитектура', 'уй']
+    },
+    'transport': {
+        'name': 'Транспорт',
+        'icon': '🚛',
+        'hashtag': '#Транспорт',
+        'uz_tags': ['#Transport', '#Avto', '#Avia', '#TemirYol', '#Haydovchi'],
+        'keywords': ['транспорт', 'авто', 'авиа', 'ж/д', 'дорог', 'водител', 'перевозк', 'логистик', 'автомобил', 'транспорт', 'авто', 'авиа']
+    },
+    'energy': {
+        'name': 'Энергетика',
+        'icon': '⚡',
+        'hashtag': '#Энергетика',
+        'uz_tags': ['#Energetika', '#Elektr', '#Gaz', '#Neft', '#Yoqilgi'],
+        'keywords': ['энерг', 'электро', 'газ', 'нефт', 'топлив', 'атом', 'возобновляем', 'тепл', 'солнечн', 'ветр', 'энергетика', 'электр', 'газ']
+    },
+    'general': {
+        'name': 'Общие',
+        'icon': '📁',
+        'hashtag': '#Общие',
+        'uz_tags': ['#Umumiy'],
+        'keywords': []
+    },
 }
 
 DOC_TYPES = {
@@ -133,7 +229,6 @@ class LexUzParser:
         """Умное определение категории по ключевым словам"""
         title_lower = title.lower()
         
-        # Считаем совпадения для каждой категории
         scores = {}
         for cat_key, cat_info in CATEGORIES.items():
             if cat_key == 'general':
@@ -145,7 +240,6 @@ class LexUzParser:
             if score > 0:
                 scores[cat_key] = score
         
-        # Возвращаем категорию с максимальным score
         if scores:
             return max(scores, key=scores.get)
         return 'general'
@@ -161,6 +255,21 @@ class LexUzParser:
         elif 'ЗРУ' in doc_upper or 'ЗАКОН' in doc_upper:
             return 'law'
         return 'regulation'
+
+    def _get_hashtags(self, category: str) -> str:
+        """Получить хештеги для категории"""
+        cat_info = CATEGORIES.get(category, {})
+        hashtags = []
+        
+        # Русский хештег
+        if 'hashtag' in cat_info:
+            hashtags.append(cat_info['hashtag'])
+        
+        # Узбекские теги
+        if 'uz_tags' in cat_info:
+            hashtags.extend(cat_info['uz_tags'][:2])  # Берём первые 2 узб тега
+        
+        return ' '.join(hashtags) if hashtags else ''
 
     async def fetch_new_documents(self) -> List[LawDocument]:
         """Парсинг реальных документов с Lex.uz"""
@@ -229,7 +338,6 @@ class LexUzParser:
                 
                 doc_number = href.split('/')[-1] if '/' in href else 'unknown'
                 
-                # Определяем категорию
                 category = self._get_category(title)
                 
                 documents.append(LawDocument(
@@ -411,6 +519,10 @@ async def notify_subscribers(doc: LawDocument, is_update: bool = False):
 
     type_info = DOC_TYPES.get(doc.doc_type, {'name': 'Документ', 'icon': '📄'})
     cat_info = CATEGORIES.get(doc.category, {'name': doc.category, 'icon': '📁'})
+    
+    # Получаем хештеги
+    parser = LexUzParser()
+    hashtags = parser._get_hashtags(doc.category)
 
     action_emoji = "🔄" if is_update else "🆕"
     action_text = "ОБНОВЛЕНИЕ" if is_update else "НОВЫЙ ДОКУМЕНТ"
@@ -425,6 +537,9 @@ async def notify_subscribers(doc: LawDocument, is_update: bool = False):
 • Номер: <code>{doc.doc_number}</code>
 • Дата публикации: {doc.date_published}
 • Категория: {cat_info['icon']} {cat_info['name']}
+
+<b>🏷️ Теги:</b>
+{hashtags}
 
 <b>🔗 Источник:</b> <a href="{doc.url}">Lex.uz</a>
 """
@@ -495,10 +610,15 @@ async def cmd_documents(message: Message):
     for i, doc in enumerate(docs, 1):
         type_info = DOC_TYPES.get(doc['doc_type'], {'icon': '📄'})
         cat_info = CATEGORIES.get(doc['category'], {'name': doc['category']})
+        
+        # Хештеги
+        parser = LexUzParser()
+        hashtags = parser._get_hashtags(doc['category'])
 
         text += f"{i}. {type_info['icon']} <b>{doc['title'][:80]}</b>\n"
         text += f"   <code>{doc['doc_number']}</code>\n"
         text += f"   📅 {doc['date_published']} | {cat_info['icon']} {cat_info['name']}\n"
+        text += f"   🏷️ {hashtags}\n"
         text += f"   <a href='{doc['url']}'>Открыть →</a>\n\n"
 
     await message.answer(text, parse_mode="HTML", disable_web_page_preview=True)
@@ -536,10 +656,14 @@ async def cmd_stats(message: Message):
     total_docs = sum(cat_stats.values())
 
     text = f"<b>📊 СТАТИСТИКА</b>\n\n<b>📚 Всего документов: {total_docs}</b>\n\n<b>📁 По категориям:</b>\n"
+    
     for cat_key, count in sorted(cat_stats.items(), key=lambda x: x[1], reverse=True):
         if count > 0:
             info = CATEGORIES.get(cat_key, {'name': cat_key, 'icon': '📁'})
+            hashtags = info.get('hashtag', '')
+            uz_tags = ' '.join(info.get('uz_tags', [])[:1])
             text += f"\n{info['icon']} {info['name']}: {count}"
+            text += f"\n   🏷️ {hashtags} {uz_tags}"
 
     await message.answer(text, parse_mode="HTML")
 
@@ -553,6 +677,9 @@ async def cmd_help(message: Message):
 /categories — По категориям (15 категорий)
 /stats — Статистика
 /help — Помощь
+
+<b>🏷️ Узбекские теги:</b>
+#Soliq #Mehnat #IT #Talim #Savdo
 
 <b>🏛️ KPMG Law Uzbekistan</b>
 """, parse_mode="HTML")
@@ -576,11 +703,15 @@ async def callback_category(callback: CallbackQuery):
 
     cat_info = CATEGORIES[category]
     docs = await get_documents_by_category(category, limit=10)
+    
+    # Хештеги категории
+    parser = LexUzParser()
+    hashtags = parser._get_hashtags(category)
 
     if not docs:
-        text = f"<b>{cat_info['icon']} {cat_info['name']}</b>\n\n📭 Нет документов"
+        text = f"<b>{cat_info['icon']} {cat_info['name']}</b>\n\n🏷️ {hashtags}\n\n📭 Нет документов"
     else:
-        text = f"<b>{cat_info['icon']} {cat_info['name']}</b>\n\n📚 Найдено: <b>{len(docs)}</b>\n\n"
+        text = f"<b>{cat_info['icon']} {cat_info['name']}</b>\n\n🏷️ {hashtags}\n\n📚 Найдено: <b>{len(docs)}</b>\n\n"
         for i, doc in enumerate(docs, 1):
             text += f"{i}. <b>{doc['title'][:60]}</b>\n   <a href='{doc['url']}'>Открыть →</a>\n\n"
 
