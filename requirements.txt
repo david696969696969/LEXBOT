@@ -1,7 +1,0 @@
-﻿aiogram
-aiohttp
-aiosqlite
-apscheduler
-beautifulsoup4
-lxml
-python-dotenv

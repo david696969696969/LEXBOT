@@ -10,7 +10,7 @@ import os
 import sys
 import json
 import aiohttp
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 from dataclasses import dataclass, asdict
 
@@ -226,9 +226,7 @@ class LexUzParser:
             await self.session.close()
 
     def _get_category(self, title: str) -> str:
-        """Умное определение категории по ключевым словам"""
         title_lower = title.lower()
-        
         scores = {}
         for cat_key, cat_info in CATEGORIES.items():
             if cat_key == 'general':
@@ -257,24 +255,16 @@ class LexUzParser:
         return 'regulation'
 
     def _get_hashtags(self, category: str) -> str:
-        """Получить хештеги для категории"""
         cat_info = CATEGORIES.get(category, {})
         hashtags = []
-        
-        # Русский хештег
         if 'hashtag' in cat_info:
             hashtags.append(cat_info['hashtag'])
-        
-        # Узбекские теги
         if 'uz_tags' in cat_info:
-            hashtags.extend(cat_info['uz_tags'][:2])  # Берём первые 2 узб тега
-        
+            hashtags.extend(cat_info['uz_tags'][:2])
         return ' '.join(hashtags) if hashtags else ''
 
     async def fetch_new_documents(self) -> List[LawDocument]:
-        """Парсинг реальных документов с Lex.uz"""
         documents = []
-        
         if not BeautifulSoup:
             logger.error("BeautifulSoup not installed")
             return documents
@@ -310,7 +300,6 @@ class LexUzParser:
         for link in links:
             href = link['href']
             text = link.get_text(strip=True)
-            
             if '/docs/' in href and text and len(text) > 10:
                 doc_links.append((text, href))
         
@@ -337,7 +326,6 @@ class LexUzParser:
                     url = f'{self.base_url}/ru/docs/{href}'
                 
                 doc_number = href.split('/')[-1] if '/' in href else 'unknown'
-                
                 category = self._get_category(title)
                 
                 documents.append(LawDocument(
@@ -371,6 +359,8 @@ class LexUzParser:
         except Exception as e:
             logger.error(f"Site unavailable: {e}")
             return False
+
+# ==================== DATABASE ====================
 
 async def init_database():
     async with aiosqlite.connect(DATABASE_PATH) as db:
@@ -450,6 +440,18 @@ async def get_documents_by_category(category: str, limit: int = 10) -> List[Dict
             rows = await cursor.fetchall()
             return [dict(row) for row in rows]
 
+async def get_documents_by_period(days: int = 7) -> List[Dict]:
+    """Получить документы за последние N дней"""
+    async with aiosqlite.connect(DATABASE_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        async with db.execute("""
+            SELECT * FROM documents 
+            WHERE created_at >= datetime('now', '-{} days')
+            ORDER BY created_at DESC
+        """.format(days)) as cursor:
+            rows = await cursor.fetchall()
+            return [dict(row) for row in rows]
+
 async def get_all_categories_stats() -> Dict[str, int]:
     async with aiosqlite.connect(DATABASE_PATH) as db:
         stats = {}
@@ -458,6 +460,8 @@ async def get_all_categories_stats() -> Dict[str, int]:
                 count = (await cursor.fetchone())[0]
                 stats[cat_key] = count
         return stats
+
+# ==================== CHECK & NOTIFY ====================
 
 async def check_new_documents():
     logger.info("Checking for new documents...")
@@ -519,8 +523,6 @@ async def notify_subscribers(doc: LawDocument, is_update: bool = False):
 
     type_info = DOC_TYPES.get(doc.doc_type, {'name': 'Документ', 'icon': '📄'})
     cat_info = CATEGORIES.get(doc.category, {'name': doc.category, 'icon': '📁'})
-    
-    # Получаем хештеги
     parser = LexUzParser()
     hashtags = parser._get_hashtags(doc.category)
 
@@ -562,6 +564,83 @@ async def notify_subscribers(doc: LawDocument, is_update: bool = False):
         except Exception as e:
             logger.error(f"Notify error for {sub['user_id']}: {e}")
 
+# ==================== DIGEST / OVERVIEW ====================
+
+async def generate_digest(days: int = 7) -> str:
+    """Генерация дайджеста за период"""
+    docs = await get_documents_by_period(days)
+    
+    if not docs:
+        return "📭 За указанный период документов не найдено"
+    
+    # Группируем по категориям
+    by_category = {}
+    for doc in docs:
+        cat = doc['category']
+        if cat not in by_category:
+            by_category[cat] = []
+        by_category[cat].append(doc)
+    
+    # Формируем текст
+    period_text = "неделю" if days == 7 else f"{days} дней"
+    
+    text = f"""<b>📰 ОБЗОР ЗАКОНОДАТЕЛЬСТВА</b>
+<i>За последнюю {period_text}</i>
+
+<b>📊 Всего документов: {len(docs)}</b>
+
+"""
+    
+    # Сортируем категории по количеству документов
+    sorted_cats = sorted(by_category.items(), key=lambda x: len(x[1]), reverse=True)
+    
+    for cat_key, cat_docs in sorted_cats:
+        if cat_key == 'general':
+            continue
+            
+        cat_info = CATEGORIES.get(cat_key, {'name': cat_key, 'icon': '📁'})
+        hashtags = LexUzParser()._get_hashtags(cat_key)
+        
+        text += f"\n<b>{cat_info['icon']} {cat_info['name']}</b> {hashtags}\n"
+        text += f"<i>{len(cat_docs)} документов</i>\n\n"
+        
+        for i, doc in enumerate(cat_docs[:3], 1):  # Максимум 3 в категории
+            type_info = DOC_TYPES.get(doc['doc_type'], {'icon': '📄'})
+            text += f"{i}. {type_info['icon']} {doc['title'][:60]}...\n"
+            text += f"   <a href='{doc['url']}'>Подробнее →</a>\n"
+        
+        if len(cat_docs) > 3:
+            text += f"\n   <i>+{len(cat_docs) - 3} ещё</i>\n"
+        
+        text += "\n"
+    
+    return text
+
+async def send_digest_to_subscribers(days: int = 7):
+    """Отправить дайджест всем подписчикам"""
+    digest = await generate_digest(days)
+    subscribers = await get_all_subscribers()
+    
+    keyboard = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="📊 Полная статистика", callback_data="stats")],
+        [InlineKeyboardButton(text="📁 Все категории", callback_data="categories_menu")]
+    ])
+    
+    for sub in subscribers:
+        try:
+            await bot.send_message(
+                sub['user_id'],
+                digest,
+                reply_markup=keyboard,
+                parse_mode="HTML",
+                disable_web_page_preview=True
+            )
+            await asyncio.sleep(0.1)
+        except Exception as e:
+            logger.error(f"Digest error for {sub['user_id']}: {e}")
+
+# ==================== COMMANDS ====================
+
 @dp.message(Command("start"))
 async def cmd_start(message: Message):
     user = message.from_user
@@ -584,13 +663,16 @@ async def cmd_start(message: Message):
 <b>📋 Команды:</b>
 /documents — Все документы
 /categories — По категориям
+/digest — Обзор за неделю
 /stats — Статистика
 /help — Помощь
 """
 
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="📜 Документы", callback_data="all_docs"),
-         InlineKeyboardButton(text="📁 Категории", callback_data="categories_menu")]
+         InlineKeyboardButton(text="📰 Обзор", callback_data="digest_week")],
+        [InlineKeyboardButton(text="📁 Категории", callback_data="categories_menu"),
+         InlineKeyboardButton(text="📊 Статистика", callback_data="stats")]
     ])
 
     await message.answer(welcome, reply_markup=keyboard, parse_mode="HTML")
@@ -610,10 +692,7 @@ async def cmd_documents(message: Message):
     for i, doc in enumerate(docs, 1):
         type_info = DOC_TYPES.get(doc['doc_type'], {'icon': '📄'})
         cat_info = CATEGORIES.get(doc['category'], {'name': doc['category']})
-        
-        # Хештеги
-        parser = LexUzParser()
-        hashtags = parser._get_hashtags(doc['category'])
+        hashtags = LexUzParser()._get_hashtags(doc['category'])
 
         text += f"{i}. {type_info['icon']} <b>{doc['title'][:80]}</b>\n"
         text += f"   <code>{doc['doc_number']}</code>\n"
@@ -650,6 +729,19 @@ async def cmd_categories(message: Message):
     keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
     await message.answer(text, reply_markup=keyboard, parse_mode="HTML")
 
+@dp.message(Command("digest"))
+async def cmd_digest(message: Message):
+    """Обзор за неделю"""
+    digest = await generate_digest(7)
+    
+    keyboard = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="📅 За 3 дня", callback_data="digest_3"),
+         InlineKeyboardButton(text="📅 За 7 дней", callback_data="digest_7")],
+        [InlineKeyboardButton(text="📅 За 30 дней", callback_data="digest_30")]
+    ])
+    
+    await message.answer(digest, reply_markup=keyboard, parse_mode="HTML", disable_web_page_preview=True)
+
 @dp.message(Command("stats"))
 async def cmd_stats(message: Message):
     cat_stats = await get_all_categories_stats()
@@ -673,8 +765,10 @@ async def cmd_help(message: Message):
 <b>❓ ПОМОЩЬ — KPMG Law LexBot</b>
 
 <b>📋 Команды:</b>
+/start — Начать работу
 /documents — Все документы
 /categories — По категориям (15 категорий)
+/digest — Обзор законодательства
 /stats — Статистика
 /help — Помощь
 
@@ -683,6 +777,8 @@ async def cmd_help(message: Message):
 
 <b>🏛️ KPMG Law Uzbekistan</b>
 """, parse_mode="HTML")
+
+# ==================== CALLBACKS ====================
 
 @dp.callback_query(F.data == "all_docs")
 async def callback_all_docs(callback: CallbackQuery):
@@ -694,6 +790,37 @@ async def callback_categories_menu(callback: CallbackQuery):
     await cmd_categories(callback.message)
     await callback.answer()
 
+@dp.callback_query(F.data == "digest_week")
+async def callback_digest_week(callback: CallbackQuery):
+    digest = await generate_digest(7)
+    keyboard = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="📅 За 3 дня", callback_data="digest_3"),
+         InlineKeyboardButton(text="📅 За 30 дней", callback_data="digest_30")],
+        [InlineKeyboardButton(text="🔙 Назад", callback_data="back_main")]
+    ])
+    await callback.message.edit_text(digest, reply_markup=keyboard, parse_mode="HTML", disable_web_page_preview=True)
+    await callback.answer()
+
+@dp.callback_query(F.data.startswith("digest_"))
+async def callback_digest_period(callback: CallbackQuery):
+    days = int(callback.data.replace("digest_", ""))
+    digest = await generate_digest(days)
+    
+    keyboard = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="📅 За 3 дня", callback_data="digest_3"),
+         InlineKeyboardButton(text="📅 За 7 дней", callback_data="digest_7"),
+         InlineKeyboardButton(text="📅 За 30 дней", callback_data="digest_30")],
+        [InlineKeyboardButton(text="🔙 Назад", callback_data="back_main")]
+    ])
+    
+    await callback.message.edit_text(digest, reply_markup=keyboard, parse_mode="HTML", disable_web_page_preview=True)
+    await callback.answer()
+
+@dp.callback_query(F.data == "back_main")
+async def callback_back_main(callback: CallbackQuery):
+    await cmd_start(callback.message)
+    await callback.answer()
+
 @dp.callback_query(F.data.startswith("cat_"))
 async def callback_category(callback: CallbackQuery):
     category = callback.data.replace("cat_", "")
@@ -703,10 +830,7 @@ async def callback_category(callback: CallbackQuery):
 
     cat_info = CATEGORIES[category]
     docs = await get_documents_by_category(category, limit=10)
-    
-    # Хештеги категории
-    parser = LexUzParser()
-    hashtags = parser._get_hashtags(category)
+    hashtags = LexUzParser()._get_hashtags(category)
 
     if not docs:
         text = f"<b>{cat_info['icon']} {cat_info['name']}</b>\n\n🏷️ {hashtags}\n\n📭 Нет документов"
@@ -727,6 +851,8 @@ async def callback_unsubscribe(callback: CallbackQuery):
     await remove_subscriber(callback.from_user.id)
     await callback.message.edit_text("❌ <b>Уведомления отключены</b>", parse_mode="HTML")
     await callback.answer()
+
+# ==================== WEBHOOK / POLLING ====================
 
 async def on_startup_webhook(bot: Bot, webhook_url: str):
     try:

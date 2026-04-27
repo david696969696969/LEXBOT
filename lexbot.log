@@ -3513,3 +3513,12 @@ sqlite3.OperationalError: table check_logs has no column named error_message
 2026-04-20 19:36:02,098 - aiogram.dispatcher - WARNING - Sleep for 4.998179 seconds and try again... (tryings = 58, bot id = 8703514394)
 2026-04-20 19:36:11,844 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
 2026-04-20 19:36:11,847 - aiogram.dispatcher - WARNING - Sleep for 5.124678 seconds and try again... (tryings = 59, bot id = 8703514394)
+2026-04-20 19:39:15,177 - __main__ - INFO - Starting POLLING mode...
+2026-04-20 19:39:15,198 - __main__ - INFO - Database initialized
+2026-04-20 19:39:15,199 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-20 19:39:15,201 - apscheduler.scheduler - INFO - Added job "check_new_documents" to job store "default"
+2026-04-20 19:39:15,201 - apscheduler.scheduler - INFO - Scheduler started
+2026-04-20 19:39:15,202 - aiogram.dispatcher - INFO - Start polling
+2026-04-20 19:39:15,217 - aiogram.dispatcher - INFO - Polling stopped
+2026-04-20 19:39:15,480 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-04-20 19:39:15,481 - __main__ - ERROR - Shutdown error: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
