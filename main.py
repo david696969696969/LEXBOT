@@ -9,6 +9,7 @@ import logging
 import os
 import sys
 import json
+import re
 import aiohttp
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
@@ -254,6 +255,23 @@ class LexUzParser:
             return 'law'
         return 'regulation'
 
+    def _detect_doc_type(self, title: str, doc_id: str) -> str:
+        """Определить тип документа по заголовку и ID"""
+        title_lower = title.lower()
+        id_upper = doc_id.upper()
+        
+        if 'указ президента' in title_lower or 'уп-' in id_upper or id_upper.startswith('уп'):
+            return 'decree'
+        elif 'постановление' in title_lower and ('кабинет' in title_lower or 'км' in id_upper):
+            return 'resolution'
+        elif 'приказ' in title_lower:
+            return 'order'
+        elif 'закон' in title_lower or 'зру' in id_upper:
+            return 'law'
+        elif 'постановление' in title_lower:
+            return 'resolution'
+        return 'regulation'
+
     def _get_hashtags(self, category: str) -> str:
         cat_info = CATEGORIES.get(category, {})
         hashtags = []
@@ -270,71 +288,85 @@ class LexUzParser:
             return documents
 
         urls_to_try = [
-            "https://lex.uz/ru/",
             "https://lex.uz/ru/search/all/",
-            "https://lex.uz/ru/docs/",
+            "https://lex.uz/ru/search/?sort=date",
+            "https://lex.uz/ru/",
         ]
         
         html = None
         
         for url in urls_to_try:
             try:
-                logger.info(f"Trying {url}")
-                async with self.session.get(url, allow_redirects=True) as response:
-                    logger.info(f"Status: {response.status}")
+                logger.info(f"Пробуем {url}")
+                async with self.session.get(url, allow_redirects=True, timeout=30) as response:
+                    logger.info(f"Статус: {response.status}")
                     if response.status == 200:
                         html = await response.text()
                         break
             except Exception as e:
-                logger.error(f"Error with {url}: {e}")
+                logger.error(f"Ошибка {url}: {e}")
                 continue
         
         if not html:
-            logger.error("All URLs failed")
+            logger.error("Все URL недоступны")
             return documents
 
         soup = BeautifulSoup(html, 'html.parser')
-        links = soup.find_all('a', href=True)
-        doc_links = []
         
-        for link in links:
-            href = link['href']
-            text = link.get_text(strip=True)
-            if '/docs/' in href and text and len(text) > 10:
-                doc_links.append((text, href))
+        # Пробуем разные селекторы для поиска документов
+        doc_blocks = (
+            soup.find_all('div', class_='search-result-item') or 
+            soup.find_all('div', class_='doc-item') or
+            soup.find_all('a', href=re.compile(r'/ru/docs/\d+'))
+        )
         
-        logger.info(f"Found {len(doc_links)} potential documents")
+        logger.info(f"Найдено {len(doc_blocks)} блоков")
         
-        for title, href in doc_links[:30]:
+        seen_urls = set()
+        
+        for block in doc_blocks[:30]:
             try:
-                doc_type = 'regulation'
-                title_lower = title.lower()
-                if 'закон' in title_lower or 'ЗРУ' in title:
-                    doc_type = 'law'
-                elif 'указ' in title_lower:
-                    doc_type = 'decree'
-                elif 'постановление' in title_lower:
-                    doc_type = 'resolution'
-                elif 'приказ' in title_lower:
-                    doc_type = 'order'
+                # Ищем ссылку и заголовок
+                link = block.find('a', href=True) if hasattr(block, 'find') else block
+                if not link:
+                    continue
+                    
+                href = link['href']
+                title = link.get_text(strip=True)
                 
+                if not title or len(title) < 5:
+                    continue
+                    
+                # Нормализуем URL
                 if href.startswith('/'):
                     url = f'{self.base_url}{href}'
                 elif href.startswith('http'):
                     url = href
                 else:
                     url = f'{self.base_url}/ru/docs/{href}'
+                    
+                if url in seen_urls:
+                    continue
+                seen_urls.add(url)
                 
-                doc_number = href.split('/')[-1] if '/' in href else 'unknown'
+                # Извлекаем ID документа из URL
+                doc_id = href.split('/')[-1] if '/' in href else 'unknown'
+                
+                # Определяем тип по заголовку и номеру
+                doc_type = self._detect_doc_type(title, doc_id)
                 category = self._get_category(title)
+                
+                # Пытаемся извлечь дату из блока (если есть)
+                date_elem = block.find('span', class_='date') or block.find('time')
+                date_str = date_elem.get_text(strip=True) if date_elem else datetime.now().strftime('%d.%m.%Y')
                 
                 documents.append(LawDocument(
                     id=0,
                     title=title[:300],
                     doc_type=doc_type,
-                    doc_number=doc_number[:100],
-                    date_published=datetime.now().strftime('%d.%m.%Y'),
-                    date_effective=datetime.now().strftime('%d.%m.%Y'),
+                    doc_number=doc_id[:100],
+                    date_published=date_str,
+                    date_effective=date_str,
                     category=category,
                     description=title[:250],
                     full_text='',
@@ -345,11 +377,12 @@ class LexUzParser:
                     previous_versions=[],
                     created_at=datetime.now().isoformat()
                 ))
+                
             except Exception as e:
-                logger.error(f'Parse error: {e}')
+                logger.error(f'Ошибка парсинга блока: {e}')
                 continue
 
-        logger.info(f'Parsed {len(documents)} documents')
+        logger.info(f'Спарсено {len(documents)} документов')
         return documents
 
     async def test_connection(self) -> bool:
@@ -357,7 +390,7 @@ class LexUzParser:
             async with self.session.get(self.base_url) as response:
                 return response.status == 200
         except Exception as e:
-            logger.error(f"Site unavailable: {e}")
+            logger.error(f"Сайт недоступен: {e}")
             return False
 
 # ==================== DATABASE ====================
@@ -886,6 +919,7 @@ async def main_webhook():
     )
     scheduler.start()
 
+    # Получаем домен из переменных Railway или используем fallback
     RAILWAY_STATIC_URL = os.getenv("RAILWAY_STATIC_URL")
     RAILWAY_PUBLIC_DOMAIN = os.getenv("RAILWAY_PUBLIC_DOMAIN")
 
@@ -894,7 +928,13 @@ async def main_webhook():
     elif RAILWAY_PUBLIC_DOMAIN:
         WEBHOOK_HOST = f"https://{RAILWAY_PUBLIC_DOMAIN}"
     else:
-        logger.error("No Railway domain!")
+        # Fallback: пробуем получить домен из Railway API или используем дефолт
+        logger.warning("No Railway domain env vars found, trying to detect...")
+        WEBHOOK_HOST = None
+
+    if not WEBHOOK_HOST:
+        logger.error("No Railway domain! Set RAILWAY_PUBLIC_DOMAIN in Variables")
+        logger.error("Example: RAILWAY_PUBLIC_DOMAIN=your-app.up.railway.app")
         return
 
     WEBHOOK_URL = f"{WEBHOOK_HOST}/bot{BOT_TOKEN}"
@@ -926,6 +966,8 @@ async def main_webhook():
     site = web.TCPSite(runner, '0.0.0.0', int(os.getenv("PORT", "8080")))
     await site.start()
 
+    logger.info(f"Server started on port {os.getenv('PORT', '8080')}")
+    
     while True:
         await asyncio.sleep(3600)
 
@@ -946,8 +988,14 @@ async def main_polling():
     finally:
         await on_shutdown(bot)
 
+# ==================== ТОЧКА ВХОДА ====================
+# Railway ВСЕГДА использует webhook, polling только для локальной разработки
+
 if __name__ == "__main__":
-    if os.getenv("RAILWAY_STATIC_URL") or os.getenv("RAILWAY_PUBLIC_DOMAIN"):
-        asyncio.run(main_webhook())
-    else:
+    MODE = os.getenv("BOT_MODE", "webhook").lower()
+    
+    if MODE == "polling":
         asyncio.run(main_polling())
+    else:
+        # По умолчанию webhook — для Railway и продакшена
+        asyncio.run(main_webhook())
